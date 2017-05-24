@@ -1,0 +1,148 @@
+html {
+  font-size: $FontSizeBase;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  position: relative;
+  color: $ColorBase;
+  font-family: $FontBase;
+  font-weight: 300;
+  line-height: 1;
+  background: $BgBase;
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+  min-width: $MinWidth;
+  font-size: 12px;
+  //-webkit-font-smoothing: antialiased;
+  //-moz-osx-font-smoothing: grayscale;
+  //text-rendering: optimizeSpeed;
+}
+
+img {
+  max-width: 100%;
+}
+
+input[type="text"], input[type="password"], textarea {
+  font-family: Helvetica, sasn-serif;
+}
+
+.clear {
+  clear: both;
+}
+
+.fw:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+
+.fl {
+  float: left;
+  width: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.base-content {
+  position: relative;
+  min-height: 30rem;
+
+}
+
+.main-content {
+  float: right;
+  width: 100%;
+
+  @media#{$media-phone-landscape}{
+    float: none;
+  }
+
+  &._all-width {
+    float: none;
+
+    .main-content-inner {
+      padding-left: 0;
+    }
+  }
+
+  &__title {
+    strong {
+      text-transform: none;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .main-content.is-filter .main-content__title h1{
+    margin-bottom: 3.2rem;
+  }
+}
+
+.main-content-inner {
+  padding-left: 27.8rem;
+
+  @media #{$media-desk}{
+    padding-left: 28rem;
+  }
+
+  @media #{$media-740}{
+    padding-left:0;
+  }
+}
+
+.sidebar-bar {
+  width: 25.8rem;
+  float: left;
+
+  @media #{$media-desk}{
+    width: 25.7rem;
+  }
+
+
+  @media #{$media-740}{
+    float: none;
+    margin-left: -3rem;
+  }
+
+  @media #{$media-phone}{
+    margin-left: -2rem;
+  }
+
+}
+
+.inner-width {
+  max-width: $ContentMaxWidth;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 4rem;
+
+  @media #{$media-desk}{
+    padding: 0 3.4rem;
+  }
+
+  @media #{$media-phone-landscape}{
+    padding: 0 3rem;
+  }
+
+  @media #{$media-phone}{
+    padding: 0 2rem;
+  }
+}
+
+.mobile-hidden {
+  @media #{$media-phone-landscape} {
+    display: none;
+  }
+}

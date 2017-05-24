@@ -1,0 +1,31 @@
+extends layouts/_base-layoute.jade
+
+block PageTitle
+	title Index
+
+
+block PageLayout
+	section.base-content.inner-width.fw
+		section.main-content.fw.first
+			section.sidebar-bar.main-move-block
+				//include includes/_left-menu.jade
+
+			section.main-content-inner.main-move-block.fw
+				//include includes/_search.jade
+			section.sidebar-bar
+				.left-banner__move-wrapp
+					.left-banner.is-first
+						a.left-banner__link(href='', alt='')
+							img.left-banner__image(src='../images/delivery.png')
+			section.main-content-inner
+				//include includes/_main-page-slider_new-products-slider.jade
+
+
+
+
+
+
+
+
+
+

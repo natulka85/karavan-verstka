@@ -1,0 +1,21 @@
+//- mixins
+doctype html
+
+html
+	head
+		block PageTitle
+			title
+			
+		include ../includes/_head.jade
+
+	body
+		section.wrapper
+			include ../includes/_header.jade
+
+			block PageLayout
+
+			include ../includes/_footer.jade
+				
+			#global-overlay.global-overlay
+				
+			//include ../includes/_modal-popups.jade

@@ -1,0 +1,43 @@
+{
+  "name": "karavanmarket",
+  "version": "1.0.0",
+  "main": "yes",
+  "scripts": {
+    "test": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natulka85/karavan-verstka.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/natulka85/karavan-verstka/issues"
+  },
+  "homepage": "https://github.com/natulka85/karavan-verstka#readme",
+  "devDependencies": {
+    "grunt-svgstore": "^1.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-path": "^3.0.3",
+    "gulp-sass": "^3.1.0",
+    "gulp-svgmin": "^1.2.3",
+    "gulp-svgstore": "^6.1.0",
+    "gulp-watch": "^4.3.11",
+    "path": "^0.12.7",
+    "run-sequence": "^1.2.2"
+  },
+  "description": "",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-sass": "^3.1.0",
+    "path": "^0.12.7",
+    "run-sequence": "^1.2.2"
+  }
+}

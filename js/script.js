@@ -156,15 +156,57 @@ function dropDownLists(){
 // PHOTO GALLERY
 function initProductListPhotoGallery() {
 
-    function noArrows($quant){
-        $('.products-list__preview-photos').each(function(){
-            if($(this).find('.products-list__previw-photos-link').length <= $quant){
+    function noArrows($quant, $class){
+        $($class).each(function(){
+            if($(this).find($class +'-link').length <= $quant){
                 $(this).addClass('is-no-arrows');
             }
         });
     }
     if($('.products-list.is-cards').length > 0){
-        noArrows(3);
+        noArrows(3, '.products-list__preview-photos');
+        $('.js-product-list-photos').each(function(index){
+            $(this).slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                adaptiveHeight: true,
+                arrows: false,
+                fade: true,
+                dots: false,
+                draggable: false,
+                toucheventsMove: false,
+                infinite:false,
+                touchMove: false,
+                asNavFor: '.js-product-preview-photos.index-'+index,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            fade: false,
+                            touchMove: false
+                        }
+                    }
+                ]
+            });
+        });
+        $('.js-product-preview-photos').each(function(index){
+            $(this).slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                vertical: true,
+                draggable: false,
+                centerMode: false,
+                focusOnSelect: true,
+                verticalSwiping: true,
+                infinite:false,
+                touchMove: false,
+                dots: false,
+                asNavFor: '.js-product-list-photos.index-'+ index,
+            });
+        });
+    }
+    if($('.similar-products').length > 0){
+        noArrows(3, '.products-list__preview-photos');
         $('.js-product-list-photos').each(function(index){
             $(this).slick({
                 slidesToShow: 1,
@@ -206,7 +248,7 @@ function initProductListPhotoGallery() {
         });
     }
     if($('.products-list.is-list').length > 0){
-        noArrows(2);
+        noArrows(2, '.products-list__preview-photos');
         $('.js-product-list-photos').each(function(index){
             $(this).slick({
                 slidesToShow: 1,
@@ -244,6 +286,48 @@ function initProductListPhotoGallery() {
                 touchMove: false,
                 dots: false,
                 asNavFor: '.js-product-list-photos.index-'+ index,
+            });
+        });
+    }
+    if($('.detail-product').length > 0){
+        noArrows(4, '.detail-product__preview-photos');
+        $('.js-detail-product-photos').each(function(index){
+            $(this).slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                adaptiveHeight: true,
+                arrows: false,
+                fade: true,
+                dots: false,
+                draggable: false,
+                toucheventsMove: false,
+                infinite:false,
+                touchMove: false,
+                asNavFor: '.js-detail-product-preview-photos.index-'+index,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            fade: false,
+                            touchMove: false
+                        }
+                    }
+                ]
+            });
+        });
+        $('.js-detail-product-preview-photos').each(function(index){
+            $(this).slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                vertical: true,
+                draggable: false,
+                centerMode: false,
+                focusOnSelect: true,
+                verticalSwiping: true,
+                infinite:false,
+                touchMove: false,
+                dots: false,
+                asNavFor: '.js-detail-product-photos.index-'+ index,
             });
         });
     }

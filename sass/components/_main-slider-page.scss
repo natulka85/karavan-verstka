@@ -1,0 +1,15 @@
+.main-slider-page{
+  margin-top: 4.7rem;
+  &__title{
+    font-size: 2.4rem;
+    color: #2a2024;
+    margin-bottom: 7.4rem;
+  }
+  &__content{
+    position: relative;
+  }
+  .products-list{
+    width: 100%;
+    overflow: hidden;
+  }
+}

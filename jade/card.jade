@@ -1,0 +1,43 @@
+extends layouts/_base-layoute.jade
+
+block PageTitle
+	title Index
+
+
+block PageLayout
+	section.base-content.inner-width.fw
+		section.header
+			include blocks/_header-top
+			include blocks/_header-menu
+			include blocks/_basket-small
+		section.main-content.fw
+			section.sidebar-bar
+				include blocks/_main-search
+				include includes/_left-menu.jade
+				include blocks/_left-banner
+
+
+			section.main-content-inner.fw
+				include blocks/_page-header
+
+				section.detail-product-wrap
+
+					include blocks/_detail-product
+					.separate-pattern
+					include blocks/_collection-products
+					include blocks/_subscribe-page-block-var1
+					include blocks/_similar-products
+					include blocks/_viewed-products
+		section.footer.fl
+			include includes/_footer
+
+
+
+
+
+
+
+
+
+
+

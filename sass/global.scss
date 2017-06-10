@@ -34,11 +34,16 @@
 @import "components/catalog-controls";
 @import "components/products-list";
 @import "components/pagination";
+@import "components/viewed-products";
+@import "components/main-slider-page";
+@import "components/detail-product";
+
 
 
 //Wrapps
 @import "wrapps/catalog-sections-wrap";
 @import "wrapps/catalog-products-wrap";
+@import "wrapps/detail-product-wrap";
 
 // Print
 @import "print";

@@ -2,12 +2,28 @@
 @include font-face-full("OpenSansSemiBold", "OpenSansSemiBold", normal, normal);
 @include font-face-full("OpenSansBold", "OpenSansBold", normal, normal);
 @include font-face-full("IconsFont", "IconsFont", normal, normal);
+@include font-face-full("IconsFont2", "IconsFont2", normal, normal);
 @include font-face-full("slick", "slick", normal, normal);
 
 
-[class^="icon-"]:before, [class*=" icon-"]:before, .icon-template {
+[class^="icon-"]:before, [class*=" icon-"]:before, .icon-template,
+[class^="icon2-"]:before, [class*=" icon2-"]:before{
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'IconsFont' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+[class^="icon2-"]:before, [class*=" icon2-"]:before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'IconsFont2' !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -115,6 +131,12 @@
 }
 .icon-gl:before{
   content: "\e131";
+}
+.icon2-ar-long-l:before{
+  content: '\e200';
+}
+.icon2-ar-long-r:before{
+  content: '\e201';
 }
 
 

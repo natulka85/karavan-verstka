@@ -1,18 +1,22 @@
 .pagination{
-  text-align: center;
-  position: relative;
 
-  &:before{
-    content: '';
-    display: block;
-    position: absolute;
-    height:1px;
-    width:100%;
-    background: #999999;
-    z-index: 1;
-    top:50%;
-    margin-top:-0.5px;
+  &__content-wrap{
+    text-align: center;
+    position: relative;
+    &:before{
+      content: '';
+      display: block;
+      position: absolute;
+      height:1px;
+      width:100%;
+      background: #999999;
+      z-index: 1;
+      top:50%;
+      margin-top:-0.5px;
+    }
   }
+
+
 
   &__content{
     display: inline-block;
@@ -33,6 +37,47 @@
     &:hover{
       background-color: #ff7e09;
       color: #ffffff;
+    }
+  }
+  &__arrows{
+    height: 42px;
+    line-height: 42px;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #000000;
+    background-color: #ffffff;
+    border: solid 2px #fcf8f2;
+    display: inline-block;
+    position: absolute;
+    top: 4.9rem;
+    cursor: pointer;
+    &.is-prev{
+      left: 0;
+      span{
+        padding-left: 5rem;
+        padding-right: 2rem;
+        &:before{
+          left:20px;
+        }
+      }
+    }
+    &.is-next{
+      right: 0;
+      span{
+        padding-right: 5rem;
+        padding-left: 2rem;
+        &:before{
+          right: 20px;
+        }
+      }
+    }
+    span{
+      position: relative;
+      &:before{
+        position: absolute;
+        font-size: 7px;
+        top: 6px;
+      }
     }
   }
 }

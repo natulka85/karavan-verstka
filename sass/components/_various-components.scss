@@ -1,2 +1,226 @@
 /* ////////////////////////////////// VARIOUS COMPONENTS ////////////////////////////////// */
+.main-tabs{
+  &__content-item{
+    //display: none;
+    /*&.is-default-active{
+      display: block;
+    }*/
 
+   /* @media screen and (min-width: 769px) {
+      &:target {
+        display: block;
+      }
+    }*/
+  }
+}
+
+.btn{
+  display: block;
+  border-radius: 2px;
+  border: solid 1px #cecece;
+  font-size: 14px;
+  color: #ffffff;
+  height: 3.4rem;
+  line-height: 3.4rem;
+  padding: 0 1.1rem;
+  cursor: pointer;
+  font-family: $fopRegular;
+  transition: .3s;
+  text-align: center;
+
+  &.is-orange{
+    background-color: #ff7e09;
+  }
+  &.is-green{
+    background-color: #64ac39;
+    &:hover{
+      background-color: #007a1a;
+    }
+  }
+  &.is-brown{
+    background-color: #8d5b3d;
+    &:hover{
+      background-color: #a76f4d;
+    }
+  }
+  &.is-transparent-orange{
+    background-color: #ff6600;
+    color: #ff6600;
+  }
+}
+
+.separate-pattern{
+  height: 1.2rem;
+  display: block;
+  background-image: url('../images/pattern-1.png');
+}
+
+.seo-text{
+  margin-top: 3.5rem;
+  &__title{
+    font-size: 24px;
+    line-height: 0.75;
+    color: #2a2024;
+    margin-bottom: 2.2rem;
+
+  }
+  &__pic{
+    float: right;
+    margin-right: 1.5rem;
+    width: 37%;
+    
+  }
+  &__content{
+    float: left;
+    font-size: 14px;
+    line-height: 1.29;
+    color: #262626;
+    width: 61%;
+  }
+}
+@media #{$media-1166} {
+  .seo-text__pic{
+    display: none;
+  }
+  .seo-text__content{
+    width: 100%;
+  }
+}
+
+.left-banner{
+  width: 100%;
+  height: 28.5rem;
+  background-image: url(../images/left-banner.png);
+  cursor: pointer;
+  margin-top: 3rem;
+  background-repeat:no-repeat;
+
+  &__link{
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media #{$media-960} {
+    display: none;
+  }
+}
+
+.main-date{
+  font-size: 1.1rem;
+  line-height: 1.64;
+  color: #000000;
+  &:before{
+    margin-right: 8px;
+    font-size: 1.6rem;
+    vertical-align: middle;
+    color: #999999;
+  }
+  span{
+    vertical-align: middle;
+  }
+}
+
+.label-block{
+  &__label{
+    background-color: #ffffff;
+    font-size: 14px;
+    border: 1px solid transparent;
+    display: inline-block;
+    height: 3.3rem;
+    line-height: 3.3rem;
+    padding: 0 1rem;
+    white-space: nowrap;
+    
+    &.is-orange{
+      color: #ff6600;
+      border-color: #ff6600;
+    }
+    &.is-green{
+      color: #008d1e;
+      border: solid 1px #008d1e;
+    }
+  }
+}
+
+$checkSize: 13;
+.main-checkbox{
+  opacity: 0;
+  width: $checkSize + 2px;
+  height: $checkSize + 2px;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  margin: 0;
+}
+.main-checkbox-label{
+  position: relative;
+  padding-left: 6px;
+}
+.main-checkbox + .main-checkbox-label:before{
+  content: '';
+  display: block;
+  position: absolute;
+  line-height: $checkSize+px;
+  width: $checkSize+px;
+  height: $checkSize+px;
+  border: solid 1px #999999;
+  left: -18px;
+  top: 3px;
+  z-index: 1;
+  cursor: pointer;
+  text-align: center;
+  transition: .3s;
+}
+.main-checkbox:checked + .main-checkbox-label:before{
+  background-color: #007fc7;
+}
+.main-checkbox:not(:checked) + .main-checkbox-label:before{
+  content: '';
+}
+
+.slick-prev, .slick-next{
+  border-radius: 2px;
+  background-color: #b79885 !important;
+  &:before{
+    @extend .icon-template;
+    @extend .icon-arrow;
+    font-size: 2.6rem;
+    color: #ffffff;
+    opacity: 1;
+    width: 100%;
+    text-align: center;
+  }
+  &:hover{
+    background-color: #b79885;
+  }
+}
+.slick-next:before{
+  transform: rotate(180deg);
+}
+
+.main-count{
+  position: relative;
+  &__btn{
+    position: absolute;
+    right: 0;
+    border-radius: 2px;
+    background-color: #999999;
+    height: 11px;
+    line-height: 8px;
+    width: 15px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    &:before{
+      @extend .icon-template;
+      font-size: 5px;
+      color: #ffffff;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    &.is-up:before{@extend .icon-arrow-up;}
+    &.is-down:before{@extend .icon-arrow-down;}
+  }
+}

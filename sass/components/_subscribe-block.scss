@@ -1,0 +1,110 @@
+.subscribe-block{
+  padding: 1.9rem 0;
+  padding-left:29.7rem;
+  background-image: url(../images/bg/subscribe-bg.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  height: 15.4rem;
+  margin-top: 5.5rem;
+  margin-bottom: 2.9rem;
+  &__top-text{
+    font-size: 1.6rem;
+    line-height: 1.12;
+    color: #000000;
+    margin-bottom: 1.1rem;
+  }
+  &__bottom-text{
+    font-size: 1.4rem;
+    line-height: 1.29;
+    color: #272727;
+    max-width: 65.8rem;
+  }
+  &__form{
+    margin-bottom: 1.3rem;
+    width: 53.3rem;
+    display: flex;
+    align-items: center;
+  }
+  &__input{
+    border-radius: 2px;
+    background-color: #ffffff;
+    border: solid 1px #999999;
+    font-size: 18.7px;
+    width: 100%;
+    height: 4.2rem;
+    line-height: 4.2rem;
+    padding-left: 1.7rem;
+  }
+  &__line{
+    position: relative;
+    flex-grow:2;
+  }
+  &__label{
+    font-size: 18.7px;
+    color: #999999;
+    position: absolute;
+    height: 4.2rem;
+    line-height: 4.2rem;
+    padding-left: 1.7rem;
+
+    &:before{
+      font-size: 1.3rem;
+      margin-right: 1.2rem;
+      display: inline-block;
+    }
+  }
+  &__btn{
+    width: 20.4rem;
+    height: 4.4rem;
+    margin-left: 4px;
+    border:none;
+    font-size: 1.8rem;
+  }
+
+}
+
+@media #{$media-1285} {
+  .subscribe-block{
+    margin-top: 6rem;
+    padding-left: 6.8rem;
+  }
+  .subscribe-block__top-text{
+    margin-left:5rem;
+  }
+  .subscribe-block__form{
+    margin-left: 5rem;
+  }
+}
+
+@media #{$media-768}{
+  .subscribe-block{
+    padding-left: 12.5rem;
+  }
+  .subscribe-block__top-text,
+  .subscribe-block__form{
+    margin-left: 0;
+  }
+}
+
+@media #{$media-740}{
+  .subscribe-block{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+@media #{$media-686}{
+  .subscribe-block{
+    height: 11.9rem;
+    width: calc(100% + 20px);
+    margin-left: -1rem;
+  }
+  .subscribe-block__form{
+    width: 100%;
+  }
+  .subscribe-block__bottom-text{
+    display: none;
+  }
+  .subscribe-block__btn{
+    width: 15rem;
+  }
+}

@@ -1,0 +1,159 @@
+.plate-block{
+  margin-top: 4.2rem;
+
+  &__wrapps{
+    //display: flex;
+    //flex-wrap: wrap;
+   // justify-content: space-between;
+  }
+
+  &__main-title{
+    font-size: 2.4rem;
+    color: #2a2024;
+    margin-bottom: 1.7rem;
+  }
+  &__elem{
+    min-height: 21.1rem;
+    height: 21.1rem;
+    background-color: #fcf8f2;
+    width: 32.6%;
+    padding: 2.4rem;
+    margin-bottom: 1.4rem;
+    cursor: pointer;
+    position: relative;
+    border: solid 1px transparent;
+    transition: .3s;
+    float: left;
+    &:not(:nth-of-type(3n)){
+      margin-right: 1.1%;
+    }
+    &:hover{
+      background-color: #ffffff;
+      box-shadow: 1px -0.3px 9px 0 rgba(0, 0, 0, 0.19);
+      border-color: #ece4d6;
+    }
+  }
+  &__title{
+    font-family: $fopb;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 3rem;
+    line-height: 1.2;
+  }
+  &__content{
+    float: left;
+    width: 53%;
+  }
+  &__image{
+    float: right;
+    width: 49%;
+    height: 100%;
+    line-height:21.1rem;
+    right: 2rem;
+    position: absolute;
+    top: 0;
+    text-align: right;
+    img{
+      display: inline-block;
+      vertical-align: middle;
+      max-width: 100%;
+    }
+  }
+  &__text{
+    font-size: 1.4rem;
+    line-height: 1.29;
+    color: #272727;
+  }
+  &__content-links{
+    list-style: none;
+  }
+  &__content-item{
+    display: inline-block;
+  }
+  &__link{
+    font-size: 1.4rem;
+    line-height: 1.29;
+    color: #272727;
+  }
+
+  #mm_polki_i_stellaji img{vertical-align: bottom}
+  #mm_sunduki img{vertical-align: bottom}
+  #mm_karandashi img{vertical-align: bottom;padding-bottom:3rem;}
+  #mm_gazetnici img{vertical-align: bottom;}
+  #mm_morskaya_romantika img{vertical-align: bottom;}
+}
+
+@media #{$media-1728}{
+  .plate-block__image{
+    width: 31%;
+  }
+  .plate-block__content{
+    width: 74%;
+  }
+}
+
+@media #{$media-1496} {
+  .plate-block__elem:nth-child(n+7){
+    display: none;
+  }
+  .plate-block__title{
+    max-width: 70%;
+  }
+  .plate-block__image img{
+    max-height: 138px;
+  }
+}
+
+@media #{$media-1166} {
+  .plate-block{
+    margin-top: 3.9rem;
+  }
+  .plate-block__elem{
+    min-height: 20.2rem;
+    height: 20.2rem;
+    margin-bottom: 7px;
+  }
+  .plate-block__content{
+    display: none;
+  }
+  .plate-block__image{
+    width: 100%;
+    text-align: center;
+    line-height: 20.3rem;
+    img{
+      vertical-align: bottom;
+      max-height: 10rem;
+      max-width: 12rem;
+    }
+  }
+  .plate-block__main-title{
+    margin-bottom: 2.6rem;
+  }
+}
+
+@media #{$media-768} {
+  .plate-block__elem:nth-child(n+7){
+    display: block;
+  }
+}
+
+@media #{$media-686}{
+  .plate-block__elem:nth-child(n+11){
+    display: none;
+  }
+  .plate-block__elem:not(:nth-of-type(3n)){
+    margin-right: 0;
+  }
+  .plate-block__elem{
+    width: 49%;
+    margin-right: 0;
+
+    &:not(:nth-of-type(2n)){
+      margin-right:2%;
+    }
+  }
+  .plate-block__main-title{
+    margin-bottom: 3rem;
+  }
+}

@@ -1,0 +1,45 @@
+.main-search{
+  margin-bottom: 2.5rem;
+  min-width: 25.3rem;
+  &__form{
+    display: flex;
+  }
+  &__input{
+    margin-right: -2px;
+    border-radius: 2px;
+    background-color: #ffffff;
+    border: solid 1px #cecece;
+    border-right:none;
+    flex-grow:2;
+    font-size: 1.4rem;
+    color: #000000;
+    padding-left: 1.6rem;
+    &::placeholder{
+      color: #000000;
+    }
+  }
+&__btn{
+  width: 3.4rem;
+  height: 3.4rem;
+  border-radius: 2px;
+  background-color: #ff7e09;
+  &:before{
+    color: #ffffff;
+    font-size: 1.9rem;
+  }
+  }
+}
+
+@media #{$media-960} {
+  .main-search{
+    margin-right:1.6rem;
+    margin-bottom: 0;
+  }
+}
+@media #{$media-740}{
+ .main-search{
+   flex-basis: 100%;
+   margin-bottom: 1.3rem;
+   margin-right: 0;
+ }
+}

@@ -1,0 +1,220 @@
+.catalog-filter{
+  background-color: #f4f0e9;
+  padding: 1.3rem 1.4rem;
+  display: flex;
+  width: 100%;
+
+  &__section{
+    &:not(:last-child){
+      margin-right: 6px;
+    }
+  }
+
+  .cd-dropdown > span{
+    height: 2.5rem;
+    line-height: 2.2rem;
+    box-shadow: none;
+    background-color: #ffffff;
+    border: solid 1px #cecece;
+    font-family: $fopRegular;
+    font-size: 1.4rem;
+    color: #000000;
+    padding: 0;
+    padding-left: 1rem;
+    font-weight:300;
+  }
+
+  .cd-dropdown ul li{
+    border:none;
+    box-shadow: none;
+    height: 2.5rem;
+
+    span{
+      height: 2.5rem;
+      line-height: 2.2rem;
+      font-family: $fopRegular;
+      font-size: 1.4rem;
+      color: #000000;
+      font-weight:300;
+      padding: 0;
+      padding-left: 1rem;
+    }
+  }
+
+  .cd-dropdown, .cd-select{
+    width: 16.1rem;
+  }
+  .cd-dropdown > span:after{
+    @extend .icon-template;
+    content: '\e124';
+    height: 13px;
+    width: 15px;
+    border-radius: 2px;
+    background-color: #c4c4c4;
+    padding:0;
+    color: #ffffff;
+    text-align: center;
+    line-height: 13px;
+    top: 50%;
+    margin-top: -6px;
+    right: 6px;
+    font-size:6px;
+    border: none;
+  }
+
+  &__name{
+    font-family: $fopRegular;
+    font-size: 1.4rem;
+    color: #000000;
+    margin-bottom: 1.4rem;
+    font-weight:300;
+  }
+  .cd-active.cd-dropdown ul li span:hover {
+    background: #f4f0e9;
+    color: #000000;
+  }
+
+
+  .catalog-filter__section:last-child{
+    .cd-dropdown{
+      width: 8.1rem;
+      margin-right: 0;
+    }
+
+  }
+  &__list{
+    margin: 2rem 0;
+    white-space: nowrap;
+  }
+  &__chose{
+    height: 2.5rem;
+    line-height: 2.2rem;
+    border-radius: 2px;
+    background-color: #dbd5cc;
+    display: inline-block;
+    margin-right: 4px;
+    padding-left: 1.2rem;
+    padding-right: 3rem;
+    position: relative;
+    cursor: pointer;
+
+    &:after{
+      content: '';
+      position: absolute;
+      right: 13px;
+      top: 50%;
+      border: 4px solid transparent;
+    }
+
+    &.is-up:after{
+      border-bottom: 5px solid #464646;
+      margin-top: -6px;
+    }
+
+    &.is-down:after{
+      border-top: 5px solid #464646;
+      margin-top: -2px;
+    }
+
+  }
+}
+
+@media #{$media-1166} {
+  .catalog-filter__chose{
+    padding: 0;
+    width: 3.4rem;
+    span{
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 961px){
+  .catalog-filter .cd-dropdown, .catalog-filter .cd-select {
+    width: 15rem;
+  }
+}
+
+@media #{$media-740} {
+  .catalog-filter{
+    flex-wrap: wrap;
+    padding: 1.9rem;
+    position: relative;
+  }
+  .catalog-filter__section:not(:last-child){
+    margin-right: 0;
+  }
+  .catalog-filter .catalog-filter__section{
+    width: 100%;
+    margin-right: 0;
+    display: flex;
+    align-items: center;
+    &:nth-of-type(4n){
+      .catalog-filter__name{
+        flex-grow:0;
+        margin-right: 1.4rem;
+      }
+    }
+    &:last-child{
+      position: absolute;
+      bottom: 1.9rem;
+      width: 55%;
+      right: 1.9rem;
+
+      .cd-dropdown{
+        width: 10.3rem;
+        margin-bottom: 0;
+      }
+      .cd-dropdown > span,
+      .cd-dropdown ul li span{
+        padding-left: 4rem;
+      }
+      .catalog-filter__list{
+        width: 10.3rem;
+      }
+    }
+  }
+  .catalog-filter__chose{
+    width: 5.1rem;
+    height: 3.8rem;
+    &:after{
+      border: 5px solid transparent;
+      right: 19px;
+    }
+    &.is-up:after{
+      border-bottom: 9px solid #464646;
+      margin-top: -1rem;
+    }
+    &.is-down:after{
+      border-top: 9px solid #464646;
+      margin-top: -4px;
+    }
+  }
+
+  .catalog-filter__name{
+    margin-bottom: 0;
+    flex-grow: 2;
+  }
+  .catalog-filter__list{
+    margin: 0;
+    width: 60%;
+  }
+  .catalog-filter .cd-dropdown, .catalog-filter .cd-select{
+    width: 100%;
+    height: 4rem;
+    line-height: 4rem;
+  }
+  .catalog-filter .cd-dropdown > span,
+  .catalog-filter .cd-dropdown ul li span,
+  .catalog-filter .cd-dropdown ul li{
+    height: 4rem;
+    line-height: 4rem;
+  }
+  .cd-dropdown.cd-active{
+    z-index: 1010;
+  }
+  .cd-dropdown, .cd-select{
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+}

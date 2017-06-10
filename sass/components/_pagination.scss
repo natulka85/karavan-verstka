@@ -1,0 +1,38 @@
+.pagination{
+  text-align: center;
+  position: relative;
+
+  &:before{
+    content: '';
+    display: block;
+    position: absolute;
+    height:1px;
+    width:100%;
+    background: #999999;
+    z-index: 1;
+    top:50%;
+    margin-top:-0.5px;
+  }
+
+  &__content{
+    display: inline-block;
+    background: #FFFFFF;
+    z-index: 2;
+    position: relative;
+    padding: 0 8px;
+  }
+  &__btn{
+    display: inline-block;
+    width: 2.7rem;
+    height: 2.9rem;
+    line-height:2.9rem;
+    text-align: center;
+    color: #2a2024;
+    font-size: 1.4rem;
+    &.is-active,
+    &:hover{
+      background-color: #ff7e09;
+      color: #ffffff;
+    }
+  }
+}

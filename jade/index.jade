@@ -6,19 +6,68 @@ block PageTitle
 
 block PageLayout
 	section.base-content.inner-width.fw
-		section.main-content.fw.first
-			section.sidebar-bar.main-move-block
-				//include includes/_left-menu.jade
-
-			section.main-content-inner.main-move-block.fw
-				//include includes/_search.jade
+		section.header
+			include blocks/_header-top
+			include blocks/_header-menu
+			include blocks/_basket-small
+		section.main-content.fw
 			section.sidebar-bar
-				.left-banner__move-wrapp
-					.left-banner.is-first
-						a.left-banner__link(href='', alt='')
-							img.left-banner__image(src='../images/delivery.png')
-			section.main-content-inner
-				//include includes/_main-page-slider_new-products-slider.jade
+				include blocks/_main-search
+				include includes/_left-menu.jade
+				include blocks/_left-banner
+				include blocks/_left-news
+				include blocks/_left-reviews
+
+
+			section.main-content-inner.fw
+				include blocks/_page-header
+				section.main-sliders
+					.main-slider
+						.main-slider__header
+							img.main-slider__flag(src="../images/flags/fl-tai.png")
+							h2.main-slider__title Товары из Таиланда (2 483)
+						include blocks/_main-slider
+					.main-slider
+						.main-slider__header
+							img.main-slider__flag(src="../images/flags/fl-indonez.png")
+							h2.main-slider__title Товары из Индонезии (2 483)
+						include blocks/_main-slider
+					.main-slider
+						.main-slider__header
+							img.main-slider__flag(src="../images/flags/fl-turkey.png")
+							h2.main-slider__title Товары из Турции (2 483)
+						include blocks/_main-slider
+					.main-slider
+						.main-slider__header
+							img.main-slider__flag(src="../images/flags/fl-indi.png")
+							h2.main-slider__title Товары из Индии (2 483)
+						include blocks/_main-slider
+					.main-slider
+						.main-slider__header
+							img.main-slider__flag(src="../images/flags/fl-china.png")
+							h2.main-slider__title Товары из Китая (2 483)
+						include blocks/_main-slider
+
+
+				.separate-pattern
+				section.main-sections
+					include blocks/_plate-block
+				section.seo-text.fw
+					.seo-text__content
+						h5.seo-text__title Сувениры и подарки из Индии оптом
+						p Индия для всех представляется яркой и сказочной страной, где всегда светит солнце, а девушки ходят в ярких сари, привлекающих внимание. Чтобы стать обладателем сувенира из Индии, теперь не нужно ехать в эту страну. Достаточно лишь заказать их в нашем интернет-магазине.
+						|Вам нравятся яркие ткани, расшитые многочисленными стразами или бисером? Давно мечтаете приобрести сари? Тогда мы будем рады вам в этом помочь!
+						|Помимо сари, вы можете приобрести самые разнообразные украшения, которые поражают своей уникальностью и яркостью цветов. Девушки и женщины всего мира не смогут устоять перед ожерельями и браслетами из меди, инкрустированными цветными каменьями.
+						|Для мужчин лучшим сувениром из Индии станет кинжал, рукоять которого декорирована потрясающей резьбой ручной работы, а острие ножа имеет невероятную форму и гравировку.
+						|Что уж говорить об индийских специях, которые способны придать любому блюду изысканный аромат и вкус. Вы сможете перенестись на мгновение в страну солнца и веселья. У нас вы так же можете приобрести знаменитый индийский чай, который упаковывается в цветные мешочки, чтобы сохранить его насыщенность и аромат.
+						|Деревянные статуэтки слонов привнесут в интерьер вашей комнаты некую изюминку и станут символом доброты, спокойствия и благополучия.
+					.seo-text__pic
+						img(src='../images/seo-main.png')
+
+				include blocks/_subscribe-block
+
+			include includes/_footer
+
 
 
 

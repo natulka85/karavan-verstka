@@ -1,0 +1,41 @@
+.page-header-main{
+  margin-top: 2.4rem;
+  display: flex;
+  &__side:nth-child(1){
+    flex-basis: 70%;
+  }
+  &__side:nth-child(2){
+    flex-grow:2;
+    text-align: right;
+  }
+  &__title{
+    font-size: 2.4rem;
+    line-height: 0.75;
+    color: #2a2024;
+    margin-bottom:2.6rem;
+  }
+  &__info{
+    font-size: 1.4rem;
+    line-height: 1.29;
+    color: #262626;
+  }
+}
+
+@media #{$media-1166} {
+  .page-header-main__side:nth-child(1){
+    flex-basis: 64%;
+  }
+}
+
+@media #{$media-740} {
+  .page-header-main{
+    flex-wrap: wrap;
+  }
+  .page-header-main__side:nth-child(1){
+    flex-basis: 100%;
+  }
+  .page-header-main__side:nth-child(2){
+    text-align: left;
+    margin-top: 2.7rem;
+  }
+}

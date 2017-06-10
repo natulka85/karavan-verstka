@@ -1,9 +1,11 @@
-@include font-face-full("FiraSansMedium", "FiraSansMedium", normal, normal);
+@include font-face-full("OpenSansRegular", "OpenSansRegular", normal, normal);
+@include font-face-full("OpenSansSemiBold", "OpenSansSemiBold", normal, normal);
+@include font-face-full("OpenSansBold", "OpenSansBold", normal, normal);
 @include font-face-full("IconsFont", "IconsFont", normal, normal);
 @include font-face-full("slick", "slick", normal, normal);
 
 
-[class^="icon-"]:before, [class*=" icon-"]:before {
+[class^="icon-"]:before, [class*=" icon-"]:before, .icon-template {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'IconsFont' !important;
   speak: none;
@@ -19,5 +21,103 @@
 }
 
 .icon-close:before{
-  content: "\e230";
+  content: "\e117";
 }
+.icon-phone:before{
+  content: "\e102";
+}
+.icon-map:before{
+  content: "\e101";
+}
+.icon-cart:before{
+  content: "\e100";
+}
+.icon-search:before{
+  content: "\e103";
+}
+.icon-calendar:before{
+  content: "\e104";
+}
+.icon-clicker:before{
+  content: "\e105";
+}
+.icon-pipe:before{
+  content: "\e106";
+}
+.icon-braclet:before{
+  content: "\e107";
+}
+.icon-mortar:before{
+  content: "\e108";
+}
+.icon-chess:before{
+  content: "\e109";
+}
+.icon-anchor:before{
+  content: "\e110";
+}
+.icon-treasure:before{
+  content: "\e111";
+}
+.icon-giftbox:before{
+  content: "\e112";
+}
+.icon-lamp:before{
+  content: "\e113";
+}
+.icon-star:before{
+  content: "\e114";
+}
+.icon-arrow:before{
+  content: "\e115";
+}
+.icon-email:before{
+  content: "\e116";
+}
+.icon-catalog:before{
+  content: "\e118";
+}
+.icon-house:before{
+  content: "\e119";
+}
+.icon-man:before{
+  content: "\e120";
+}
+.icon-new:before{
+  content: "\e121";
+}
+.icon-promo:before{
+  content: "\e122";
+}
+.icon-fb:before{
+  content: "\e123";
+}
+.icon-arrow-down:before{
+  content: "\e124";
+}
+.icon-arrow-up:before{
+  content: "\e130";
+}
+.icon-cards:before{
+  content: "\e125";
+}
+.icon-list:before{
+  content: "\e126";
+}
+.icon-price:before{
+  content: "\e127";
+}
+.icon-star-full:before{
+  content: "\e128";
+}
+.icon-chart:before{
+  content: "\e129";
+}
+.icon-gl:before{
+  content: "\e131";
+}
+
+
+
+
+

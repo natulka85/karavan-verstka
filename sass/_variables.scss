@@ -1,63 +1,36 @@
 // Size
-$MinWidth: 320px;
-$ContentMaxWidth: 1485px;
+$MinWidth: 480px;
+$ContentMaxWidth: 1478px;
 
 // Responsive from large to small
-$media-desktop: "screen and (max-width: 1485px)"; // 1286-1485
-$media-desk: "screen and (max-width: 1285px)"; // 1024-1285
+$media-1728: "screen and (max-width: 1728px)"; //
+$media-1496: "screen and (max-width: 1496px)"; // 1286-1496
+$media-1285: "screen and (max-width: 1285px)"; // 1024-1285
 
 $media-1166: "screen and (max-width: 1166px)";
-$media-tablet: "screen and (max-width: 1023px)";
+$media-1023: "screen and (max-width: 1023px)";
+$media-1008: "screen and (max-width: 1008px)";
 $media-960: "screen and (max-width: 960px)";
-$media-phone-landscape: "screen and (max-width: 767px)";
+$media-768: "screen and (max-width: 768px)";
 $media-740: "screen and (max-width: 740px)";
+$media-686: "screen and (max-width: 686px)";
 
-$media-phone: "screen and (max-width: 485px)"; // 320-479 (iphone 4 landscape not included)
+$media-480: "screen and (max-width: 485px)"; // 320-479 (iphone 4 landscape not included)
 $media-450: "screen and (max-width: 450px)"; // 320-479 (iphone 4 landscape not included)
 $media-408: "screen and (max-width: 408px)"; // 320-479 (iphone 4 landscape not included)
 
 //Fonts
 $FontSizeBase: 10px;
+$FontBase: 'OpenSansRegular', sans-serif;
 
-$FontBaseName: 'FiraSansMedium';
-$FontBase: $FontBaseName, sans-serif;
+$fopRegular: 'OpenSansRegular', sans-serif;
+$fopSemib: 'OpenSansSemiBold', sans-serif;
+$fopb: 'OpenSansBold', sans-serif;
 
-$FontBaseName2: 'Arial';
-$FontBase2: $FontBaseName2, Helvetica, sans-serif;
-
-$FontBaseName3: 'FiraSansRegular';
-$FontBase3: $FontBaseName3, sans-serif;
-
-$FontBaseName4: 'FiraSansBoldItalic';
-$FontBase4: $FontBaseName4, sans-serif;
-
+//colors
 $ColorBase: #21242f;
-
-$gunmetal: #54636a;
-$blue: #38b2ff;
-$marengo: #59686f;
 $lazur-crayola: #2ea6d3;
-$brownish-grey: #676666;
-$jade: #00B468;
-$shamrock: #00b468;
 $dark: #21242f;
-$charcoal-grey: #3c3d41;
-$steel: #8c8d93;
-$greyish-brown: #434343;
-$cloudy-blue: #c0d5da;
-$cool-grey: #94a1a8;
-$warm-grey: #717171;
-$dodger-blue: #38adf7;
-$white-grey: #e3e3e3;
-$dark-grey: #b5bfc2;
-$greyish-brown-two: #4f4f4f;
-$azure: #00aae7;
-$shamrock-green:#00d751;
-$dodger-blue-two:#38acf5;
-$dodger-blue-three:#38b2ff;
-$brownish-grey-two: #606060;
-$brownish-grey-three: #666666;
-
 $cl-real-white: #ffffff;
 $cl-real-black: #000000;
 

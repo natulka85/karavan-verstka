@@ -1,0 +1,57 @@
+.catalog-controls{
+  padding:9px 0;
+  display: flex;
+  align-items: center;
+  margin-bottom: 3.2rem;
+  &__item{
+    font-size: 1.4rem;
+    line-height: normal;
+    color: #000000;
+    padding: 1rem 1.6rem;
+    border: solid 1px transparent;
+    cursor: pointer;
+    transition: .3s;
+    white-space: nowrap;
+    &:before{
+      font-size: 2rem;
+      margin-right: 1.1rem;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    
+    &:not(:last-child):hover,
+    &:not(:last-child).is-active{
+      border-color:#cecece;
+      color: #007fc7;
+      &:before{
+        color: #007fc7;
+      }
+    }
+    &:last-child{
+      margin-left: 1.4rem;
+    }
+    
+    span{
+      vertical-align: middle;
+    }
+  }
+  &__name{
+    margin-right: 2.3rem;
+    font-size: 1.4rem;
+    color: #000000;
+  }
+  .main-checkbox-label{
+    vertical-align: middle;
+  }
+}
+
+@media #{$media-686} {
+  .catalog-controls{
+    flex-wrap: wrap;
+  }
+  .catalog-controls__item:last-child{
+    width: 100%;
+    margin-left: 0;
+    padding-left: 0;
+  }
+}

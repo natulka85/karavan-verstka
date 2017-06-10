@@ -1,0 +1,129 @@
+.subscribe-page-block {
+  background-image: url(../images/bg/subscribe-bg.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  height: 11.9rem;
+  padding: 0 1rem;
+  width: 100%;
+  overflow: hidden;
+  &__top-text{
+    font-size: 1.8rem;
+    padding-top: 2.5rem;
+    line-height:normal;
+    color: #2a2024;
+    text-align: center;
+    margin-bottom: 2rem;
+    span{
+      color: #ff9b47;
+    }
+  }
+  &__form{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    max-width: 91.3rem;
+    margin:auto;
+  }
+  &__input{
+    border-radius: 2px;
+    border: solid 1px #2a2024;
+    font-size: 18.7px;
+    width: 100%;
+    height: 4rem;
+    line-height: 4rem;
+    padding-left: 1.7rem;
+  }
+  &__line{
+    position: relative;
+    display: flex;
+    align-items: center;
+    &:first-child{
+      margin-right:2.8rem;
+    }
+  }
+  &__label{
+    font-size: 18.7px;
+    color: #999999;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 4rem;
+    line-height: 4rem;
+    padding-left: 1.7rem;
+
+    &:before{
+      font-size: 1.3rem;
+      margin-right: 1.2rem;
+      display: inline-block;
+    }
+  }
+  &__name{
+    white-space: nowrap;
+    font-size: 1.8rem;
+    margin-right: 1.5rem;
+  }
+  &__btn{
+    width: 20%;
+    height: 4rem;
+    margin-left: 1rem;
+    border:none;
+    font-size: 1.8rem;
+    flex-grow:2;
+    font-weight: 100;
+  }
+  &__line:nth-child(1){
+    .subscribe-page-block__input{
+      width: 18rem;
+    }
+    .subscribe-page-block__label{
+      left: 9.4rem;
+    }
+  }
+  &__line:nth-child(2){
+    .subscribe-page-block__input{
+      width: 32.5rem;
+    }
+    .subscribe-page-block__label{
+      left: 6.2rem;
+    }
+  }
+}
+
+@media #{$media-1285}{
+  .subscribe-page-block__btn{
+    max-width: 16rem;
+  }
+}
+@media #{$media-1166} {
+  .subscribe-page-block{
+    height: 22.8rem;
+    background-position: right 84%;
+  }
+  .subscribe-page-block__form{
+    flex-wrap: wrap;
+    max-width: 50rem;
+  }
+  .subscribe-page-block__line{
+    flex-basis: 100%;
+  }
+  .subscribe-page-block__line:nth-child(1) .subscribe-page-block__input,
+  .subscribe-page-block__line:nth-child(2) .subscribe-page-block__input{
+    width: 32rem;
+    margin-bottom: 1.2rem;
+  }
+  .subscribe-page-block__name{
+    width: 7.2rem;
+    text-align: right;
+  }
+  .subscribe-page-block__line:nth-child(1) .subscribe-page-block__label {
+    left: 9.1rem;
+  }
+  .subscribe-page-block__line:nth-child(2) .subscribe-page-block__label {
+    left: 8.9rem;
+  }
+  .subscribe-page-block__btn{
+    max-width: 32rem;
+    width: 32rem;
+    margin-left:8.7rem;
+  }
+}

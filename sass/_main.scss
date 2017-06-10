@@ -53,20 +53,36 @@ input[type="text"], input[type="password"], textarea {
   position: relative;
   width: 100%;
   overflow: hidden;
+  padding: 0 148px;
+  background-image: url('../images/bg/wrap-bg.png');
+
+  @media #{$media-1496} {
+    padding:0;
+  }
 }
 
 .base-content {
   position: relative;
   min-height: 30rem;
+  background: #ffffff;
 
 }
 
 .main-content {
   float: right;
   width: 100%;
+  padding: 3rem 2rem;
 
-  @media#{$media-phone-landscape}{
+
+  @media#{$media-960}{
     float: none;
+  }
+  @media#{$media-686}{
+    padding: 3rem 1rem;
+  }
+
+  @media #{$media-740}{
+    padding-top: 1.3rem;
   }
 
   &._all-width {
@@ -91,58 +107,51 @@ input[type="text"], input[type="password"], textarea {
 }
 
 .main-content-inner {
-  padding-left: 27.8rem;
+  padding-left: 31rem;
 
-  @media #{$media-desk}{
-    padding-left: 28rem;
+  @media screen and(max-width: 1580px){
+    padding-left: 27rem;
+  }
+  @media #{$media-1285}{
+    padding-left: 27rem;
   }
 
-  @media #{$media-740}{
+  @media #{$media-960}{
     padding-left:0;
+    padding-top: 2rem;
+  }
+  @media #{$media-740}{
+    padding-top: 1rem;
   }
 }
 
 .sidebar-bar {
   width: 25.8rem;
   float: left;
-
-  @media #{$media-desk}{
-    width: 25.7rem;
-  }
-
-
-  @media #{$media-740}{
+  @media #{$media-960} {
     float: none;
-    margin-left: -3rem;
+    width: 100%;
   }
-
-  @media #{$media-phone}{
-    margin-left: -2rem;
-  }
-
 }
 
 .inner-width {
   max-width: $ContentMaxWidth;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 4rem;
 
-  @media #{$media-desk}{
-    padding: 0 3.4rem;
+  @media #{$media-1496} {
+   max-width: 1200px;
   }
-
-  @media #{$media-phone-landscape}{
-    padding: 0 3rem;
+ /* @media #{$media-1008} {
+    max-width: 768px;
   }
-
-  @media #{$media-phone}{
-    padding: 0 2rem;
-  }
+  @media #{$media-686} {
+    max-width: 480px;
+  }*/
 }
 
 .mobile-hidden {
-  @media #{$media-phone-landscape} {
+  @media #{$media-960} {
     display: none;
   }
 }

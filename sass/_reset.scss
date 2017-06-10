@@ -52,6 +52,7 @@ img{
 }
 button{
   cursor: pointer;
+  border: none;
 }
 button::-moz-focus-inner {
   padding: 0;
@@ -65,13 +66,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 a{
-  color: $lazur-crayola;
+  color: #007fc7;
+  cursor: pointer;
 }
 h1, h2, h3, h4, h5, h6 {
   color: $dark;
   font-weight: 500
 }
-
+input{
+  outline: none;
+  border:none;
+}
 input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{
   border: solid 1px #d9d9d9;
 }

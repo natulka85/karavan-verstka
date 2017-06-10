@@ -1,0 +1,42 @@
+.catalog-filter
+    .catalog-filter__section
+        .catalog-filter__name Разделы
+        .catalog-filter__list
+            select.catalog-filter__select.cd-select
+                option(value='-1', selected) Подарки
+                option(value='1', selected) Подарки
+                option(value='2', selected) Светильники
+                option(value='3', selected) Фигурки
+                option(value='4', selected) Аксессуары
+    .catalog-filter__section
+        .catalog-filter__name Страна производитель
+        .catalog-filter__list
+            select.catalog-filter__select.cd-select
+                option(value='-1', selected) Все страны
+                option(value='1', selected) Все страны
+                option(value='2', selected) Тайланд
+                option(value='3', selected) Индонезия
+                option(value='4', selected) Турция
+    .catalog-filter__section
+        .catalog-filter__name Наличие на складе
+        .catalog-filter__list
+            select.catalog-filter__select.cd-select
+                option(value='-1', selected) Все склады
+                option(value='1', selected) Все склады
+                option(value='2', selected) Сочи
+                option(value='3', selected) Москва
+    .catalog-filter__section
+        .catalog-filter__name Цена
+        .catalog-filter__list
+            .catalog-filter__chose.is-up #[span По ворастанию]
+            .catalog-filter__chose.is-down #[span По убыванию]
+    .catalog-filter__section
+        .catalog-filter__name Показывать
+        .catalog-filter__list
+            select.catalog-filter__select.cd-select
+                option(value='-1', selected) 20
+                option(value='1', selected) 20
+                option(value='2', selected) 30
+                option(value='3', selected) 40
+
+

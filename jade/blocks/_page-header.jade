@@ -1,0 +1,55 @@
+.page-header
+    .page-header__left
+        ul.page-header__menu
+            li.page-header__menu-item
+                a(href="").page-header__menu-item-link.btn.is-brown Новинки
+            li.page-header__menu-item
+                a(href="").page-header__menu-item-link.btn.is-brown Акции #[span (98)]
+                    .page-header__menu-item-link-label 98
+            li.page-header__menu-item
+                a(href="").page-header__menu-item-link.btn.is-brown Распродажи
+    .page-header__middle.is-away
+        .page-header__controls
+            .page-header__controls-title Фильтр по странам:
+            .page-header__controls-title По странам:
+            ul.page-header__controls-menu.is-hide-cnt
+                li.page-header__controls-item
+                    a.page-header__controls-link.is-current
+                        span Все
+                        strong &nbsp;(34)
+                li.page-header__controls-item
+                    a.page-header__controls-link
+                        span Тайланд
+                        strong &nbsp;(180)
+                li.page-header__controls-item
+                    a.page-header__controls-link
+                        span Индонезия
+                        strong &nbsp;(90)
+                li.page-header__controls-item
+                    a.page-header__controls-link
+                        span Турция
+                        strong &nbsp;(89)
+                li.page-header__controls-item
+                    a.page-header__controls-link
+                        span Индия
+                        strong &nbsp;(34)
+                li.page-header__controls-item
+                    a.page-header__controls-link
+                        span Китай
+                        strong &nbsp;(24)
+
+        .page-header__mobile-controls
+            .page-header__mobile-controls-title По странам:
+            select.page-header__mobile-controls-select.cd-select(id="cd-dropdown")
+                option(value='-1', selected) Все страны (900)
+                option(value='1', selected) Все страны (900)
+                option(value='2', selected) Китай (10)
+                option(value='3', selected) Индия
+                option(value='4', selected) Бали
+                option(value='5', selected) Турция
+
+
+    .page-header__right
+        a.page-header__delay-btn.btn.is-orange.icon-star
+            span Избранное
+            strong &nbsp;(4)

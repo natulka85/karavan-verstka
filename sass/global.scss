@@ -10,13 +10,35 @@
 @import "components/external-libraries/nouislider";
 @import "components/external-libraries/jquery.fancybox";
 @import "components/external-libraries/jquery.fs.selecter";
+@import "components/external-libraries/drop-down";
 
 
 // Components
 @import "components/various-components";
+@import "components/header";
+@import "components/header-top";
+@import "components/header-menu";
+@import "components/basket-small";
+@import "components/main-search";
+@import "components/left-menu";
+@import "components/page-header";
+@import "components/main-slider";
+@import "components/plate-block";
+@import "components/left-news";
+@import "components/left-reviews";
+@import "components/subscribe-block";
+@import "components/subscribe-page-block";
+@import "components/footer";
+@import "components/page-header-main";
+@import "components/catalog-filter";
+@import "components/catalog-controls";
+@import "components/products-list";
+@import "components/pagination";
 
 
 //Wrapps
+@import "wrapps/catalog-sections-wrap";
+@import "wrapps/catalog-products-wrap";
 
 // Print
 @import "print";

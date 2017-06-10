@@ -1,0 +1,43 @@
+.header-menu{
+  width: 100%;
+  background-color: #8d5b3d;
+
+  &__list{
+    list-style: none;
+    padding: 0 0.5rem;
+  }
+  &__item{
+    display: inline-block;
+    height: 3.8rem;
+    line-height: 3.8rem;
+    padding: 0 1.4rem;
+  }
+  &__link{
+    font-family: $fopRegular;
+    font-size: 1.4rem;
+    color: #ffffff;
+    display: block;
+    height: 100%;
+    text-decoration: none;
+  }
+  .is-mobile-show{
+    display: none;
+  }
+}
+
+@media #{$media-686} {
+  .header-menu{
+    .is-mobile-show{display: block;}
+    .is-mobile-hide{display: none;}
+  }
+  .header-menu__list{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.8rem;
+  }
+  .header-menu__item{
+    padding:0;
+    flex-grow: 2;
+    text-align: center;
+  }
+}

@@ -1,0 +1,9 @@
+.catalog-products-wrap{
+  & + .pagination{
+    margin-bottom: 9.8rem;
+
+    .pagination__arrows{
+      display: none;
+    }
+  }
+}

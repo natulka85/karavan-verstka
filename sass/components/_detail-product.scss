@@ -35,6 +35,7 @@
     font-size: 2.4rem;
     color: #ff7e09;
     margin-bottom: 1.9rem;
+    line-height: 1.2;
   }
 
   &__big-photos-link {
@@ -46,6 +47,7 @@
   }
   &__gallery {
     position: relative;
+    padding-right: 7.2rem;
     .detail-product__label-block {
       position: absolute;
       top: 7px;
@@ -54,7 +56,7 @@
     }
   }
   &__big-photos {
-    width: 86.5%;
+    width: 100%;
     border: solid 1px #fcf8f2;
   }
   &__big-photos-img {
@@ -108,7 +110,7 @@
   &__controls-content{
     position: absolute;
     right: 0;
-    width: calc(58% - 99px);
+    left: calc(42% + 99px);
     bottom: -4.3rem;
   }
   &__controls-main{
@@ -262,6 +264,109 @@
     top: -7px;
     &:before {
       transform: rotate(90deg);
+    }
+  }
+}
+
+@media #{$media-1728} {
+  .detail-product {
+    &__side {
+      &:first-child{
+        width:40.8%
+      }
+      &:last-child {
+        width: 56%;
+        position: relative;
+      }
+    }
+    &__content{
+      width: 50%;
+    }
+    &__controls {
+      position: absolute;
+      bottom: 7.4rem;
+      right: 0;
+      flex-wrap: wrap;
+      width: 60%;
+    }
+    &__buy-info {
+      width: 100%;
+      text-align: right;
+      margin-bottom: 2.6rem;
+    }
+    &__controls-main {
+      justify-content: flex-end;
+    }
+    &__controls-content{
+      width: 18.5rem;
+      left:auto;
+      right: 0;
+    }
+  }
+}
+
+@media #{$media-1496}{
+  .detail-product{
+    &__side {
+      &:first-child {
+        width: 39.2%
+      }
+      &:last-child {
+        width: 58%;
+      }
+    }
+  }
+}
+@media #{$media-1166}{
+  .detail-product {
+    &__side {
+      &:last-child {
+        position: static;
+      }
+    }
+    &__top{
+      position: relative;
+      margin-bottom: 8rem;
+    }
+    &__controls{
+      width: 100%;
+      position: static;
+    }
+    &__price{
+      display: flex;
+    }
+    &__price-old{
+      margin-right: 2.7rem;
+    }
+    &__gallery{
+      padding-right: 0;
+      padding-bottom: 7.2rem;
+    }
+    &__preview-photos,
+    &__preview-photos.is-no-arrows{
+      width: 100%;
+      top: auto;
+      bottom: 0;
+    }
+    &__controls-quantity-text{
+      position: static;
+    }
+    &__controls-content{
+      display: flex;
+      width:100%;
+      left: 0;
+    }
+    &__controls-content-link{
+      margin-right: 2.6rem;
+    }
+    &__controls-main{
+      justify-content: flex-start;
+    }
+    &__buy-info{
+      margin-bottom: 1.4rem;
+    }
+    &__description{
+      width: 100%;
     }
   }
 }

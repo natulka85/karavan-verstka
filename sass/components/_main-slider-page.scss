@@ -13,3 +13,22 @@
     overflow: hidden;
   }
 }
+@media #{$media-1728}{
+  .main-slider-page{
+    .products-list__item{
+      &:nth-child(n+4){
+        display: none;
+      }
+    }
+  }
+}
+
+@media #{$media-1166}{
+  .main-slider-page{
+    .products-list__item{
+      &:nth-child(n+3){
+        display: none;
+      }
+    }
+  }
+}

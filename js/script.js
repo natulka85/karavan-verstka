@@ -328,6 +328,14 @@ function initProductListPhotoGallery() {
                 touchMove: false,
                 dots: false,
                 asNavFor: '.js-detail-product-photos.index-'+ index,
+                responsive: [
+                    {
+                        breakpoint: 1166,
+                        settings: {
+                            vertical: false
+                        }
+                    }
+                ]
             });
         });
     }

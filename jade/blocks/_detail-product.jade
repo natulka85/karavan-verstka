@@ -46,13 +46,14 @@ section.detail-product
                     span.detail-product__description-art Артикул: Hai06
                     span.detail-product__description-country Индонезия
                 .detail-product__available
-                        .detail-product__available-stock Наличие в Москве: #[span да]
-                        .detail-product__available-stock Наличие в Сочи: #[span нет]
+                        .detail-product__available-stock Наличие в Москве: #[span 50-100]
+                        .detail-product__available-stock Наличие в Сочи: #[span больше 1000]
                         .detail-product__available-stock Фасовка 1 шт.
             .detail-product__controls
-                .detail-product__controls-content
-                    a.detail-product__controls-content-link.icon-star-full(href='') #[span В избранное]
-                    a.detail-product__controls-content-link.icon-chart(href='') #[span Комментарий]
+                .detail-product__buy-info
+                    .detail-product__price
+                        .detail-product__price-old 1200 руб.
+                        .detail-product__price-cur 1120 руб.
                 .detail-product__controls-main
                     .detail-product__controls-quantity
                         .detail-product__controls-quantity-text
@@ -62,7 +63,10 @@ section.detail-product
                             .detail-product__controls-count-btn.main-count__btn.is-up.js-count(data-count='1').js-count
                             input.detail-product__controls-quantity-input
                             .detail-product__controls-count-btn.main-count__btn.is-down.js-count(data-count='-1').js-count
-                    .detail-product__btn.btn.is-green Купить                
+                    .detail-product__btn.btn.is-green Купить
+                .detail-product__controls-content
+                    a.detail-product__controls-content-link.icon-star-full(href='') #[span В избранное]
+                    a.detail-product__controls-content-link.icon-chart(href='') #[span Комментарий]
 
 
     .detail-product__footer

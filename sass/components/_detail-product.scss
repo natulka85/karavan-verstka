@@ -1,63 +1,76 @@
-.detail-product{
+.detail-product {
   margin-top: 3rem;
-  font-size: 12px;
-  line-height: 1.33;
+  font-size: 1.4rem;
+  line-height: 1.71;
   color: #666666;
   font-weight: 500;
+  margin-bottom: 5.4rem;
 
-  &__side{
-    &:first-child{
+  &__side {
+    &:first-child {
       width: 46.8%;
       float: left;
     }
-    &:last-child{
+    &:last-child {
       float: right;
       width: 50%;
     }
   }
-  &__header{
+&__top{
+  margin-bottom: 3.4rem;
+}
+  &__footer{
+    width: 100%;
+    overflow: hidden;
+  }
+  &__header {
     display: flex;
     flex-wrap: wrap;
-
-
+    margin-bottom: 1.3rem;
   }
-  &__title{
+  &__content{
+    margin-bottom: 1.8rem;
+  }
+  &__title {
     font-size: 2.4rem;
     color: #ff7e09;
     margin-bottom: 1.9rem;
   }
 
-  &__big-photos-link{
+  &__big-photos-link {
     display: block;
     width: 100%;
   }
-  &__gallery{
+  &__label{
+    padding: 0 1.8rem;
+  }
+  &__gallery {
     position: relative;
-    .detail-product__label-block{
+    .detail-product__label-block {
       position: absolute;
       top: 7px;
       left: 7px;
       z-index: 3;
     }
   }
-  &__big-photos{
+  &__big-photos {
     width: 86.5%;
     border: solid 1px #fcf8f2;
   }
-  &__big-photos-img{
+  &__big-photos-img {
     max-height: 100%;
   }
-  &__preview-photos{
-    width:5.9rem;
+  &__preview-photos {
+    width: 5.9rem;
     position: absolute;
-    right:2px;
+    right: 2px;
     top: 1.6rem;
 
-    &.is-no-arrows{
+    &.is-no-arrows {
       top: 4px;
     }
   }
-  &__previw-photos-link{
+  &__previw-photos-link {
     width: 5.8rem;
     height: 5.8rem;
     display: block;
@@ -66,103 +79,133 @@
     border: solid 2px #f4f0e9;
     transition: .3s;
 
-    &:hover{
+    &:hover {
       border-color: #b79885;
     }
-    img{
+    img {
       max-height: 100%;
-      margin:auto;
+      margin: auto;
     }
   }
-  &__available-stock{
+  &__available-stock {
     white-space: nowrap;
+    &:last-child {
+      font-family: $fopb;
+      font-weight: 600;
+    }
+    span{
+      font-family: $fopb;
+      font-weight: 600;
+    }
   }
-  &__controls{
+  &__buy-info{
+    width: 42%;
+  }
+  &__controls {
     position: relative;
 
   }
-  &__controls-quantity{
+  &__controls-content{
     position: absolute;
-    bottom: 100%;
     right: 0;
+    width: calc(58% - 99px);
+    bottom: -4.3rem;
+  }
+  &__controls-main{
+    flex-grow: 2;
     display: flex;
-    justify-content:flex-end;
-    span{
+    align-items: center;
+  }
+  &__controls-quantity {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right:1rem;
+    position: relative;
+    span {
       display: block;
       font-weight: 600;
     }
   }
-  &__controls-quantity-input{
-    width: 5.4rem;
-    height: 2.9rem;
-    line-height: 2.9rem;
+  &__controls-quantity-input {
+    width: 8.9rem;
+    height: 4.8rem;
+    line-height: 4.8rem;
     background-color: #ffffff;
     border: solid 1px #999999;
-    padding-left: 1.3rem;
-    font-size: 1.4rem;
+    padding-left: 1.8rem;
+    font-size: 2.4rem;
     color: #666666;
   }
-  &__controls-quantity-text{
+  &__controls-quantity-text {
     margin-right: 1.5rem;
-    span{
+    position: absolute;
+    top: calc(100% + 12px);
+    left: 0;
+    font-size: 1.4rem;
+    span {
       white-space: nowrap;
     }
   }
-  &__controls-count{
-    max-height:3rem;
-  }
-  &__controls-count-btn{
-    right: 3px;
+  &__controls-count-btn {
+    width: 2.4em;
+    height: 1.8rem;
+    line-height: 1.8rem;
+    right: 5px;
+    &:before{
+      font-size:9px;
+    }
 
-    &.is-up{
-      top: 3px;
+    &.is-up {
+      top: 5px;
     }
-    &.is-down{
-      bottom: 4px;
+    &.is-down {
+      bottom: 5px;
     }
   }
-  &__description{
+  &__description {
     font-size: 1.4rem;
     line-height: 1.29;
     color: #262626;
+    width: 62%;
+    p{
+      &:not(:last-child){
+        margin-bottom: 1.6rem;
+      }
+    }
   }
-  &__description{
-    margin-bottom: 1.4rem;
-  }
-  &__description-short{
+  &__description-short {
     display: block;
     margin-bottom: 2px;
   }
-  &__description-art{
+  &__description-art {
     display: block;
     margin-bottom: 2px;
   }
-  &__description-country{
+  &__description-country {
     display: block;
-    font-weight: 600;
   }
-  &__price{
-    font-size: 1.6rem;
+  &__price {
+    font-size: 2.4rem;
     color: #666666;
+    line-height: 1.4;
   }
-  &__price-old{
-    text-decoration:line-through;
+  &__price-old {
+    text-decoration: line-through;
     white-space: nowrap;
   }
-  &__price-cur{
+  &__price-cur {
     font-family: $fopb;
     font-weight: bold;
     color: #008d1e;
     white-space: nowrap;
   }
-  &__controls{
+  &__controls {
     display: flex;
     padding-top: 1.2rem;
   }
-  &__controls-content{
-    flex-grow: 2;
-  }
-  &__controls-content-link{
+
+  &__controls-content-link {
     position: relative;
     padding-left: 1.8rem;
     display: block;
@@ -170,49 +213,54 @@
     text-decoration: none;
     line-height: 1;
 
-    &:before{
+    &:before {
       position: absolute;
       left: 0;
       top: 2px;
       font-size: 1.1rem;
       color: #999999;
     }
-    &:not(:last-child){
+    &:not(:last-child) {
       margin-bottom: 7px;
     }
-    &.icon-chart:before{font-size:1rem}
-    span{
+    &.icon-chart:before {
+      font-size: 1rem
+    }
+    span {
       border-bottom: 1px solid #666666;
       transition: .3s;
     }
-    &:hover{
+    &:hover {
       span {
         border-bottom-color: transparent;
       }
     }
   }
-  &__btn{
-    width: 12.3rem;
+  &__btn {
+    width: 18.5rem;
+    height: 5rem;
+    line-height: 5rem;
     border: none;
+    font-size: 2.1rem;
   }
-  .slick-prev, .slick-next{
+  .slick-prev, .slick-next {
     width: 58px;
     height: 13px;
-    right:0;
+    right: 0;
     left: auto;
-    &:before{
+    &:before {
       font-size: 1.2rem;
     }
   }
-  .slick-next{
+  .slick-next {
     top: calc(100% + 7px);
-    &:before{
+    &:before {
       transform: rotate(-90deg);
     }
   }
-  .slick-prev{
+  .slick-prev {
     top: -7px;
-    &:before{
+    &:before {
       transform: rotate(90deg);
     }
   }

@@ -330,9 +330,15 @@ function initProductListPhotoGallery() {
                 asNavFor: '.js-detail-product-photos.index-'+ index,
                 responsive: [
                     {
-                        breakpoint: 1166,
+                        breakpoint: 1167,
                         settings: {
                             vertical: false
+                        }
+                    },
+                    {
+                        breakpoint: 740,
+                        settings: {
+                            vertical: true
                         }
                     }
                 ]

@@ -456,6 +456,34 @@
     }
   }
 }
+@media screen and(max-width: 580px){
+  .products-list.is-only-pic{
+    .products-list{
+      &__item{
+        width: 48%;
+        height: 14.2rem;
+      }
+      &__item:not(:nth-child(3n)){
+        margin-right: 0;
+      }
+      &__item:not(:nth-child(2n)){
+        margin-right: 2%;
+      }
+      &__name{
+        font-size: 1.4rem;
+        height: 42px;
+      }
+      &__price{
+        flex-wrap: wrap;
+        justify-content: flex-end;
+      }
+      &__price-old{
+        margin-right: 0;
+      }
+    }
+  }
+}
+
 //////////////list//////////////
 
 .products-list.is-list{

@@ -96,8 +96,9 @@
 }
 @media #{$media-1166} {
   .subscribe-page-block{
-    height: 22.8rem;
+    height: auto;
     background-position: right 84%;
+    padding-bottom: 2rem;
   }
   .subscribe-page-block__form{
     flex-wrap: wrap;

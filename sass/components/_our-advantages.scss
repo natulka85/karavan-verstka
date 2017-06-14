@@ -1,0 +1,43 @@
+.our-advantages {
+  margin-top: 5.5rem;
+  padding-bottom: 1rem;
+  &__title {
+    font-size: 2.4rem;
+    line-height: 0.75;
+    color: #2a2024;
+  }
+  &__list{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.8rem 0;
+  }
+  &__item{
+    max-width: 18%;
+  }
+  &__item-image{
+    height: 11rem;
+    background-image: url('../images/our-advantages/sprite-advantages.png');
+    background-repeat:no-repeat;
+    background-position: center -9.7rem;
+    &.spr-delivery{background-position-y: -24.7rem}
+    &.spr-best-price{background-position-y: -39rem}
+    &.spr-term{background-position-y: -54rem}
+    &.spr-manager{background-position-y: -69rem}
+  }
+  &__item-title{
+    font-family: $fopb;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.0;
+    text-align: center;
+    color: #ff7e09;
+    margin-bottom: 1.8rem;
+    height: 3.5rem;
+  }
+  &__item-description{
+    font-size: 1.4rem;
+    line-height: 1.29;
+    text-align: center;
+    color: #272727;
+  }
+}

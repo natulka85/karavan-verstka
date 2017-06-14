@@ -1,0 +1,34 @@
+.block-gallery {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #272727;
+  margin-bottom: 6rem;
+  &__header {
+    display: flex;
+    height: 10rem;
+  }
+  &__header-left{
+    width: 57%;
+  }
+  &__header-right{
+    flex-grow: 2;
+  }
+  &__seo-text{
+    margin-bottom: 12.7rem;
+  }
+  &__title {
+    font-size: 2.4rem;
+    line-height: 0.75;
+    color: #2a2024;
+    margin-bottom: 3rem;
+  }
+&__logo-block{
+  height: 100%;
+  text-align: right;
+
+  img{
+    max-height: 100%;
+    margin-left: 78px;
+  }
+}
+}

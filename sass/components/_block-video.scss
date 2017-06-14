@@ -1,0 +1,20 @@
+.block-video {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6rem;
+  &__text {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #272727;
+    width: 47.6%;
+    padding-right: 6rem;
+
+    p:not(:last-child) {
+      margin-bottom: 2.1rem;
+    }
+  }
+  &__video{
+    width: 53%;
+    height: 347px;
+  }
+}

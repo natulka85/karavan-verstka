@@ -1,0 +1,51 @@
+.page-slider{
+  position: relative;
+  .slick-arrow{
+    width: 16.6rem;
+    background-color: #ffffff;
+    height: 42px;
+    line-height: 42px;
+    font-size: 1.4rem;
+    text-decoration: none;
+    border: solid 2px #fcf8f2;
+    display: inline-block;
+    position: absolute;
+    top: -4.9rem;
+    cursor: pointer;
+    &:after{
+      font-size: 14px;
+      color: #000000;
+    }
+    &.slick-prev{
+      left: 0;
+      @extend .icon-template;
+      @extend .icon2-ar-long-l;
+      padding-left: 5rem;
+      padding-right: 2rem;
+      &:before{
+          left:20px;
+      }
+      &:after{
+        content: 'Предыдущая';
+      }
+    }
+    &.slick-next{
+      right: 0;
+      &:before{
+        padding-right: 5rem;
+        padding-left: 2rem;
+        &:before{
+          right: 20px;
+        }
+      }
+    }
+    span{
+      position: relative;
+      &:before{
+        position: absolute;
+        font-size: 7px;
+        top: 6px;
+      }
+    }
+  }
+}

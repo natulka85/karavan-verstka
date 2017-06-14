@@ -181,7 +181,7 @@ $checkSize: 13;
 
 .slick-prev, .slick-next{
   border-radius: 2px;
-  background-color: #b79885 !important;
+  background-color: #b79885;
   &:before{
     @extend .icon-template;
     @extend .icon-arrow;
@@ -222,5 +222,42 @@ $checkSize: 13;
 
     &.is-up:before{@extend .icon-arrow-up;}
     &.is-down:before{@extend .icon-arrow-down;}
+  }
+}
+
+.register-offer{
+  padding: 3.3rem 0;
+  &__text{
+    margin: 2.6rem auto;
+    max-width: 92.8rem;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-align: center;
+    color: #272727;
+  }
+  &__btn-block{
+    display: flex;
+    justify-content: center;
+  }
+  &__btn{
+    width: 27.4rem;
+    height: 5.6rem;
+    line-height: 5.6rem;
+    font-size: 1.7rem;
+    text-decoration: none;
+    margin: 0 1.3rem;
+  }
+}
+
+.page-btn-block{
+  margin: 6rem auto;
+  text-align: center;
+  &__btn{
+    width: 27.4rem;
+    height: 5.6rem;
+    line-height: 5.6rem;
+    font-size: 1.7rem;
+    text-decoration: none;
+    margin:auto;
   }
 }

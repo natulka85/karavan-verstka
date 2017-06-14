@@ -75,6 +75,30 @@ function sliders() {
             ]
         });
     }
+    if($('.js-page-slider-1').length > 0){
+        $('.js-page-slider-1').slick({
+            slidesToScroll: 1,
+            draggable: false,
+            slidesToShow: 3,
+            infinite: false,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        touchMove: false
+                    },
+                },
+                {
+                    breakpoint: 686,
+                    settings: {
+                        slidesToShow: 1,
+                        touchMove: false
+                    }
+                }
+            ]
+        });
+    }
 }
 function blockLink() {
     $('.js-block-link').on('click', function () {
@@ -345,6 +369,63 @@ function initProductListPhotoGallery() {
             });
         });
     }
+    if($('.our-stores').length > 0){
+        noArrows(4, '.our-stores__preview-photos');
+        $('.js-stores-photos').each(function(index){
+            $(this).slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                adaptiveHeight: true,
+                arrows: false,
+                fade: true,
+                dots: false,
+                draggable: false,
+                toucheventsMove: false,
+                infinite:false,
+                touchMove: false,
+                asNavFor: '.js-stores-preview-photos.index-'+index,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            fade: false,
+                            touchMove: false
+                        }
+                    }
+                ]
+            });
+        });
+        $('.js-stores-preview-photos').each(function(index){
+            $(this).slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                vertical: true,
+                draggable: false,
+                centerMode: false,
+                focusOnSelect: true,
+                verticalSwiping: true,
+                infinite:false,
+                touchMove: false,
+                dots: false,
+                asNavFor: '.js-stores-photos.index-'+ index,
+                responsive: [
+                    {
+                        breakpoint: 1167,
+                        settings: {
+                            vertical: false
+                        }
+                    },
+                    {
+                        breakpoint: 740,
+                        settings: {
+                            vertical: true
+                        }
+                    }
+                ]
+            });
+        });
+    }
+
 }
 function formMein(){
     var label = $('.js-form label');

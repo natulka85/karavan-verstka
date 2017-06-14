@@ -74,7 +74,7 @@
       top: 0;
     }
   }
-  &__previw-photos-link {
+  &__preview-photos-link {
     width: 5.8rem;
     height: 5.8rem;
     display: block;
@@ -306,6 +306,7 @@
       width: 18.5rem;
       left:auto;
       right: 0;
+      bottom:-5.2rem;
     }
   }
 }
@@ -383,7 +384,7 @@
     &__description{
       width: 100%;
     }
-    &__previw-photos-link{
+    &__preview-photos-link{
       margin-right: 8px;
     }
     &__preview-photos{

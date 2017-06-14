@@ -1,0 +1,96 @@
+.our-stores{
+  padding: 5rem 0;
+  &__title{
+    font-family: $fopb;
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 0.75;
+    color: #000000;
+    margin-top: 8px;
+    margin-bottom: 3rem;
+  }
+  &__text{
+    font-size: 16px;
+    line-height: 1.5;
+    color: #272727;
+    max-width: 93rem;
+    margin-bottom: 5.7rem;
+  }
+  &__item-title{
+    font-family: $fopb;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.0;
+    color: #000000;
+    margin-bottom: 3.2rem;
+  }
+  &__list{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item{
+    width: 32.3%;
+  }
+  &__item-gallery{
+    position: relative;
+    padding-right: 6.2rem;
+  }
+  &__preview-photos{
+    position: absolute;
+    width: 5.8rem;
+    right:0;
+    top: 1.6rem;
+  }
+  &__big-photos-link{
+    height: 271px;
+    overflow: hidden;
+    display: block;
+
+    img{
+      min-height: 100%;
+      max-width: 150%;
+    }
+  }
+  &__preview-photos-link{
+    width: 5.8rem;
+    height: 5.8rem;
+    display: block;
+    text-align: center;
+    background-color: #ffffff;
+    border: solid 2px #f4f0e9;
+    transition: .3s;
+
+    &:hover{
+      border-color: #b79885;
+    }
+    img{
+      max-height: 100%;
+      margin:auto;
+    }
+  }
+
+  .slick-current > .our-stores__preview-photos-link{
+    border-color: #b79885;
+  }
+  .slick-prev, .slick-next{
+    width: 58px;
+    height: 13px;
+    right:0;
+    left: auto;
+    &:before{
+      font-size: 1.2rem;
+    }
+  }
+  .slick-next{
+    top: calc(100% + 10px);
+    &:before{
+      transform: rotate(-90deg);
+    }
+  }
+  .slick-prev{
+    top: -10px;
+    &:before{
+      transform: rotate(90deg);
+    }
+  }
+}

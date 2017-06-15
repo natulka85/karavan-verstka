@@ -7,12 +7,17 @@
     color: #2a2024;
   }
   &__list{
-    display: flex;
-    justify-content: space-between;
     padding: 1.8rem 0;
+    width: 100%;
+    overflow: hidden;
   }
   &__item{
-    max-width: 18%;
+    width: 19%;
+    height: 25.2rem;
+    float: left;
+    &:not(:last-child){
+      margin-right: 1%;
+    }
   }
   &__item-image{
     height: 11rem;
@@ -39,5 +44,34 @@
     line-height: 1.29;
     text-align: center;
     color: #272727;
+    max-width: 25.2rem;
+    margin: auto;
   }
+}
+
+@media #{$media-1728} {
+  .our-advantages__item{
+    width: 32%;
+    &:nth-child(3n){
+      margin-right: 0;
+    }
+    &:nth-child(n+4){
+      margin-top: 1rem;
+      height: 22rem;
+    }
+  }
+  .our-advantages__list{
+    padding-bottom: 0;
+  }
+}
+@media #{$media-1023}{
+  .our-advantages__item-description{
+    max-width: 18.2rem;
+  }
+  .our-advantages__item:nth-child(n+4){
+    height: 24rem;
+  }
+}
+@media #{$media-768} {
+  
 }

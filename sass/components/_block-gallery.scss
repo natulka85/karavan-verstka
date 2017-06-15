@@ -9,6 +9,7 @@
   }
   &__header-left{
     width: 57%;
+    min-width: 33.6rem;
   }
   &__header-right{
     flex-grow: 2;
@@ -25,10 +26,30 @@
 &__logo-block{
   height: 100%;
   text-align: right;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 
   img{
-    max-height: 100%;
-    margin-left: 78px;
+    max-height: 80%;
+    margin: auto;
   }
 }
+  &__item{
+    height: 28.3rem;
+    overflow: hidden;
+    margin-right: 15px;
+  }
+  &__slider-image{
+    max-width: 150%;
+    min-height: 100%;
+  }
+}
+@media #{$media-960} {
+  .block-gallery__seo-text{
+    margin-bottom: 9.3rem;
+  }
+  .block-gallery__item{
+    height: 18.4rem;
+  }
 }

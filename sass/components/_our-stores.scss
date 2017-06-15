@@ -94,3 +94,33 @@
     }
   }
 }
+
+@media #{$media-1166} {
+  .our-stores{
+    padding-bottom: 3rem;
+  }
+  .our-stores__preview-photos{
+    width: 100%;
+    top:auto;
+    bottom: 0;
+    left: 0;
+    padding: 0 1.6rem;
+  }
+  .our-stores__text{
+    margin-bottom: 4.7rem;
+  }
+  .our-stores__item-gallery{
+    padding-right: 0;
+    padding-bottom: 6.2rem;
+  }
+  .our-stores .slick-prev{
+    left: -38px;
+    transform: rotate(-90deg);
+    top: 22px;
+  }
+  .our-stores .slick-next{
+    right: -38px;
+    transform: rotate(-90deg);
+    top: 22px;
+  }
+}

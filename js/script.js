@@ -83,16 +83,9 @@ function sliders() {
             infinite: false,
             responsive: [
                 {
-                    breakpoint: 1024,
+                    breakpoint: 581,
                     settings: {
                         slidesToShow: 2,
-                        touchMove: false
-                    },
-                },
-                {
-                    breakpoint: 686,
-                    settings: {
-                        slidesToShow: 1,
                         touchMove: false
                     }
                 }
@@ -416,9 +409,10 @@ function initProductListPhotoGallery() {
                         }
                     },
                     {
-                        breakpoint: 740,
+                        breakpoint: 769,
                         settings: {
-                            vertical: true
+                            slidesToShow: 3,
+                            vertical: false
                         }
                     }
                 ]

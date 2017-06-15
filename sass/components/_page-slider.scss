@@ -12,40 +12,54 @@
     position: absolute;
     top: -4.9rem;
     cursor: pointer;
-    &:after{
-      font-size: 14px;
-      color: #000000;
+
+    &.slick-prev,
+    &.slick-next{
+      &:before{
+        position: absolute;
+        color: #000000;
+        font-size: 7px;
+        top: 17px;
+        width:auto;
+        transform: rotate(0);
+      }
+      &:after{
+        font-family: $FontBase;
+        font-size: 14px;
+        color: #000000;
+        position: absolute;
+      }
     }
     &.slick-prev{
       left: 0;
-      @extend .icon-template;
-      @extend .icon2-ar-long-l;
-      padding-left: 5rem;
-      padding-right: 2rem;
       &:before{
+        @extend .icon-template2;
+        @extend .icon2-ar-long-l;
           left:20px;
       }
       &:after{
         content: 'Предыдущая';
+        left: 52px;
       }
     }
     &.slick-next{
       right: 0;
-      &:before{
-        padding-right: 5rem;
-        padding-left: 2rem;
         &:before{
+          @extend .icon-template2;
+          @extend .icon2-ar-long-r;
           right: 20px;
-        }
+      }
+      &:after{
+        content: 'Следующая';
+        right: 52px;
       }
     }
-    span{
-      position: relative;
-      &:before{
-        position: absolute;
-        font-size: 7px;
-        top: 6px;
-      }
-    }
+
+  }
+}
+
+@media #{$media-960} {
+  .page-slider .slick-arrow{
+    top: -3.3rem;
   }
 }

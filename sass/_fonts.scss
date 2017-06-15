@@ -21,7 +21,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-[class^="icon2-"]:before, [class*=" icon2-"]:before {
+[class^="icon2-"]:before, [class*=" icon2-"]:before, .icon-template2 {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'IconsFont2' !important;
   speak: none;

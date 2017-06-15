@@ -241,11 +241,20 @@ $checkSize: 13;
   }
   &__btn{
     width: 27.4rem;
+    flex-basis: 27.4rem;
     height: 5.6rem;
     line-height: 5.6rem;
     font-size: 1.7rem;
     text-decoration: none;
     margin: 0 1.3rem;
+  }
+}
+
+@media #{$media-686} {
+  .register-offer__btn{
+    width: 22.7rem;
+    flex-basis: 22.7rem;
+    margin: 0 2px;
   }
 }
 

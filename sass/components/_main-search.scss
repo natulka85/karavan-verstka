@@ -28,6 +28,10 @@
     font-size: 1.9rem;
   }
   }
+  &.is-moved{
+    width: 100%;
+    margin-right: 0;
+  }
 }
 
 @media #{$media-960} {

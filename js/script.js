@@ -414,6 +414,13 @@ function initProductListPhotoGallery() {
                             slidesToShow: 3,
                             vertical: false
                         }
+                    },
+                    {
+                        breakpoint: 686,
+                        settings: {
+                            slidesToShow: 4,
+                            vertical: true
+                        }
                     }
                 ]
             });

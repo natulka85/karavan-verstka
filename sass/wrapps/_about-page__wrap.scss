@@ -2,4 +2,22 @@
   .page-header-main{
     margin-top: 0;
   }
+  .page-header{
+    margin-bottom: 0;
+  }
+}
+
+@media #{$media-960}  {
+  .about-page__wrap{
+    .page-header{
+      margin-bottom: 3rem;
+    }
+  }
+}
+@media #{$media-740}{
+  .about-page__wrap{
+    .page-header{
+      margin-bottom: 1.5rem;
+    }
+  }
 }

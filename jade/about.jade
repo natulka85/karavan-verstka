@@ -19,6 +19,7 @@ block PageLayout
 
             section.main-content-inner.fw
                 .about-page__wrap
+                    .page-header
                     section.page-header-main
                         .page-header-main__side
                             h1.page-header-main__title О нас
@@ -64,7 +65,7 @@ block PageLayout
                             .block-gallery__seo-text Предлагаем посетить наш выставочный зал или зарегистрироваться на нашем сайте.<br>
                                     |Вы найдете для себя много новой, интересной продукции, которая без сомнения заинтересует Вас и Ваших клиентов.
                             .block-gallery__slider.page-slider
-                                .page-slider__list.js-page-slider-1
+                                .block-gallery__list.page-slider__list.js-page-slider-1
                                     .block-gallery__item.page-slider__item
                                         img.block-gallery__slider-image(src='../images/develop/slide-2.png')
                                     .block-gallery__item.page-slider__item
@@ -77,8 +78,8 @@ block PageLayout
                                         img.block-gallery__slider-image(src='../images/develop/slide-2.png')
 
 
-            section.footer.fl
-                include includes/_footer
+        section.footer.fl
+            include includes/_footer
 
 
 

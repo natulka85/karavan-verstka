@@ -56,7 +56,7 @@
 }
 
 @media #{$media-960} {
-  .left-news{
+  .left-news.is-mobile-hide{
     display: none;
   }
 }

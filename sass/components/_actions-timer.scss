@@ -1,0 +1,77 @@
+.actions-timer{
+  &__data-info{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 2.8rem;
+  }
+  &__data{
+    margin-right: 1.7rem;
+    font-size: 1.4rem;
+    line-height: 1.29;
+    color: #000000;
+  }
+
+  &__count{
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__numbers{
+    display: inline-block;
+    font-family: $fopb;
+    font-weight: 600;
+    font-size: 5rem;
+    color: #666666;
+    width: 4.3rem;
+    height: 5.1rem;
+    line-height: 5.1rem;
+    text-align: center;
+    background: url('../images/bg-numbers.svg');
+    background-repeat:no-repeat;
+    background-size: cover;
+  }
+  &__numbers-name{
+    font-size: 13.4px;
+    line-height: 1.0;
+    color: #000000;
+    text-align: right;
+  }
+  &__count-item{
+    margin-left: 8px;
+    white-space: nowrap;
+    &.is-hours{
+      margin-left:2.3rem;
+    }
+  }
+}
+@media #{$media-1166} {
+  .actions-timer__data-info{
+    margin-bottom: 3.9rem;
+  }
+}
+@media #{$media-960} {
+  .actions-timer__count-item{
+    margin-left: 3px;
+    &.is-hours{
+      margin-left:4px;
+    }
+  }
+}
+
+@media #{$media-740} {
+  .actions-timer{
+    &__data-info{
+      justify-content: space-between;
+      margin-bottom: 2.4rem;
+    }
+    &__count-item{
+      margin-left: 8px;
+      white-space: nowrap;
+      &.is-hours{
+        margin-left:3.3rem;
+      }
+    }
+  }
+
+}

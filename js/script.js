@@ -124,6 +124,10 @@ function adaptive() {
         $('.products-list.is-list .subscribe-page-block').insertAfter($('.products-list.is-list .products-list__item').eq(3)).addClass('is-moved');
         /////
         $('.catalog-sections-wrap .plate-block .subscribe-page-block').insertAfter($('.plate-block .plate-block__elem').eq(7)).addClass('is-moved');
+        //
+        $('.left-reviews').appendTo($('.main-content-inner')).addClass('is-moved');
+        //
+        $('.left-news').appendTo($('.main-content-inner')).addClass('is-moved');
     }
 
     if (size > 960) {
@@ -132,17 +136,19 @@ function adaptive() {
         $('.main-search.is-moved').prependTo($('.sidebar-bar')).removeClass('is-moved');
         ///
         $('.catalog-sections-wrap .plate-block .subscribe-page-block.is-moved').insertAfter($('.plate-block .plate-block__elem').eq(7)).removeClass('is-moved');
+        //
+        $('.left-news.is-moved').appendTo($('.sidebar-bar')).removeClass('is-moved');
+        //
+        $('.left-reviews.is-moved').appendTo($('.sidebar-bar')).removeClass('is-moved');
 
     }
 
     if (size <= 768) {
-        $('.left-reviews').appendTo($('.main-content-inner')).addClass('is-moved');
-        $('.left-news').appendTo($('.main-content-inner')).addClass('is-moved');
+
     }
 
     if (size > 768) {
-        $('.left-news.is-moved').appendTo($('.sidebar-bar')).removeClass('is-moved');
-        $('.left-reviews.is-moved').appendTo($('.sidebar-bar')).removeClass('is-moved');
+
     }
     if(size < 580){
         ////
@@ -153,6 +159,16 @@ function adaptive() {
         $('.products-list.is-cards .subscribe-page-block').insertAfter($('.products-list.is-cards .products-list__item').eq(1));
 
     }
+
+    if (size <= 740) {
+        $('.actions-timer__data-info').insertAfter($('.page-header-main__title')).addClass('is-moved');
+    }
+
+    if (size > 740) {
+        $('.actions-timer__data-info.is-moved').prependTo($('.actions-timer')).removeClass('is-moved');
+    }
+
+
 }
 
 function dropDownLists(){

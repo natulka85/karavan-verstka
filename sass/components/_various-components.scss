@@ -30,11 +30,14 @@
 
   &.is-orange{
     background-color: #ff7e09;
+    border-color:#ff7e09;
   }
   &.is-green{
     background-color: #64ac39;
+    border-color:#64ac39;
     &:hover{
       background-color: #007a1a;
+      border-color:#007a1a;
     }
   }
   &.is-brown{
@@ -268,5 +271,42 @@ $checkSize: 13;
     font-size: 1.7rem;
     text-decoration: none;
     margin:auto;
+  }
+}
+
+.breadcrumbs{
+  margin: 2.4rem 0 2.9rem 0;
+  &__list{
+    list-style: none;
+    width: 100%;
+  }
+  &__item{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.29;
+
+
+    &:not(:last-child){
+      &:after{
+        content: '|';
+        margin-right: 4px;
+      }
+    }
+
+    &:hover{
+      a{
+        text-decoration: none;
+      }
+    }
+
+    a{
+      color: #218acb;
+      padding-right: 5px;
+    }
+
+    span{
+      color: #262626;
+    }
   }
 }

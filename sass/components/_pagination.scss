@@ -80,4 +80,10 @@
       }
     }
   }
+
+  &.is-arrows-hide{
+    .pagination__arrows{
+      display: none;
+    }
+  }
 }

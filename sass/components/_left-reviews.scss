@@ -58,7 +58,7 @@
 }
 
 @media #{$media-960} {
-  .left-reviews{
+  .left-reviews.is-mobile-hide{
     display: none;
   }
 }
@@ -66,10 +66,5 @@
   .left-reviews{
     display: block;
     margin-top: 5.5rem;
-  }
-}
-@media #{$media-686} {
-  .left-reviews{
-
   }
 }

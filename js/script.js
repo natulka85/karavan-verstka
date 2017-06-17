@@ -122,6 +122,8 @@ function adaptive() {
         //////
         $('.products-list.is-list .subscribe-page-block').insertAfter($('.products-list.is-list .products-list__item').eq(3)).addClass('is-moved');
         /////
+        $('.products-list.is-list-small .subscribe-page-block').insertAfter($('.products-list.is-list-small .products-list__item').eq(7)).addClass('is-moved');
+        /////
         $('.catalog-sections-wrap .plate-block .subscribe-page-block').insertAfter($('.plate-block .plate-block__elem').eq(7)).addClass('is-moved');
         //
         $('.left-reviews').appendTo($('.main-content-inner')).addClass('is-moved');
@@ -134,11 +136,13 @@ function adaptive() {
         //
         $('.main-search.is-moved').prependTo($('.sidebar-bar')).removeClass('is-moved');
         ///
-        $('.catalog-sections-wrap .plate-block .subscribe-page-block.is-moved').insertAfter($('.plate-block .plate-block__elem').eq(5)).removeClass('is-moved');
+        $('.catalog-sections-wrap .plate-block .subscribe-page-block.is-moved').insertAfter($('.plate-block .plate-block__elem').eq(11)).removeClass('is-moved');
         //
         $('.left-news.is-moved').appendTo($('.sidebar-bar')).removeClass('is-moved');
         //
         $('.left-reviews.is-moved').appendTo($('.sidebar-bar')).removeClass('is-moved');
+        //
+        $('.products-list.is-list-small.is-moved .subscribe-page-block').insertAfter($('.products-list.is-list-small .products-list__item').eq(3)).addClass('is-moved');
 
     }
 
@@ -164,6 +168,7 @@ function adaptive() {
         $('.products-list.is-cards .subscribe-page-block').insertAfter($('.products-list.is-cards .products-list__item').eq(2));
         ////
         $('.products-list.is-list .subscribe-page-block').insertAfter($('.products-list.is-list .products-list__item').eq(5)).addClass('is-moved');
+        ///
 
     }
     if(size > 580 && size < 1166){
@@ -439,6 +444,57 @@ function initProductListPhotoGallery() {
                         breakpoint: 686,
                         settings: {
                             slidesToShow: 4,
+                            vertical: true
+                        }
+                    }
+                ]
+            });
+        });
+    }
+    if($('.shops-info').length > 0){
+        noArrows(4, '.shops-info__preview-photos');
+        $('.js-shops-info-photos').each(function(index){
+            $(this).slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                adaptiveHeight: true,
+                arrows: false,
+                fade: true,
+                dots: false,
+                draggable: false,
+                toucheventsMove: false,
+                infinite:false,
+                touchMove: false,
+                asNavFor: '.js-shops-info-preview-photos.index-'+index,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            fade: false,
+                            touchMove: false
+                        }
+                    }
+                ]
+            });
+        });
+        $('.js-shops-info-preview-photos').each(function(index){
+            $(this).slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                vertical: false,
+                draggable: false,
+                centerMode: false,
+                focusOnSelect: true,
+                verticalSwiping: true,
+                infinite:false,
+                touchMove: false,
+                dots: false,
+                asNavFor: '.js-shops-info-photos.index-'+ index,
+                responsive: [
+                    {
+                        breakpoint: 1167,
+                        settings: {
+                            slidesToShow: 2,
                             vertical: true
                         }
                     }

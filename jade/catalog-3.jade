@@ -37,7 +37,12 @@ block PageLayout
 				include blocks/_catalog-controls
 				.catalog-products-wrap.fw
 					include includes/_products-list-3
+				.page-btn-block.is-price
+					a.page-btn-block__btn.btn.is-orange(href="#") Выгрузить прайс
+					a.page-btn-block__btn.btn.is-green(href="#") Купить все отмеченные
 				include blocks/_pagination-arrows-hide
+				.bottom-menu__wrap.mobile-show
+					include includes/_left-menu.jade
 				section.seo-text.fw
 					.seo-text__content
 						h5.seo-text__title Сувениры и подарки из Индии оптом

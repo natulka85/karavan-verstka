@@ -283,6 +283,27 @@ $checkSize: 13;
       font-size: 1.6rem;
     }
   }
+  &.is-price{
+    display: flex;
+    justify-content: flex-end;
+    margin: 2.9rem 0;
+    .page-btn-block__btn{
+      width: 20.5rem;
+      height: 3.5rem;
+      line-height: 3.2rem;
+      font-size: 1.6rem;
+      margin: 0;
+      &:not(:last-child){
+        margin-right: 7px;
+      }
+    }
+  }
+}
+
+@media #{$media-686} {
+  .page-btn-block.is-price{
+    justify-content: center;
+  }
 }
 
 .breadcrumbs{

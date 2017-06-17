@@ -1942,6 +1942,31 @@ yx-axis
       height: 3.5rem;
       line-height: 3.2rem;
       font-size: 1.6rem; }
+  .page-btn-block.is-price {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    margin: 2.9rem 0; }
+    .page-btn-block.is-price .page-btn-block__btn {
+      width: 20.5rem;
+      height: 3.5rem;
+      line-height: 3.2rem;
+      font-size: 1.6rem;
+      margin: 0; }
+      .page-btn-block.is-price .page-btn-block__btn:not(:last-child) {
+        margin-right: 7px; }
+
+@media screen and (max-width: 686px) {
+  .page-btn-block.is-price {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; } }
 
 .breadcrumbs {
   margin: 2.4rem 0 2.9rem 0; }
@@ -4542,6 +4567,10 @@ yx-axis
 .products-list.is-list-small .products-list__big-photos-link {
   height: 8.3rem; }
 
+.products-list.is-list-small .products-list__big-photos-img {
+  max-height: -webkit-calc(100% - 4px);
+  max-height: calc(100% - 4px); }
+
 .products-list.is-list-small .products-list__preview-photos {
   display: none; }
 
@@ -4645,7 +4674,9 @@ yx-axis
       top: -18px; }
     .products-list.is-list-small .products-list__controls-quantity-text span:last-child {
       top: -webkit-calc(100% + 2px);
-      top: calc(100% + 2px); } }
+      top: calc(100% + 2px); }
+  .products-list.is-list-small .products-list__controls-count-btn.is-down {
+    bottom: 3px; } }
 
 @media screen and (max-width: 1024px) and (min-width: 961px) {
   .products-list.is-list-small .products-list__controls-quantity {
@@ -5723,6 +5754,131 @@ yx-axis
     .actions-timer__count-item.is-hours {
       margin-left: 3.3rem; } }
 
+.shops-info {
+  font-size: 1.4rem; }
+  .shops-info__item {
+    padding: 1.8rem 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .shops-info__item:not(:last-child) {
+      border-bottom: 1px solid #d2d2d2; }
+  .shops-info__item-side:nth-child(1) {
+    -webkit-flex-basis: 40%;
+    -ms-flex-preferred-size: 40%;
+    flex-basis: 40%; }
+  .shops-info__item-side:nth-child(2) {
+    -webkit-box-flex: 2;
+    -webkit-flex-grow: 2;
+    -ms-flex-positive: 2;
+    flex-grow: 2; }
+  .shops-info__title {
+    font-family: "OpenSansBold", sans-serif;
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 1.12;
+    color: #ff7e09;
+    margin: 2rem 0; }
+  .shops-info__content {
+    line-height: 1.29; }
+    .shops-info__content:not(:last-child) {
+      margin-bottom: 2rem; }
+    .shops-info__content strong {
+      font-family: "OpenSansBold", sans-serif;
+      font-weight: bold; }
+  .shops-info__visual-content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 2rem;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
+  .shops-info__gallery {
+    max-width: 25rem;
+    margin-right: 3.1rem; }
+  .shops-info__big-photos {
+    margin-bottom: 1.5rem; }
+  .shops-info__map {
+    width: 25rem; }
+  .shops-info__preview-photos {
+    padding: 0 2rem;
+    position: relative; }
+  .shops-info__preview-photos-link {
+    display: block;
+    height: 3.8rem;
+    margin: 0 3px;
+    border: solid 1px #d2d2d2;
+    overflow: hidden; }
+    .shops-info__preview-photos-link img {
+      min-height: 100%;
+      max-width: 150%; }
+  .shops-info .slick-prev, .shops-info .slick-next {
+    width: 15px;
+    height: 39px;
+    background-color: #ffffff;
+    border: solid 1px #cecece; }
+    .shops-info .slick-prev:before, .shops-info .slick-next:before {
+      font-size: 1.2rem;
+      color: #999999; }
+  .shops-info .slick-prev {
+    left: -2rem; }
+  .shops-info .slick-next {
+    right: -2rem; }
+
+@media screen and (max-width: 1166px) {
+  .shops-info__item {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .shops-info__item-side:nth-child(1) {
+    -webkit-flex-basis: 75%;
+    -ms-flex-preferred-size: 75%;
+    flex-basis: 75%; }
+  .shops-info__visual-content {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
+  .shops-info__gallery {
+    max-width: 29.3rem;
+    padding-right: 4.3rem;
+    position: relative; }
+  .shops-info__preview-photos {
+    height: 14.7rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4.1rem;
+    padding: 1.3rem 0; }
+  .shops-info__preview-photos-link {
+    width: 3.9rem;
+    height: 5.2rem;
+    margin: 3px 0; }
+  .shops-info__big-photos {
+    margin-bottom: 0; }
+  .shops-info .slick-prev, .shops-info .slick-next {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg); }
+  .shops-info .slick-prev {
+    left: auto;
+    right: 13px;
+    top: -25px; }
+  .shops-info .slick-next {
+    right: 13px;
+    top: -webkit-calc(100%  - 13px);
+    top: calc(100%  - 13px); } }
+
+@media screen and (max-width: 686px) {
+  .shops-info__gallery {
+    margin-right: 9px; }
+  .shops-info__map {
+    width: 15rem; } }
+
 .catalog-sections-wrap {
   width: 100%;
   overflow: hidden; }
@@ -5822,6 +5978,10 @@ yx-axis
 @media screen and (max-width: 740px) {
   .about-page__wrap .page-header {
     margin-bottom: 1.5rem; } }
+
+@media screen and (max-width: 960px) {
+  .shops-page__wrap .page-header {
+    margin-bottom: 3rem; } }
 
 .actions-page__wrap {
   /*.page-btn-block{

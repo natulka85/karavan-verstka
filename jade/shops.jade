@@ -1,0 +1,36 @@
+extends layouts/_base-layoute.jade
+
+block PageTitle
+    title Shops
+
+
+block PageLayout
+    section.base-content.inner-width.fw
+        section.header
+            include blocks/_header-top
+            include blocks/_header-menu
+            include blocks/_basket-small
+        section.main-content.fw
+            section.sidebar-bar
+                include blocks/_main-search
+                include includes/_left-menu.jade
+
+
+            section.main-content-inner.fw
+                .shops-page__wrap
+                    .page-header
+                    section.page-header-main
+                        .page-header-main__side
+                            h1.page-header-main__title Магазины
+                    section.shops-info
+                        include blocks/_shops-info
+        section.footer.fl
+            include includes/_footer
+
+
+
+
+
+
+
+

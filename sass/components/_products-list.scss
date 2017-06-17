@@ -818,6 +818,9 @@
     &__big-photos-link{
       height: 8.3rem;
     }
+    &__big-photos-img{
+      max-height: calc(100% - 4px);
+    }
     &__preview-photos{
       display: none;
     }
@@ -913,6 +916,9 @@
       span:last-child{
         top: calc(100% + 2px);
       }
+    }
+    .products-list__controls-count-btn.is-down{
+      bottom: 3px;
     }
   }
 

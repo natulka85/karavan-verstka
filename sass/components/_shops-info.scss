@@ -1,0 +1,144 @@
+.shops-info {
+  font-size: 1.4rem;
+
+  &__item {
+    padding: 1.8rem 0;
+    display: flex;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid #d2d2d2;
+    }
+  }
+
+  &__item-side{
+    &:nth-child(1){
+      flex-basis: 40%;
+    }
+    &:nth-child(2){
+      flex-grow: 2;
+    }
+  }
+  &__title {
+    font-family: $fopb;
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 1.12;
+    color: #ff7e09;
+    margin: 2rem 0;
+  }
+  &__content {
+    line-height: 1.29;
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+    strong {
+      font-family: $fopb;
+      font-weight: bold;
+    }
+  }
+  &__visual-content {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: flex-end;
+  }
+  &__gallery {
+    max-width: 25rem;
+    margin-right: 3.1rem;
+  }
+  &__big-photos {
+    margin-bottom: 1.5rem;
+  }
+  &__map {
+    width: 25rem;
+  }
+  &__preview-photos {
+    padding: 0 2rem;
+    position: relative;
+  }
+  &__preview-photos-list {
+  }
+  &__preview-photos-link {
+    display: block;
+    height: 3.8rem;
+    margin: 0 3px;
+    border: solid 1px #d2d2d2;
+    overflow: hidden;
+    img{
+      min-height: 100%;
+      max-width: 150%;
+    }
+  }
+  .slick-prev, .slick-next {
+    width: 15px;
+    height: 39px;
+    background-color: #ffffff;
+    border: solid 1px #cecece;
+
+    &:before {
+      font-size: 1.2rem;
+      color: #999999;
+    }
+  }
+  .slick-prev {
+    left: -2rem;
+  }
+  .slick-next {
+    right: -2rem;
+  }
+}
+
+@media #{$media-1166} {
+  .shops-info{
+    &__item{
+      flex-wrap: wrap;
+    }
+    &__item-side:nth-child(1){
+      flex-basis:75%;
+    }
+    &__visual-content{
+      justify-content: flex-start;
+    }
+    &__gallery {
+      max-width: 29.3rem;
+      padding-right: 4.3rem;
+      position: relative;
+    }
+    &__preview-photos{
+      height: 14.7rem;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 4.1rem;
+      padding: 1.3rem 0;
+    }
+    &__preview-photos-link {
+      width: 3.9rem;
+      height: 5.2rem;
+      margin: 3px 0;
+    }
+    &__big-photos{
+      margin-bottom: 0;
+    }
+    .slick-prev, .slick-next {
+     transform: rotate(90deg);
+    }
+    .slick-prev {
+      left: auto;
+      right: 13px;
+      top: -25px;
+    }
+    .slick-next {
+      right: 13px;
+      top:calc(100%  - 13px);
+    }
+  }
+}
+
+@media #{$media-686} {
+  .shops-info__gallery{
+    margin-right: 9px;
+  }
+  .shops-info__map{
+    width: 15rem;
+  }
+}

@@ -155,3 +155,9 @@ input[type="text"], input[type="password"], textarea {
     display: none;
   }
 }
+.mobile-show {
+  display: none;
+  @media #{$media-960} {
+    display: block;
+  }
+}

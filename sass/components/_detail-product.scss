@@ -268,6 +268,12 @@
       transform: rotate(90deg);
     }
   }
+  &__description-country-flag{
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    margin-left: 8px;
+  }
 }
 
 @media #{$media-1728} {
@@ -451,7 +457,12 @@
       padding-left: 50%;
       top: 0;
       padding-top: 0;
+      z-index: 1;
 
+    }
+    &__content{
+      position: relative;
+      z-index:2;
     }
     &__price{
       flex-wrap: wrap;

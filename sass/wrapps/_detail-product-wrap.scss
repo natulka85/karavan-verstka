@@ -4,3 +4,22 @@
   margin-bottom: 4.7rem;
 }
 }
+
+@media #{$media-1285} {
+  .detail-product-wrap{
+    .subscribe-page-block{
+      margin-top: 3rem;
+      margin-bottom: 5.8rem;
+    }
+  }
+}
+@media #{$media-960} {
+  .detail-product-wrap{
+    .subscribe-page-block{
+      margin-bottom: 3rem;
+    }
+    .similar-products{
+      margin-top: 3rem;
+    }
+  }
+}

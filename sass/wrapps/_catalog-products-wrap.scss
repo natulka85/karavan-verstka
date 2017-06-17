@@ -3,3 +3,10 @@
     margin-bottom: 9.8rem;
   }
 }
+@media #{$media-1285}{
+  .catalog-products-wrap{
+    & + .pagination{
+      margin-bottom: 5rem;
+    }
+  }
+}

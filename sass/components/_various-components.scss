@@ -272,6 +272,17 @@ $checkSize: 13;
     text-decoration: none;
     margin:auto;
   }
+
+  &.is-show-more{
+    margin-top: 0;
+    margin-bottom: 2.6rem;
+    .page-btn-block__btn{
+      width: 23rem;
+      height: 3.5rem;
+      line-height: 3.2rem;
+      font-size: 1.6rem;
+    }
+  }
 }
 
 .breadcrumbs{
@@ -285,8 +296,6 @@ $checkSize: 13;
     font-size: 14px;
     font-weight: normal;
     line-height: 1.29;
-
-
     &:not(:last-child){
       &:after{
         content: '|';
@@ -307,6 +316,17 @@ $checkSize: 13;
 
     span{
       color: #262626;
+    }
+  }
+}
+
+.cd-dropdown{
+  &.cd-active{
+    ul{
+      outline: solid 1px #cecece;
+    }
+    & > span{
+      border-color: transparent !important;
     }
   }
 }

@@ -1,0 +1,40 @@
+.delivery-page-block {
+  font-size: 1.4rem;
+  line-height: 1.29;
+  color: #2a2024;
+  &__title {
+    font-size: 1.6rem;
+    font-family: $fopb;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  &__item {
+    margin-bottom: 2.5rem;
+  }
+  &__context{
+    strong {
+      font-family: $fopb;
+      font-weight: bold;
+    }
+  }
+
+  &__logo-block-img{
+    width: 13.7rem;
+    height: 7.2rem;
+    line-height: 6.9rem;
+    display: inline-block;
+    margin-right: 8px;
+    margin-bottom: 1.3rem;
+    outline: 1px solid #cecece;
+    text-align: center;
+    &:nth-child(7),
+    &:nth-child(14){
+      margin-right: 0;
+  }
+
+    img{
+      vertical-align: middle;
+    }
+
+  }
+}

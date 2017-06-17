@@ -48,6 +48,8 @@
 @import "components/payment-page-block";
 @import "components/payment-contacts";
 @import "components/connection-block";
+@import "components/delivery-page-block";
+@import "components/howorder-block";
 
 
 
@@ -61,6 +63,7 @@
 @import "wrapps/actions-page__wrap";
 @import "wrapps/bottom-menu__wrap";
 @import "wrapps/main-shop-info__wrap";
+@import "wrapps/delivery-tab__wrap";
 
 // Print
 @import "print";

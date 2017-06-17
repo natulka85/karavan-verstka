@@ -19,8 +19,8 @@ $(document).ready(function () {
 });
 
 $(window).on('resize', function () {
-    //mainTabs();
-    //adaptive();
+    mainTabs();
+    adaptive();
 })
 
 function mainTabs() {

@@ -1,0 +1,32 @@
+.connection-block{
+  font-size: 1.6rem;
+  display: flex;
+  padding: 1.7rem 1.5rem;
+  background-color: #ffffff;
+  border: solid 1px #999999;
+  &__side{
+    &:nth-child(1){
+      flex-basis: 41%;
+    }
+  }
+
+  &__phone{
+    font-family:$fopb;
+    font-size: 3.6rem;
+    font-weight: bold;
+    line-height: 1.0;
+    color: #2a2024;
+    margin: 1.2rem 0;
+    white-space: nowrap;
+    &:before{
+      margin-right: 1.8rem;
+    }
+  }
+  &__text{
+    line-height: 1.5;
+    color: #2a2024;
+  }
+  &__staff-photos{
+    white-space: nowrap;
+  }
+}

@@ -1,0 +1,52 @@
+.main-shop-info{
+  font-size: 1.4rem;
+  &__tabs-items{
+    display: flex;
+    border-bottom: solid 1px #999999;
+  }
+  &__tabs-item{
+    position: relative;
+
+    &.is-active{
+      border-radius: 2px;
+      border: solid 1px #999999;
+      &:after{
+        content: '';
+        bottom: -3px;
+        height: 4px;
+        display: block;
+        background: #ffffff;
+        position: absolute;
+        width: 100%;
+      }
+      a {
+        color: #000000;
+        text-decoration: none;
+      }
+    }
+  }
+  &__tabs-item-link{
+    display: block;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    height: 100%;
+  }
+  &__content-tabs{
+    display: none;
+    &.is-active{
+      display: block;
+    }
+  }
+  &__content{
+    padding-top: 2rem;
+  }
+  &__footer{
+    margin-top: 6rem;
+    display: flex;
+  }
+
+  .note-block{
+    flex-basis: 41%;
+    margin-right: 1.8rem;
+  }
+}

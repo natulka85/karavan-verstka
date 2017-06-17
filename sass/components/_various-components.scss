@@ -351,3 +351,28 @@ $checkSize: 13;
     }
   }
 }
+
+.note-block{
+  padding: 2.9rem;
+  background-color: #fdf9ec;
+  &__title{
+    margin-top: 1.3rem;
+    font-size: 2.4rem;
+    line-height: 0.75;
+    color: #2a2024;
+    margin-bottom: 1.7rem;
+  }
+  &__context{
+    font-size: 1.4rem;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    color: #2a2024;
+    strong{
+      font-family:$fopb;
+      font-weight: bold;
+    }
+  }
+}

@@ -1,0 +1,71 @@
+.payment-page-block {
+  display: flex;
+  justify-content: space-between;
+  &__side{
+    flex-basis: 44%;
+  }
+  &__head{
+    height: 9rem;
+    margin-bottom:1rem;
+  }
+  &__title {
+    font-family: $fopb;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #000000;
+    line-height: 9rem;
+    white-space: nowrap;
+    display: inline-block;
+  }
+  &__content{
+    font-size: 1.4rem;
+    line-height: 1.29;
+    color: #000000;
+    p{
+      margin-bottom: 2.7rem;
+    }
+    ul{
+      list-style: none;
+    }
+    ul li{
+      margin-bottom: 2rem;
+      padding-left: 1.9rem;
+      position: relative;
+
+      &:before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 7px;
+        display: block;
+        width: 5px;
+        height: 5px;
+        background-color: #ff7e09;
+        border-radius: 50%;
+      }
+    }
+    ol li{
+      margin-bottom: 2rem;
+    }
+  }
+  &__icon{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right:2rem;
+    background-image: url('../images/our-advantages/sprite-advantages.png');
+    background-repeat:no-repeat;
+    background-position: center -9.7rem;
+    &.spr-best-price{
+      width: 5.6rem;
+      height: 6.2rem;
+      background-position-y: -26.7rem;
+      background-size: 187% auto;
+    }
+    &.spr-non-cash{
+      width: 7.4rem;
+      height: 4.7rem;
+      background-position-y: -77.6rem;
+      background-size: 187% auto;
+    }
+  }
+}

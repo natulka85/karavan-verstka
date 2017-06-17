@@ -24,16 +24,25 @@ $(window).on('resize', function () {
 })
 
 function mainTabs() {
+    $('.is-default-active').addClass('is-active');
+
     $('.js-main-tabs').on('click', function (e) {
         e.preventDefault();
 
-        if ($(window).width() > 960) {
-            $('.js-main-tabs').removeClass('is-active');
-            $('.js-content-tabs').removeClass('is-active');
+        if($(this).parents('.left-menu').length > 0){
+            if ($(window).width() > 960) {
+                $(this).siblings().removeClass('is-active');
+                $(this).parents('.main-tabs').find('.js-content-tabs').removeClass('is-active');
+            }
         }
+        else{
+            $(this).siblings().removeClass('is-active');
+            $(this).parents('.main-tabs').find('.js-content-tabs').removeClass('is-active');
+        }
+
         $(this).addClass('is-active');
         var id = $(this).find('a').attr('href');
-        $(this).parents('.left-menu').find(id).addClass('is-active');
+        $(this).parents('.main-tabs').find(id).addClass('is-active');
     });
 
     $('.js-close-tabs').on('click', function (e) {
@@ -113,8 +122,9 @@ function adaptive() {
 
     if (size <= 960) {
         ///
-        $('.js-main-tabs').removeClass('is-active');
-        $('.js-content-tabs').removeClass('is-active');
+        $('.left-menu .is-default-active').removeClass('is-active');
+        $('.left-menu .js-main-tabs').removeClass('is-active');
+        $('.left-menu .js-content-tabs').removeClass('is-active');
         ///
         $('.main-search').prependTo($('.page-header')).addClass('is-moved');
         ///
@@ -132,8 +142,6 @@ function adaptive() {
     }
 
     if (size > 960) {
-        $('.left-menu .is-default-active').addClass('is-active');
-        //
         $('.main-search.is-moved').prependTo($('.sidebar-bar')).removeClass('is-moved');
         ///
         $('.catalog-sections-wrap .plate-block .subscribe-page-block.is-moved').insertAfter($('.plate-block .plate-block__elem').eq(11)).removeClass('is-moved');

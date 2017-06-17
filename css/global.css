@@ -246,6 +246,9 @@ input:-webkit-autofill {
 .icon2-ar-long-r:before, .page-slider .slick-arrow.slick-next:before {
   content: '\e201'; }
 
+.icon2-skype:before {
+  content: '\e202'; }
+
 html {
   font-size: 10px;
   width: 100%;
@@ -1994,6 +1997,27 @@ yx-axis
 
 .cd-dropdown.cd-active > span {
   border-color: transparent !important; }
+
+.note-block {
+  padding: 2.9rem;
+  background-color: #fdf9ec; }
+  .note-block__title {
+    margin-top: 1.3rem;
+    font-size: 2.4rem;
+    line-height: 0.75;
+    color: #2a2024;
+    margin-bottom: 1.7rem; }
+  .note-block__context {
+    font-size: 1.4rem;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    color: #2a2024; }
+    .note-block__context strong {
+      font-family: "OpenSansBold", sans-serif;
+      font-weight: bold; }
 
 .header {
   position: relative; }
@@ -5879,6 +5903,198 @@ yx-axis
   .shops-info__map {
     width: 15rem; } }
 
+.main-shop-info {
+  font-size: 1.4rem; }
+  .main-shop-info__tabs-items {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    border-bottom: solid 1px #999999; }
+  .main-shop-info__tabs-item {
+    position: relative; }
+    .main-shop-info__tabs-item.is-active {
+      -webkit-border-radius: 2px;
+      border-radius: 2px;
+      border: solid 1px #999999; }
+      .main-shop-info__tabs-item.is-active:after {
+        content: '';
+        bottom: -3px;
+        height: 4px;
+        display: block;
+        background: #ffffff;
+        position: absolute;
+        width: 100%; }
+      .main-shop-info__tabs-item.is-active a {
+        color: #000000;
+        text-decoration: none; }
+  .main-shop-info__tabs-item-link {
+    display: block;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    height: 100%; }
+  .main-shop-info__content-tabs {
+    display: none; }
+    .main-shop-info__content-tabs.is-active {
+      display: block; }
+  .main-shop-info__content {
+    padding-top: 2rem; }
+  .main-shop-info__footer {
+    margin-top: 6rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .main-shop-info .note-block {
+    -webkit-flex-basis: 41%;
+    -ms-flex-preferred-size: 41%;
+    flex-basis: 41%;
+    margin-right: 1.8rem; }
+
+.payment-page-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .payment-page-block__side {
+    -webkit-flex-basis: 44%;
+    -ms-flex-preferred-size: 44%;
+    flex-basis: 44%; }
+  .payment-page-block__head {
+    height: 9rem;
+    margin-bottom: 1rem; }
+  .payment-page-block__title {
+    font-family: "OpenSansBold", sans-serif;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #000000;
+    line-height: 9rem;
+    white-space: nowrap;
+    display: inline-block; }
+  .payment-page-block__content {
+    font-size: 1.4rem;
+    line-height: 1.29;
+    color: #000000; }
+    .payment-page-block__content p {
+      margin-bottom: 2.7rem; }
+    .payment-page-block__content ul {
+      list-style: none; }
+    .payment-page-block__content ul li {
+      margin-bottom: 2rem;
+      padding-left: 1.9rem;
+      position: relative; }
+      .payment-page-block__content ul li:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 7px;
+        display: block;
+        width: 5px;
+        height: 5px;
+        background-color: #ff7e09;
+        -webkit-border-radius: 50%;
+        border-radius: 50%; }
+    .payment-page-block__content ol li {
+      margin-bottom: 2rem; }
+  .payment-page-block__icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 2rem;
+    background-image: url("../images/our-advantages/sprite-advantages.png");
+    background-repeat: no-repeat;
+    background-position: center -9.7rem; }
+    .payment-page-block__icon.spr-best-price {
+      width: 5.6rem;
+      height: 6.2rem;
+      background-position-y: -26.7rem;
+      -webkit-background-size: 187% auto;
+      background-size: 187% auto; }
+    .payment-page-block__icon.spr-non-cash {
+      width: 7.4rem;
+      height: 4.7rem;
+      background-position-y: -77.6rem;
+      -webkit-background-size: 187% auto;
+      background-size: 187% auto; }
+
+.payment-contacts {
+  max-width: 67%;
+  margin: auto;
+  margin-top: 3.8rem;
+  font-size: 1.4 rem; }
+  .payment-contacts__title {
+    font-family: "OpenSansBold", sans-serif;
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 1;
+    color: #000000; }
+  .payment-contacts__content {
+    margin-top: 2.4rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .payment-contacts__content-contact:not(:last-child) {
+    margin-right: 8rem; }
+  .payment-contacts__content-contact .payment-contacts__title {
+    margin-bottom: 1.6rem; }
+  .payment-contacts__phone {
+    font-family: "OpenSansBold", sans-serif;
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 1.71;
+    padding-left: 2.6rem;
+    position: relative; }
+    .payment-contacts__phone:before {
+      position: absolute;
+      font-size: 1.4rem;
+      left: 0;
+      top: 50%;
+      margin-top: -9px; }
+  .payment-contacts__skype {
+    padding-left: 2.6rem;
+    position: relative;
+    line-height: 1.71; }
+    .payment-contacts__skype:before {
+      position: absolute;
+      font-size: 3rem;
+      color: #00c6ff;
+      left: -8px;
+      top: 50%;
+      margin-top: -1.5rem; }
+
+.connection-block {
+  font-size: 1.6rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1.7rem 1.5rem;
+  background-color: #ffffff;
+  border: solid 1px #999999; }
+  .connection-block__side:nth-child(1) {
+    -webkit-flex-basis: 41%;
+    -ms-flex-preferred-size: 41%;
+    flex-basis: 41%; }
+  .connection-block__phone {
+    font-family: "OpenSansBold", sans-serif;
+    font-size: 3.6rem;
+    font-weight: bold;
+    line-height: 1.0;
+    color: #2a2024;
+    margin: 1.2rem 0;
+    white-space: nowrap; }
+    .connection-block__phone:before {
+      margin-right: 1.8rem; }
+  .connection-block__text {
+    line-height: 1.5;
+    color: #2a2024; }
+  .connection-block__staff-photos {
+    white-space: nowrap; }
+
 .catalog-sections-wrap {
   width: 100%;
   overflow: hidden; }
@@ -5979,6 +6195,12 @@ yx-axis
   .about-page__wrap .page-header {
     margin-bottom: 1.5rem; } }
 
+.shops-page__wrap .page-header {
+  margin-bottom: 0; }
+
+.shops-page__wrap .page-header-main {
+  margin-top: 0; }
+
 @media screen and (max-width: 960px) {
   .shops-page__wrap .page-header {
     margin-bottom: 3rem; } }
@@ -6032,5 +6254,19 @@ yx-axis
 @media screen and (max-width: 960px) {
   .bottom-menu__wrap {
     margin: 6rem 0; } }
+
+.main-shop-info__wrap .page-header-main {
+  margin-top: 0; }
+
+.main-shop-info__wrap .page-header {
+  margin-bottom: 0; }
+
+@media screen and (max-width: 960px) {
+  .main-shop-info__wrap .page-header {
+    margin-bottom: 3rem; } }
+
+@media screen and (max-width: 740px) {
+  .main-shop-info__wrap .page-header {
+    margin-bottom: 1.5rem; } }
 
 /* //////////////////////////////////////////////// PRINT //////////////////////////////////////////////// */

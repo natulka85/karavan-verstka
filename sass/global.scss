@@ -44,6 +44,10 @@
 @import "components/page-slider";
 @import "components/actions-timer";
 @import "components/shops-info";
+@import "components/main-shop-info";
+@import "components/payment-page-block";
+@import "components/payment-contacts";
+@import "components/connection-block";
 
 
 
@@ -56,6 +60,7 @@
 @import "wrapps/shops-page__wrap";
 @import "wrapps/actions-page__wrap";
 @import "wrapps/bottom-menu__wrap";
+@import "wrapps/main-shop-info__wrap";
 
 // Print
 @import "print";

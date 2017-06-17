@@ -1,3 +1,11 @@
+.shops-page__wrap{
+  .page-header {
+    margin-bottom: 0;
+  }
+  .page-header-main {
+    margin-top: 0;
+  }
+}
 @media #{$media-960}{
   .shops-page__wrap .page-header {
     margin-bottom: 3rem;

@@ -1,0 +1,48 @@
+extends layouts/_base-layoute.jade
+
+block PageTitle
+    title Pay-Del_Zakaz
+
+
+block PageLayout
+    section.base-content.inner-width.fw
+        section.header
+            include blocks/_header-top
+            include blocks/_header-menu
+            include blocks/_basket-small
+        section.main-content.fw
+            section.sidebar-bar
+                include blocks/_main-search
+                include includes/_left-menu.jade
+
+
+            section.main-content-inner.fw
+                .main-shop-info__wrap
+                    .page-header
+                     
+                    section.main-shop-info
+                        .main-shop-info__tabs.main-tabs
+                            .main-shop-info__tabs-items.main-tabs__items
+                                .main-shop-info__tabs-item.main-tabs__item.is-default-active.js-main-tabs
+                                    a.main-shop-info__tabs-item-link(href='#payment') Оплата
+                                .main-shop-info__tabs-item.main-tabs__item.js-main-tabs
+                                    a.main-shop-info__tabs-item-link(href='#delivery') Доставка
+                                .main-shop-info__tabs-item.main-tabs__item.js-main-tabs
+                                    a.main-shop-info__tabs-item-link(href='#how-order') Как сделать заказ
+                            .main-shop-info__content.main-tabs__content
+                                include includes/_main-shop-info-payment
+                                include includes/_main-shop-info-delivery
+                                include includes/_main-shop-info-how-order
+
+                            
+
+        section.footer.fl
+            include includes/_footer
+
+
+
+
+
+
+
+

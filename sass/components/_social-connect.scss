@@ -1,0 +1,26 @@
+.social-connect{
+  &__title{
+    font-size: 1.4rem;
+    line-height: 1;
+    color: #2a2024;
+    margin-bottom: 1.5rem;
+    margin-top: 3.4rem;
+    white-space: nowrap;
+  }
+  &__icons{
+    display: flex;
+  }
+  &__icons-item{
+    display: block;
+    height: 3rem;
+    width: 3rem;
+    background: url('../images/sprites/sprite_social.svg');
+    background-repeat:no-repeat;
+    background-size: 3rem auto;
+    margin-right: 8px;
+
+    &.spr-fb{background-position: 0 0}
+    &.spr-vk{background-position: 0 -5.6rem}
+    &.spr-inst{background-position: 0 -11.2rem}
+  }
+}

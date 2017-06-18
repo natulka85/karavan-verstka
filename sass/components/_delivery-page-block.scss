@@ -27,14 +27,18 @@
     margin-bottom: 1.3rem;
     outline: 1px solid #cecece;
     text-align: center;
-    &:nth-child(7),
-    &:nth-child(14){
-      margin-right: 0;
-  }
+
 
     img{
       vertical-align: middle;
     }
 
+  }
+}
+
+@media #{$media-686} {
+  .delivery-page-block__logo-block{
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
   }
 }

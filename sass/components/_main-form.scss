@@ -1,0 +1,64 @@
+.main-form{
+  padding: 2.5rem 4.6rem;
+  background-color: #fdf9ec;
+  font-size: 1.4rem;
+  line-height: 1.29;
+  color: #000000;
+  &__title{
+    font-family: $fopb;
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 1.88;
+    color: #2a2024;
+    margin-bottom: 2.2rem;
+  }
+  &__input,
+  &__textarea{
+    width: 44.3rem;
+    border-radius: 2px;
+    background-color: #ffffff;
+    border: solid 1px #999999;
+    padding-left: 1rem;
+    font-size: 1.4rem;
+    resize: none;
+  }
+  &__textarea{
+    height: 13.1rem;
+    padding-top: 1rem;
+  }
+
+  &__input{
+    height: 3.4rem;
+    line-height: 3.4rem;
+  }
+  &__fields{
+    width: 52.8rem;
+  }
+  &__label{
+    width: 8rem;
+    display: inline-block;
+    vertical-align: top;
+  }
+  &__field{
+    margin-bottom: 9px;
+
+    &:last-child{
+      margin-top: 1.3rem;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  &__btn{
+    width: 16.6rem;
+  }
+}
+
+@media #{$media-686}{
+  .main-form__fields{
+    width: 38.8rem;
+  }
+  .main-form__input, .main-form__textarea, .main-form__btn{
+    width: 30.3rem;
+  }
+}

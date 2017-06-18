@@ -2,7 +2,7 @@
   max-width: 67%;
   margin: auto;
   margin-top: 3.8rem;
-  font-size: 1.4 rem;
+  font-size: 1.4rem;
   &__title{
     font-family:$fopb;
     font-size: 1.6rem;
@@ -49,6 +49,14 @@
       left: -8px;
       top: 50%;
       margin-top: -1.5rem;
+    }
+  }
+  &__store{
+    margin: 1.6rem 0;
+    line-height: 1.29;
+    strong{
+      font-family:$fopb;
+      font-weight: bold;
     }
   }
 }

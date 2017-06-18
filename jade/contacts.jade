@@ -1,0 +1,99 @@
+extends layouts/_base-layoute.jade
+
+block PageTitle
+    title Contacts
+
+
+block PageLayout
+    section.base-content.inner-width.fw
+        section.header
+            include blocks/_header-top
+            include blocks/_header-menu
+            include blocks/_basket-small
+        section.main-content.fw
+            section.sidebar-bar
+                include blocks/_main-search
+                include includes/_left-menu.jade
+
+            section.main-content-inner.fw
+                .contacts-page__wrap
+                    .page-header
+                    section.page-header-main
+                        .page-header-main__side
+                            h1.page-header-main__title Контакты
+
+                    .payment-contacts
+                        .payment-contacts__content
+                            .payment-contacts__content-contact
+                                .payment-contacts__title г. Москва
+                                .payment-contacts__phone.icon-phone 8 (800) 700-52-10
+                                .payment-contacts__skype.icon2-skype Skype: karavanmoscow
+                                .payment-contacts__store #[strong Оптовый склад] ул. Дмитровское шоссе 157 БЦ "Гефест" стр. 5
+
+                            .payment-contacts__content-contact
+                                .payment-contacts__title г. Сочи
+                                .payment-contacts__phone.icon-phone 8 (800) 700-52-10
+                                .payment-contacts__skype.icon2-skype Skype: karavanmoscow
+                                .payment-contacts__store #[strong Оптовый склад] Адлерский р-он, ул. Суздальская 14 (бывший АйсКлуб)
+                                .payment-contacts__store #[strong Оптовый магазин] Центральный р-он, ул.Пригородная 48.
+                                .payment-contacts__store #[strong Розничный магазин] Адлерский р-он, ул. Ленина 10, ТК "Славутич"
+
+                            .payment-contacts__content-contact
+                                .payment-contacts__title г. Геленджик
+                                .payment-contacts__phone.icon-phone 8 (800) 700-52-10
+                                .payment-contacts__skype.icon2-skype Skype: karavanmoscow
+                                .payment-contacts__store #[strong Розничный магазин] г.Геленджик, ул.Тельмана, 146 (территория "Стройторг")
+
+                    .connection-block
+                        .connection-block__side
+                            .connection-block__staff-photos
+                                .connection-block__staff-photos-item
+                                    img(src='../images/develop/staff-1.png')
+                                .connection-block__staff-photos-item
+                                    img(src='../images/develop/staff-2.png')
+                        .connection-block__side
+                            .connection-block__text На все вопросы ам ответят наши<br>менеджеры по телефону
+                            .connection-block__phone.icon-phone 8 (800) 700-52-10
+                        .connection-block__side
+                            .connection-block__mail-block
+                                .connection-block__mail.icon-email По заказам&nbsp
+                                    a(href="mailto:order@karavanmarket.ru") order@karavanmarket.ru 
+                                .connection-block__mail.icon-email По общим вопросам&nbsp
+                                    a(href="mailto:info@karavanmarket.ru") mail@karavanmarket.ru
+                                .connection-block__mail.icon-email Для КП&nbsp
+                                    a(href="mailto:info@karavanmarket.ru") info@karavanmarket.ru
+                            .social-connect
+                                .social-connect__title Присоединяйтесь к нам в социальных сетях:
+                                .social-connect__icons
+                                    .social-connect__icons-item.spr-fb
+                                    .social-connect__icons-item.spr-vk
+                                    .social-connect__icons-item.spr-inst
+
+                    .main-form
+                        .main-form__title Задать вопрос Вы можете с помощью этой формы:
+                        form.main-form__form
+                            .main-form__fields
+                                .main-form__field
+                                    label.main-form__label Имя
+                                    input.main-form__input(type='text' value='')
+                                .main-form__field
+                                    label.main-form__label Email
+                                    input.main-form__input(type='text' value='')
+                                .main-form__field
+                                    label.main-form__label Сообщение
+                                    textarea.main-form__textarea(type='textarea' value='')
+                                .main-form__field
+                                    button.main-form__btn.btn.is-orange(type='submit' value='') Отправить
+
+
+
+        section.footer.fl
+                    include includes/_footer
+
+
+
+
+
+
+
+

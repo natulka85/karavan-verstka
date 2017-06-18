@@ -5,6 +5,11 @@ $(window).on('load', function () {
 
 })
 
+//active default for tabs
+$(function(){
+    $('.is-default-active').addClass('is-active');
+});
+
 $(document).ready(function () {
     /* //////////////////////////////////////////// GENERAL ///////////////////////////////////////////// */
     mainTabs();
@@ -24,7 +29,7 @@ $(window).on('resize', function () {
 })
 
 function mainTabs() {
-    $('.is-default-active').addClass('is-active');
+
 
     $('.js-main-tabs').on('click', function (e) {
         e.preventDefault();

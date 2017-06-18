@@ -1,6 +1,7 @@
 .connection-block{
   font-size: 1.6rem;
   display: flex;
+  align-items: center;
   padding: 1.7rem 1rem;
   padding-left: 6px;
   background-color: #ffffff;
@@ -9,6 +10,7 @@
   &__side{
     &:nth-child(1){
       flex-basis: 41%;
+      max-width: 32rem;
       margin-right: 1.3rem;
     }
   }
@@ -43,6 +45,16 @@
 
     &:nth-child(1){
       margin-right: 1.7rem;
+    }
+  }
+
+  &__mail{
+    white-space: nowrap;
+    line-height: 1.71;
+    &:before{
+      font-size: 1.4rem;
+      vertical-align: middle;
+      margin-right: 1rem;
     }
   }
 }

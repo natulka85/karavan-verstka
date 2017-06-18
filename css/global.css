@@ -6466,6 +6466,57 @@ yx-axis
   .detail-news__content-img-block {
     grid-template-columns: repeat(3, 33%); } }
 
+.actions__item-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 2.8rem; }
+
+.actions__name {
+  font-family: "OpenSansBold", sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 1.12;
+  color: #ff7e09; }
+
+.actions__item {
+  padding-top: 4rem;
+  margin-bottom: 2.5rem; }
+  .actions__item:not(:last-child) {
+    border-bottom: 1px solid #d2d2d2; }
+
+.actions__description {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 2rem; }
+
+.actions__main-text {
+  max-width: 60rem;
+  font-size: 1.4rem;
+  line-height: 1.29;
+  color: #272727; }
+
+.actions__item-content strong {
+  font-family: "OpenSansBold", sans-serif;
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #272727; }
+
 .catalog-sections-wrap {
   width: 100%;
   overflow: hidden; }

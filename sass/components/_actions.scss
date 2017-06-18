@@ -1,0 +1,41 @@
+.actions {
+  &__item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.8rem;
+  }
+  &__name {
+    font-family: $fopb;
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 1.12;
+    color: #ff7e09;
+  }
+  &__item {
+    padding-top: 4rem;
+    margin-bottom: 2.5rem;
+    &:not(:last-child) {
+      border-bottom: 1px solid #d2d2d2;
+    }
+  }
+  &__description {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+  &__main-text {
+    max-width: 60rem;
+    font-size: 1.4rem;
+    line-height: 1.29;
+    color: #272727;
+  }
+  &__item-content{
+    strong{
+      font-family:$fopb;
+      font-weight: bold;
+      font-size: 1.4rem;
+      color: #272727;
+    }
+  }
+}

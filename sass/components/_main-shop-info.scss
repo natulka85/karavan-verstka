@@ -1,5 +1,6 @@
 .main-shop-info{
   font-size: 1.4rem;
+  margin-bottom: 2.8rem;
   &__tabs-items{
     display: flex;
     border-bottom: solid 1px #999999;
@@ -48,8 +49,58 @@
   .note-block{
     flex-basis: 41.8%;
     margin-right: 1.8rem;
+    height: 17.1rem;
   }
   .connection-block{
     flex-grow: 2;
+    height: 17.1rem;
+  }
+}
+
+@media #{$media-1728} {
+  .main-shop-info{
+    .note-block{
+      padding: 2.7rem;
+      padding-right: 1rem;
+
+      &__title{
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+@media #{$media-1166} {
+  .main-shop-info{
+    &__footer{
+      flex-wrap: wrap;
+    }
+    .note-block{
+      flex-basis: 100%;
+      height:auto;
+      margin-right: 0;
+      margin-bottom: 3rem;
+      &__title{
+        margin-top: 5px;
+      }
+    }
+    .connection-block{
+      width: 100%;
+    }
+  }
+}
+@media #{$media-686}{
+  .main-shop-info {
+    &__footer {
+      margin-top: 5.5rem;
+    }
+    .connection-block{
+      height:auto;
+      padding: 2.8rem 3.4rem;
+      &__staff-photos{
+        height:auto;
+        margin-bottom: 2rem;
+      }
+    }
   }
 }

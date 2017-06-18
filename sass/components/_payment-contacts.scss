@@ -52,3 +52,10 @@
     }
   }
 }
+
+
+@media #{$media-960} {
+  .payment-contacts{
+    max-width:100%;
+  }
+}

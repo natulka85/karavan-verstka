@@ -5904,7 +5904,8 @@ yx-axis
     width: 15rem; } }
 
 .main-shop-info {
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+  margin-bottom: 2.8rem; }
   .main-shop-info__tabs-items {
     display: -webkit-box;
     display: -webkit-flex;
@@ -5949,12 +5950,48 @@ yx-axis
     -webkit-flex-basis: 41.8%;
     -ms-flex-preferred-size: 41.8%;
     flex-basis: 41.8%;
-    margin-right: 1.8rem; }
+    margin-right: 1.8rem;
+    height: 17.1rem; }
   .main-shop-info .connection-block {
     -webkit-box-flex: 2;
     -webkit-flex-grow: 2;
     -ms-flex-positive: 2;
-    flex-grow: 2; }
+    flex-grow: 2;
+    height: 17.1rem; }
+
+@media screen and (max-width: 1728px) {
+  .main-shop-info .note-block {
+    padding: 2.7rem;
+    padding-right: 1rem; }
+    .main-shop-info .note-block__title {
+      margin-top: 0; } }
+
+@media screen and (max-width: 1166px) {
+  .main-shop-info__footer {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .main-shop-info .note-block {
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    height: auto;
+    margin-right: 0;
+    margin-bottom: 3rem; }
+    .main-shop-info .note-block__title {
+      margin-top: 5px; }
+  .main-shop-info .connection-block {
+    width: 100%; } }
+
+@media screen and (max-width: 686px) {
+  .main-shop-info__footer {
+    margin-top: 5.5rem; }
+  .main-shop-info .connection-block {
+    height: auto;
+    padding: 2.8rem 3.4rem; }
+    .main-shop-info .connection-block__staff-photos {
+      height: auto;
+      margin-bottom: 2rem; } }
 
 .payment-page-block {
   display: -webkit-box;
@@ -6003,6 +6040,8 @@ yx-axis
         background-color: #ff7e09;
         -webkit-border-radius: 50%;
         border-radius: 50%; }
+    .payment-page-block__content ol {
+      padding-left: 1.9rem; }
     .payment-page-block__content ol li {
       margin-bottom: 2rem; }
   .payment-page-block__icon {
@@ -6024,6 +6063,22 @@ yx-axis
       background-position-y: -77.6rem;
       -webkit-background-size: 187% auto;
       background-size: 187% auto; }
+
+@media screen and (max-width: 960px) {
+  .payment-page-block {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .payment-page-block__side {
+      -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+      flex-basis: 100%; } }
+
+@media screen and (max-width: 686px) {
+  ul li:last-child {
+    margin-bottom: 0; }
+  ol li:last-child {
+    margin-bottom: 0; } }
 
 .payment-contacts {
   max-width: 67%;
@@ -6071,6 +6126,10 @@ yx-axis
       top: 50%;
       margin-top: -1.5rem; }
 
+@media screen and (max-width: 960px) {
+  .payment-contacts {
+    max-width: 100%; } }
+
 .connection-block {
   font-size: 1.6rem;
   display: -webkit-box;
@@ -6078,13 +6137,15 @@ yx-axis
   display: -ms-flexbox;
   display: flex;
   padding: 1.7rem 1rem;
+  padding-left: 6px;
   background-color: #ffffff;
   border: solid 1px #999999;
   max-width: 103.1rem; }
   .connection-block__side:nth-child(1) {
     -webkit-flex-basis: 41%;
     -ms-flex-preferred-size: 41%;
-    flex-basis: 41%; }
+    flex-basis: 41%;
+    margin-right: 1.3rem; }
   .connection-block__phone {
     font-family: "OpenSansBold", sans-serif;
     font-size: 3.6rem;
@@ -6103,13 +6164,38 @@ yx-axis
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     height: 100%;
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center; }
   .connection-block__staff-photos-item {
-    width: 50%; }
+    max-width: 11rem;
+    min-width: 8rem;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    overflow: hidden; }
+    .connection-block__staff-photos-item:nth-child(1) {
+      margin-right: 1.7rem; }
+
+@media screen and (max-width: 686px) {
+  .connection-block {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .connection-block__side:nth-child(1) {
+      -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+      flex-basis: 100%; }
+    .connection-block__staff-photos {
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+      justify-content: flex-start; } }
 
 .delivery-page-block {
   font-size: 1.4rem;

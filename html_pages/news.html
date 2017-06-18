@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>News</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="SKYPE_TOOLBA" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <!--meta(name="theme-color", content="#ffffff")-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic|Playfair+Display:400,400italic&amp;subset=cyrillic-ext,latin-ext,cyrillic,latin" rel="stylesheet" type="text/css">
+    <link href="../css/global.css" rel="stylesheet" type="text/css">
+    <script src="../js/vendor/device.min.js" type="text/javascript"></script>
+    <script src="../js/vendor/modernizr.custom.js" type="text/javascript"></script>
+    <script src="../js/vendor/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="../js/vendor/slick.min.js" type="text/javascript"></script>
+    <script src="../js/vendor/jquery.placeholder.min.js" type="text/javascript"></script>
+    <script src="../js/vendor/jquery.mCustomScrollbar.concat.min.js" type="text/javascript"></script>
+    <script src="../js/vendor/jquery.maskedinput.min.js" type="text/javascript"></script>
+    <script src="../js/vendor/jquery.fs.selecter.min.js" type="text/javascript"></script>
+    <script src="../js/vendor/jquery.livequery.min.js" type="text/javascript"></script>
+    <script src="../js/vendor/jquery.dropdown.js" type="text/javascript"></script>
+    <script src="..js/vendor/nouislider.min.js" type="text/javascript"></script>
+    <script src="../js/vendor/jquery.fancybox.min.js" type="text/javascript"></script>
+    <script src="../js/script.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <section class="wrapper">
+      <!--include ../includes/_header.jade-->
+      <section class="base-content inner-width fw">
+        <section class="header">
+          <div class="header-top">
+            <div class="header-top__logo"><a href="#" class="header-top__logo-link"><img src="../images/logo.png"></a></div>
+            <div class="header-top__main-content fw">
+              <div class="header-top__column">
+                <div class="header-top__shop-name">
+                  <h3>Интернет-магазин экзотических<br>сувениров и подарков оптом</h3>
+                </div>
+              </div>
+              <div class="header-top__column">
+                <div class="header-top__phone icon-phone"><a href="tel:+7 (800) 700-52-10">+7 (800) 700-52-10</a></div>
+              </div>
+              <div class="header-top__column">
+                <div class="header-top__mail"><a href="mailto:karavanmarket@mail.ru">karavanmarket@mail.ru</a></div>
+              </div>
+              <div class="header-top__column">
+                <div class="header-top__map icon-map"><a href="">Доставка по всей России</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="header-menu">
+            <ul class="header-menu__list">
+              <li class="header-menu__item"><a href="#" class="header-menu__link">О компании</a></li>
+              <li class="header-menu__item"><a href="#" class="header-menu__link">Новости</a></li>
+              <li class="header-menu__item"><a href="#" class="header-menu__link is-mobile-hide">Условия сотрудничества</a><a href="#" class="header-menu__link is-mobile-show">Сотрудничество</a></li>
+              <li class="header-menu__item"><a href="#" class="header-menu__link">Магазины</a></li>
+              <li class="header-menu__item"><a href="#" class="header-menu__link">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="basket-small">
+            <div class="basket-small__top">
+              <div class="basket-small__top-control"><a href="">Вход</a></div>
+              <div class="basket-small__top-control"><a href="">Регистрация</a></div>
+            </div>
+            <div class="basket-small__main">
+              <div class="basket-small__info icon-cart"><span class="basket-small__info-goods">5 товаров&nbsp;</span><span class="basket-small__info-summ">на <strong>24000 р</strong></span></div>
+              <div class="basket-small__text"><span>Мин. сумма оптового <strong>заказа — 15 000 руб</strong></span></div>
+            </div>
+          </div>
+        </section>
+        <section class="main-content fw">
+          <section class="sidebar-bar">
+            <div class="main-search">
+              <form class="main-search__form">
+                <input placeholder="8075 наименований" class="main-search__input">
+                <button type="submit" class="main-search__btn icon-search"></button>
+              </form>
+            </div>
+            <div class="left-menu">
+              <div class="left-menu__tabs main-tabs">
+                <div class="left-menu__tabs-items main-tabs__items">
+                  <div class="left-menu__tabs-item main-tabs__item is-default-active js-main-tabs"><a href="#category" class="left-menu__tabs-item-link">Категории</a></div>
+                  <div class="left-menu__tabs-item main-tabs__item js-main-tabs"><a href="#all-goods" class="left-menu__tabs-item-link">Все товары</a></div>
+                </div>
+                <div class="left-menu__content main-tabs__content">
+                  <div id="category" class="left-menu__content-tabs main-tabs__content-item is-default-active js-content-tabs">
+                    <div class="left-menu__content-tabs-btn-close icon-close js-close-tabs"></div>
+                    <ul class="left-menu__list">
+                      <li class="left-menu__list-item"><a href="#" id="suveniry_i_podarki" class="left-menu__list-item-link">Сувениры и подарки (1 456)</a></li>
+                      <li class="left-menu__list-item"><a href="#" id="tovarydlya_interera" class="left-menu__list-item-link">Товары для интерьера (1 456)</a></li>
+                      <li class="left-menu__list-item is-current"><a href="#" id="svetilniki_dlya_doma" class="left-menu__list-item-link">Светильники для дома (1 456)</a>
+                        <ul class="left-menu__submenu-list">
+                          <li class="left-menu__submenu-item"><a href="#" class="left-menu__submenu-link">Светильники мозаика</a></li>
+                          <li class="left-menu__submenu-item"><a href="#" class="left-menu__submenu-link">Нитяные</a></li>
+                          <li class="left-menu__submenu-item"><a href="#" class="left-menu__submenu-link">Светильники из ракушек</a></li>
+                          <li class="left-menu__submenu-item"><a href="#" class="left-menu__submenu-link">Светильники из кокоса</a></li>
+                          <li class="left-menu__submenu-item"><a href="#" class="left-menu__submenu-link is-current">Комбинированные</a></li>
+                          <li class="left-menu__submenu-item"><a href="#" class="left-menu__submenu-link">Светильники животные</a></li>
+                        </ul>
+                      </li>
+                      <li class="left-menu__list-item"><a href="#" id="morskaya_tematika" class="left-menu__list-item-link">Морская тематика (1 456)</a></li>
+                      <li class="left-menu__list-item"><a href="#" id="nastolnie_igry" class="left-menu__list-item-link">Настольные игры (1 456)</a></li>
+                      <li class="left-menu__list-item"><a href="#" id="posuda_i_aksessuary_dlya_kuhny" class="left-menu__list-item-link">Посуда и аксессуары для кухни (1 456)</a></li>
+                      <li class="left-menu__list-item"><a href="#" id="bijuteriya_i_ukrasheniya" class="left-menu__list-item-link">Бижютерия и украшения (1 456)</a></li>
+                      <li class="left-menu__list-item"><a href="#" id="kuritelnie_prinadlejnosty" class="left-menu__list-item-link">Курительные принадлежности (1 456)</a></li>
+                    </ul>
+                  </div>
+                  <div id="all-goods" class="left-menu__content-tabs main-tabs__content-item is-pict js-content-tabs">
+                    <div class="left-menu__content-tabs-btn-close icon-close js-close-tabs"></div>
+                    <ul class="left-menu__list">
+                      <li class="left-menu__list-item"><a href="#" class="left-menu__list-item-link">
+                          <div style="background-image:url(&quot;../images/left-menu/1.png&quot;);" class="left-menu__list-image"></div>Подарки для женщин (154)</a></li>
+                      <li class="left-menu__list-item"><a href="#" class="left-menu__list-item-link">
+                          <div style="background-image:url(&quot;../images/left-menu/2.png&quot;);" class="left-menu__list-image"></div>ТОП-50 (50)</a></li>
+                      <li class="left-menu__list-item"><a href="#" class="left-menu__list-item-link">
+                          <div style="background-image:url(&quot;../images/left-menu/3.png&quot;);" class="left-menu__list-image"></div>Аксессуары для кухни (490)</a></li>
+                      <li class="left-menu__list-item"><a href="#" class="left-menu__list-item-link">
+                          <div style="background-image:url(&quot;../images/left-menu/4.png&quot;);" class="left-menu__list-image"></div>Турецкая керамика  (214)</a></li>
+                      <li class="left-menu__list-item"><a href="#" class="left-menu__list-item-link">
+                          <div style="background-image:url(&quot;../images/left-menu/1.png&quot;);" class="left-menu__list-image"></div>Светильники (129)</a></li>
+                      <li class="left-menu__list-item"><a href="#" class="left-menu__list-item-link">
+                          <div style="background-image:url(&quot;../images/left-menu/2.png&quot;);" class="left-menu__list-image"></div>Панно (106)</a></li>
+                      <li class="left-menu__list-item is-current"><a href="#" class="left-menu__list-item-link">
+                          <div style="background-image:url(&quot;../images/left-menu/3.png&quot;);" class="left-menu__list-image"></div>Животные (106)</a>
+                        <ul class="left-menu__submenu-list">
+                          <li class="left-menu__submenu-item"><a href="#" class="left-menu__submenu-link">Драконы, змеи, ящерицы </a><span>&nbsp;(17)</span></li>
+                          <li class="left-menu__submenu-item"><a href="#" class="left-menu__submenu-link">Жабы, лягушки</a><span>&nbsp;(18)</span></li>
+                          <li class="left-menu__submenu-item"><a href="#" class="left-menu__submenu-link">Жирафы </a><span>&nbsp;(15)</span></li>
+                          <li class="left-menu__submenu-item"><a href="#" class="left-menu__submenu-link">Зебры </a><span>&nbsp;(9)</span></li>
+                          <li class="left-menu__submenu-item"><a href="#" class="left-menu__submenu-link">Кошки</a><span>&nbsp;(108)</span></li>
+                          <li class="left-menu__submenu-item"><a href="#" class="left-menu__submenu-link">Лошади</a><span>&nbsp;(18)</span></li>
+                          <li class="left-menu__submenu-item"><a href="#" class="left-menu__submenu-link">Обезьяны </a><span>&nbsp;(4)</span></li>
+                          <li class="left-menu__submenu-item"><a href="#" class="left-menu__submenu-link">Орлы </a><span>&nbsp;(5)</span></li>
+                          <li class="left-menu__submenu-item"><a href="#" class="left-menu__submenu-link">Петухи</a><span>&nbsp;(15)</span></li>
+                          <li class="left-menu__submenu-item"><a href="#" class="left-menu__submenu-link is-current">Разные животные, птицы </a><span>&nbsp;(34)</span></li>
+                          <li class="left-menu__submenu-item"><a href="#" class="left-menu__submenu-link">Рыбы </a><span>&nbsp;(16)</span></li>
+                          <li class="left-menu__submenu-item"><a href="#" class="left-menu__submenu-link">Обезьяны </a><span>&nbsp;(4)</span></li>
+                        </ul>
+                      </li>
+                      <li class="left-menu__list-item"><a href="#" class="left-menu__list-item-link">
+                          <div style="background-image:url(&quot;../images/left-menu/4.png&quot;);" class="left-menu__list-image"></div>Изделия из меди (72)</a></li>
+                      <li class="left-menu__list-item"><a href="#" class="left-menu__list-item-link">
+                          <div style="background-image:url(&quot;../images/left-menu/1.png&quot;);" class="left-menu__list-image"></div>Бижутерия, украшения (150)</a></li>
+                      <li class="left-menu__list-item"><a href="#" class="left-menu__list-item-link">
+                          <div style="background-image:url(&quot;../images/left-menu/4.png&quot;);" class="left-menu__list-image"></div>Изделия из меди (72)</a></li>
+                      <li class="left-menu__list-item"><a href="#" class="left-menu__list-item-link">
+                          <div style="background-image:url(&quot;../images/left-menu/1.png&quot;);" class="left-menu__list-image"></div>Бижутерия, украшения (150)</a></li>
+                      <li class="left-menu__list-item"><a href="#" class="left-menu__list-item-link">
+                          <div style="background-image:url(&quot;../images/left-menu/4.png&quot;);" class="left-menu__list-image"></div>Изделия из меди (72)</a></li>
+                      <li class="left-menu__list-item"><a href="#" class="left-menu__list-item-link">
+                          <div style="background-image:url(&quot;../images/left-menu/1.png&quot;);" class="left-menu__list-image"></div>Бижутерия, украшения (150)</a></li>
+                      <li class="left-menu__list-item"><a href="#" class="left-menu__list-item-link">
+                          <div style="background-image:url(&quot;../images/left-menu/4.png&quot;);" class="left-menu__list-image"></div>Изделия из меди (72)</a></li>
+                      <li class="left-menu__list-item"><a href="#" class="left-menu__list-item-link">
+                          <div style="background-image:url(&quot;../images/left-menu/1.png&quot;);" class="left-menu__list-image"></div>Бижутерия, украшения (150)</a></li>
+                      <li class="left-menu__list-item"><a href="#" class="left-menu__list-item-link">
+                          <div style="background-image:url(&quot;../images/left-menu/4.png&quot;);" class="left-menu__list-image"></div>Изделия из меди (72)</a></li>
+                      <li class="left-menu__list-item"><a href="#" class="left-menu__list-item-link">
+                          <div style="background-image:url(&quot;../images/left-menu/1.png&quot;);" class="left-menu__list-image"></div>Бижутерия, украшения (150)</a></li>
+                      <li class="left-menu__list-item"><a href="#" class="left-menu__list-item-link">
+                          <div style="background-image:url(&quot;../images/left-menu/4.png&quot;);" class="left-menu__list-image"></div>Изделия из меди (72)</a></li>
+                      <li class="left-menu__list-item"><a href="#" class="left-menu__list-item-link">
+                          <div style="background-image:url(&quot;../images/left-menu/1.png&quot;);" class="left-menu__list-image"></div>Бижутерия, украшения (150)</a></li>
+                      <li class="left-menu__list-item"><a href="#" class="left-menu__list-item-link">
+                          <div style="background-image:url(&quot;../images/left-menu/4.png&quot;);" class="left-menu__list-image"></div>Изделия из меди (72)</a></li>
+                      <li class="left-menu__list-item"><a href="#" class="left-menu__list-item-link">
+                          <div style="background-image:url(&quot;../images/left-menu/5.png&quot;);" class="left-menu__list-image"></div>Подарки для влюбленных (13)</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="main-content-inner fw">
+            <div class="news-page__wrap">
+              <div class="page-header"></div>
+              <section class="page-header-main">
+                <div class="page-header-main__side">
+                  <h1 class="page-header-main__title">Новости</h1>
+                </div>
+              </section>
+              <div class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                  <li class="breadcrumbs__item"><a href="#">Новости</a></li>
+                  <li class="breadcrumbs__item"><span>Пано из Тайланда</span></li>
+                </ul>
+              </div>
+              <section class="detail-news">
+                <div class="detail-news__side">
+                  <div class="detail-news__data main-date icon-calendar"><span>7 Декабря</span><span>2017 года</span></div>
+                </div>
+                <div class="detail-news__side">
+                  <h2 class="detail-news__title">Панно из Таиланда</h2>
+                  <div class="detail-news__content">
+                    <p>В этом выпуске хотим обратить Ваше внимание на предметы мебели: табуреты В этом выпуске хотим обратить Ваше внимание на предметы мебели: табуреты В этом выпуске хотим обратить Ваше внимание на предметы мебели: табуретыВ этом выпуске хотим обратить Ваше внимание на предметы мебели: табуреты</p>
+                    <div class="detail-news__content-img-block">
+                      <div class="detail-news__content-img"><img src="../images/develop/news-1.png"></div>
+                      <div class="detail-news__content-img"><img src="../images/develop/news-2.png"></div>
+                      <div class="detail-news__content-img"><img src="../images/develop/news-3.png"></div>
+                      <div class="detail-news__content-img"><img src="../images/develop/news-4.png"></div>
+                      <div class="detail-news__content-img"><img src="../images/develop/news-5.png"></div>
+                      <div class="detail-news__content-img"><img src="../images/develop/news-6.png"></div>
+                      <div class="detail-news__content-img"><img src="../images/develop/news-1.png"></div>
+                      <div class="detail-news__content-img"><img src="../images/develop/news-2.png"></div>
+                      <div class="detail-news__content-img"><img src="../images/develop/news-3.png"></div>
+                      <div class="detail-news__content-img"><img src="../images/develop/news-4.png"></div>
+                      <div class="detail-news__content-img"><img src="../images/develop/news-5.png"></div>
+                      <div class="detail-news__content-img"><img src="../images/develop/news-6.png"></div>
+                      <div class="detail-news__content-img"><img src="../images/develop/news-1.png"></div>
+                      <div class="detail-news__content-img"><img src="../images/develop/news-2.png"></div>
+                      <div class="detail-news__content-img"><img src="../images/develop/news-3.png"></div>
+                    </div>
+                    <p>В этом выпуске хотим обратить Ваше внимание на предметы мебели: табуреты В этом выпуске хотим обратить Ваше внимание на предметы мебели: табуреты В этом выпуске хотим обратить Ваше внимание на предметы мебели: табуретыВ этом выпуске хотим обратить Ваше внимание на предметы мебели: табуреты</p>
+                  </div>
+                  <div class="page-btn-block is-controls"><a href="#" class="page-btn-block__btn btn is-orange">Перейти в новинки</a><a href="#" class="page-btn-block__btn btn is-orange">Каталог&nbsp;<span>(98)</span></a></div>
+                </div>
+              </section>
+              <div class="pagination-short"><a href="" class="pagination-short__arrows is-prev"><span>Предыдущая</span></a><a href="" class="pagination-short__arrows is-next"><span>Следующая</span></a></div>
+            </div>
+          </section>
+        </section>
+        <section class="footer fl">
+          <div class="footer-block">
+            <div class="footer-block__column">
+              <div class="footer-contacts"><a href="" class="footer-block__title icon-phone">Контакты</a>
+                <div class="footer-block__content"><a href="tel:+7 (800) 700-52-10" class="footer-contacts__phone">+7 (800) 700-52-10</a><a href="mailto:karavanmarket@mail.ru " class="footer-contacts__email">karavanmarket@mail.ru</a>
+                  <div class="footer-contacts__address">г. Москва: ул. Дмитровское шоссе 157 БЦ "Гефест" стр. 5</div>
+                  <div class="footer-contacts__address">г. Сочи: Адлерский р-он, ул. Суздальская 14</div>
+                  <div class="footer-contacts__social">
+                    <div class="footer-contacts__social-icon icon-fb"></div>
+                  </div><a href="" class="footer-contacts__logo"><img src="../images/logo.png"></a>
+                </div>
+              </div>
+            </div>
+            <div class="footer-block__column">
+              <div class="footer-catalog"><a href="" class="footer-block__title icon-catalog">Каталог</a>
+                <div class="footer-block__content">
+                  <ul class="footer-catalog__menu">
+                    <li class="footer-catalog__menu-item"><a href="" class="footer-catalog__link">Сувениры и подарки</a><span>&nbsp;(1 456)</span></li>
+                    <li class="footer-catalog__menu-item"><a href="" class="footer-catalog__link">Товары для интерьера</a><span>&nbsp;(1 456)</span></li>
+                    <li class="footer-catalog__menu-item"><a href="" class="footer-catalog__link">Светильники для дома</a><span>&nbsp;(1 456)</span></li>
+                    <li class="footer-catalog__menu-item"><a href="" class="footer-catalog__link">Морская тематика</a><span>(1 456)</span></li>
+                    <li class="footer-catalog__menu-item"><a href="" class="footer-catalog__link">Настольные игры</a><span>(1 456)</span></li>
+                    <li class="footer-catalog__menu-item"><a href="" class="footer-catalog__link">Посуда и аксессуары для кухни</a><span>&nbsp;(1 456)</span></li>
+                    <li class="footer-catalog__menu-item"><a href="" class="footer-catalog__link">Бижютерия и украшения</a><span>&nbsp;(1 456)</span></li>
+                    <li class="footer-catalog__menu-item"><a href="" class="footer-catalog__link">Курительные принадлежности</a><span>&nbsp;(1 456)</span></li>
+                  </ul>
+                  <div class="footer-catalog__promo-links"><a href="" class="footer-catalog__promo-link icon-new">Новинки</a><a href="" class="footer-catalog__promo-link icon-promo">Лучшая цена</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="footer-block__column">
+              <div class="footer-shops"><a href="" class="footer-block__title icon-map">Магазины</a>
+                <div class="footer-block__content">
+                  <div class="footer-shops__elem">
+                    <div class="footer-shops__name">Оптово-розничный магазин г.Сочи - Центр</div>
+                    <div class="footer-shops__address">Адрес:  г.Сочи, Центральный р-он, ул.Пригородная 48. Напротив третьих ворот рынка "Авангард"</div>
+                  </div>
+                  <div class="footer-shops__elem">
+                    <div class="footer-shops__name">Розничный магазин, ТК Славутич</div>
+                    <div class="footer-shops__address">Адрес:  г. Сочи, Адлерский р-он, ул.Ленина 10в, павильон №11</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer-block__column">
+              <div class="footer-main-menu"><a href="" class="footer-block__title icon-house">О компании</a>
+                <div class="footer-block__content">
+                  <ul class="footer-main-menu__list">
+                    <li class="footer-main-menu__item"><a href="" class="footer-main-menu__link">О компании</a></li>
+                    <li class="footer-main-menu__item"><a href="" class="footer-main-menu__link">Новости</a></li>
+                    <li class="footer-main-menu__item"><a href="" class="footer-main-menu__link">Условия сотрудничества</a></li>
+                    <li class="footer-main-menu__item"><a href="" class="footer-main-menu__link">Магазины</a></li>
+                    <li class="footer-main-menu__item"><a href="" class="footer-main-menu__link">Отзывы</a></li>
+                    <li class="footer-main-menu__item"><a href="" class="footer-main-menu__link">Контакты</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer-block__column">
+              <div class="footer-account"><a href="" class="footer-block__title icon-man">Личный кабинет</a>
+                <div class="footer-block__content">
+                  <div class="footer-account__basket icon-cart">
+                    <div class="footer-account__basket-goods">5 товаров</div>
+                    <div class="footer-account__basket-summ">на&nbsp;<strong>24900 р</strong></div>
+                  </div>
+                  <div class="footer-account__apps"><a class="footer-account__apps-link"><img src="../images/appstore.png"></a><a class="footer-account__apps-link"><img src="../images/google_play.png"></a></div>
+                  <div class="footer-copyright">
+                    <div class="footer-copyright__image"><img src="../images/footer-budha.png"></div>
+                    <div class="footer-copyright__text">© 2016<br>Оптовый интернет-магазин экзотических сувениров и подарков «Караван»</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <!--include ../includes/_footer.jade
+      -->
+      <div id="global-overlay" class="global-overlay"></div>
+      <!--include ../includes/_modal-popups.jade-->
+    </section>
+  </body>
+</html>

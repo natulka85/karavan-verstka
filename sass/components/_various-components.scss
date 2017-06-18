@@ -298,6 +298,24 @@ $checkSize: 13;
       }
     }
   }
+  &.is-controls{
+    display: flex;
+    justify-content: flex-start;
+    margin: 2.9rem 0;
+    .page-btn-block__btn{
+      width: auto;
+      padding-left: 1.7rem;
+      padding-right: 1.7rem;
+      min-width: 12.2rem;
+      height: 3.5rem;
+      line-height: 3.2rem;
+      font-size: 1.6rem;
+      margin: 0;
+      &:not(:last-child){
+        margin-right: 5px;
+      }
+    }
+  }
 }
 
 @media #{$media-686} {

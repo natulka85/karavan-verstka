@@ -15,6 +15,7 @@
   &__item {
     padding-top: 4rem;
     margin-bottom: 2.5rem;
+
     &:not(:last-child) {
       border-bottom: 1px solid #d2d2d2;
     }
@@ -29,8 +30,10 @@
     font-size: 1.4rem;
     line-height: 1.29;
     color: #272727;
+    padding-right: 4.3rem;
   }
   &__item-content{
+    margin-bottom: -4rem;
     strong{
       font-family:$fopb;
       font-weight: bold;
@@ -38,4 +41,65 @@
       color: #272727;
     }
   }
+  &__plate-list{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2.7rem 0;
+  }
+  &__plate-item{
+    width: 11%;
+    min-width: 12rem;
+    padding: 0 1.5rem;
+    margin-bottom: 4rem;
+  }
+  &__plate-link{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.4rem;
+    line-height: 1.29;
+    text-align: center;
+    color: #007fc7;
+  }
+  &__plate-image-wrapp{
+    height: 11rem;
+    line-height: 11rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    img{
+      max-height:100%;
+      vertical-align: middle;
+    }
+  }
+}
+
+@media #{$media-740} {
+ .actions{
+   &__description{
+     flex-wrap: wrap;
+     margin-bottom: 4.5rem;
+   }
+   &__description-side{
+     flex-basis: 100%;
+     &:nth-child(1){
+       order:2;
+     }
+     &:nth-child(2){
+       margin-bottom: 2.7rem;
+     }
+   }
+   &__main-text{
+     padding-right: 0;
+   }
+   &__item-header{
+     flex-wrap:wrap;
+   }
+   &__name{
+     flex-basis: 100%;
+     margin-bottom: 1rem;
+   }
+   &__plate-list{
+     display: grid;
+     grid-template-columns: repeat(4, 25%);
+   }
+ }
 }

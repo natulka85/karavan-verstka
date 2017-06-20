@@ -131,7 +131,7 @@
     border: 1px solid transparent;
     display: inline-block;
     height: 3.3rem;
-    line-height: 3.3rem;
+    line-height: 3.1rem;
     padding: 0 1rem;
     white-space: nowrap;
     
@@ -142,6 +142,10 @@
     &.is-green{
       color: #008d1e;
       border: solid 1px #008d1e;
+    }
+    &.is-grey{
+      color: #999999;
+      border: solid 1px #999999;
     }
   }
 }

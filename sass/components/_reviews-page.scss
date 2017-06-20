@@ -1,0 +1,62 @@
+.reviews-page{
+  margin-top: -1rem;
+  &__item{
+    display: grid;
+    grid-template-columns: 106px auto;
+    padding: 3rem 0;
+    &:not(:last-child){
+      border-bottom: 1px solid #d2d2d2;
+    }
+  }
+  &__pic{
+    width: 6.7rem;
+    height: 6.7rem;
+    line-height: 6.7rem;
+    border-right:50%;
+    text-align: center;
+    overflow: hidden;
+  }
+  &__content{
+    font-size: 1.4rem;
+    line-height: 1.29;
+    color: #272727;
+    margin-bottom: 3rem;
+    p{
+      max-width:89rem;
+    }
+  }
+  &__name{
+    font-family:$fopb;
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 1.12;
+    color: #000000;
+    margin-bottom: 1.5rem;
+  }
+  &__date{
+    margin-right: 1.1rem;
+    &:before{
+      font-size: 1.6rem;
+      margin-right: 8px;
+      vertical-align: middle;
+      color: #999999;
+    }
+  }
+  &__all{
+    display: inline-block;
+    margin-top: 1.8rem;
+    font-size: 1.4rem;
+    line-height: 1.29;
+    color: #3592cd;
+  }
+  &__footer{
+    display: flex;
+  }
+}
+
+@media #{$media-960} {
+
+}
+@media #{$media-768}{
+
+}

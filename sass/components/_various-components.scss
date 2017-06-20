@@ -50,6 +50,11 @@
     background-color: #ff6600;
     color: #ff6600;
   }
+  &.is-transparent-black{
+    background-color: #ffffff;
+    color: #000000;
+    border-color: #cecece;
+  }
 }
 
 .separate-pattern{

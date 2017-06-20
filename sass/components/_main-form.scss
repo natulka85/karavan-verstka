@@ -51,6 +51,17 @@
 
   &__btn{
     width: 16.6rem;
+    &.is-transparent-black{
+      margin-right: 4px;
+    }
+  }
+  .review-block{
+    display: flex;
+    margin-bottom: 1.2rem;
+    span{
+      width: 8rem;
+
+    }
   }
 }
 

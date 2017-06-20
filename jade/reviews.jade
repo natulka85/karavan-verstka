@@ -1,0 +1,142 @@
+extends layouts/_base-layoute.jade
+
+block PageTitle
+    title Reviews
+
+
+block PageLayout
+    section.base-content.inner-width.fw
+        section.header
+            include blocks/_header-top
+            include blocks/_header-menu
+            include blocks/_basket-small
+        section.main-content.fw
+            section.sidebar-bar
+                include blocks/_main-search
+                include includes/_left-menu.jade
+
+            section.main-content-inner.fw
+                .reviews-page__wrap
+                    .page-header
+                    section.page-header-main
+                        .page-header-main__side
+                            h1.page-header-main__title Отзывы
+                        .page-header-main__side
+                            a.btn.is-orange Оставить отзыв
+
+                    .reviews-page
+                        .reviews-page__item
+                            .reviews-page__side
+                                .reviews-page__pic
+                                    img(src="../images/develop/review_pic.png")
+                            .reviews-page__side
+                                .reviews-page__info
+                                    .reviews-page__name Сергеева Оксана
+                                .reviews-page__content
+                                    p В этом выпуске хотим обратить Ваше внимание на предметы мебели: табуреты В этом выпуске хотим обратить Ваше внимание на предметы мебели: табуретыВ этом выпуске хотим обратить Ваше внимание на предметы мебели: табуретыВ этом выпуске хотим обратить Ваше внимание на предметы мебели: табуреты
+                                .reviews-page__footer
+                                    .reviews-page__date.main-date.icon-calendar
+                                        span 7 декабря 2017
+                                    .review-block
+                                        .review-block__stars.js-votes-stars
+                                            .review-block__star.js-votes-star.on
+                                            .review-block__star.js-votes-star.on
+                                            .review-block__star.js-votes-star.on
+                                            .review-block__star.js-votes-star.on
+                                            .review-block__star.js-votes-star.off
+                        .reviews-page__item
+                            .reviews-page__side
+                                .reviews-page__pic
+                                    img(src="../images/develop/review_pic.png")
+                            .reviews-page__side
+                                .reviews-page__info
+                                    .reviews-page__name Сергеева Оксана
+                                .reviews-page__content
+                                    p В этом выпуске хотим обратить Ваше внимание на предметы мебели: табуреты В этом выпуске хотим обратить Ваше внимание на предметы мебели: табуретыВ этом выпуске хотим обратить Ваше внимание на предметы мебели: табуретыВ этом выпуске хотим обратить Ваше внимание на предметы мебели: табуреты
+                                .reviews-page__footer
+                                    .reviews-page__date.main-date.icon-calendar
+                                        span 7 декабря 2017
+                                    .review-block
+                                        .review-block__stars.js-votes-stars
+                                            .review-block__star.js-votes-star.on
+                                            .review-block__star.js-votes-star.on
+                                            .review-block__star.js-votes-star.on
+                                            .review-block__star.js-votes-star.on
+                                            .review-block__star.js-votes-star.on
+                        .reviews-page__item
+                            .reviews-page__side
+                                .reviews-page__pic
+                                    img(src="../images/develop/review_pic.png")
+                            .reviews-page__side
+                                .reviews-page__info
+                                    .reviews-page__name Сергеева Оксана
+                                .reviews-page__content
+                                    p В этом выпуске хотим обратить Ваше внимание на предметы мебели: табуреты В этом выпуске хотим обратить Ваше внимание на предметы мебели: табуретыВ этом выпуске хотим обратить Ваше внимание на предметы мебели: табуретыВ этом выпуске хотим обратить Ваше внимание на предметы мебели: табуреты
+                                .reviews-page__footer
+                                    .reviews-page__date.main-date.icon-calendar
+                                        span 7 декабря 2017
+                                    .review-block
+                                        .review-block__stars.js-votes-stars
+                                            .review-block__star.js-votes-star.on
+                                            .review-block__star.js-votes-star.on
+                                            .review-block__star.js-votes-star.off
+                                            .review-block__star.js-votes-star.off
+                                            .review-block__star.js-votes-star.off
+                        .reviews-page__item
+                            .reviews-page__side
+                                .reviews-page__pic
+                                    img(src="../images/develop/review_pic.png")
+                            .reviews-page__side
+                                .reviews-page__info
+                                    .reviews-page__name Сергеева Оксана
+                                .reviews-page__content
+                                    p В этом выпуске хотим обратить Ваше внимание на предметы мебели: табуреты В этом выпуске хотим обратить Ваше внимание на предметы мебели: табуретыВ этом выпуске хотим обратить Ваше внимание на предметы мебели: табуретыВ этом выпуске хотим обратить Ваше внимание на предметы мебели: табуреты
+                                .reviews-page__footer
+                                    .reviews-page__date.main-date.icon-calendar
+                                        span 7 декабря 2017
+                                    .review-block
+                                        .review-block__stars.js-votes-stars
+                                            .review-block__star.js-votes-star.on
+                                            .review-block__star.js-votes-star.on
+                                            .review-block__star.js-votes-star.on
+                                            .review-block__star.js-votes-star.on
+                                            .review-block__star.js-votes-star.on
+
+
+
+                    .page-btn-block.is-show-more
+                        a.page-btn-block__btn.btn.is-orange(href="#") Показать еще
+                    include blocks/_pagination-arrows-hide
+                    .main-form
+                        .main-form__title Написать отзыв
+                        form.main-form__form
+                            .main-form__fields
+                                .main-form__text Подробно расскажите о своём опыте использования товара. Обратите внимание на качество, удобство модели, её соответствие заявленным характеристикам.
+                                .review-block
+                                    span Оценка
+                                    .review-block__stars.js-votes-stars.js-is-vote-main
+                                        .review-block__star.js-votes-star.off
+                                        .review-block__star.js-votes-star.off
+                                        .review-block__star.js-votes-star.off
+                                        .review-block__star.js-votes-star.off
+                                        .review-block__star.js-votes-star.off
+                                .main-form__field
+                                    label.main-form__label Имя
+                                    input.main-form__input(type='text' value='')
+                                .main-form__field
+                                    label.main-form__label Email
+                                    input.main-form__input(type='text' value='')
+                                .main-form__field
+                                    label.main-form__label Компания
+                                    input.main-form__input(type='text' value='')
+                                .main-form__field
+                                    label.main-form__label Сообщение
+                                    textarea.main-form__textarea(type='textarea' value='')
+                                .main-form__field
+                                    button.main-form__btn.btn.is-transparent-black(type='submit' value='') Прикрепить фото
+                                    button.main-form__btn.btn.is-orange(type='submit' value='') Отправить
+
+
+
+        section.footer.fl
+            include includes/_footer

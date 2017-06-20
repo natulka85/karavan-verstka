@@ -21,6 +21,7 @@ $(document).ready(function () {
     formMein();
     inputCounter();
     CatalogControlsLink();
+    voteStars();
 });
 
 $(window).on('resize', function () {
@@ -545,4 +546,34 @@ function CatalogControlsLink(){
     $('.js-controls-link > div').on('click', function(){
         $(this).toggleClass('is-active');
     });
+}
+
+function voteStars(){
+    var voteSet =  $('.js-is-vote-main .js-votes-star');
+
+    $('.js-is-vote-main .js-votes-star').on('click', function () {
+
+        var index = voteSet.index(this) + 1;
+
+        $(this).prevAll().addClass('on').removeClass('off');
+        $(this).nextAll().addClass('off').removeClass('on');
+        $(this).addClass('on').removeClass('off');
+        $('input[data-role="js-vote"]').val(index);
+
+        $(this).parent().addClass('is-voted');
+    });
+
+    $('.js-is-vote-main .js-votes-star').on('mouseover', function(){
+        if(!$(this).parent().is('.is-voted')){
+            $(this).nextAll().removeClass('on').addClass('off');
+            $(this).prevAll().removeClass('off').addClass('on');
+            $(this).addClass('on').removeClass('off');
+        }
+    });
+    $('.js-is-vote-main .js-votes-star').on('mouseout', function(){
+        if(!$(this).parent().is('.is-voted')){
+            voteSet.removeClass('on').addClass('off');
+        }
+    });
+
 }

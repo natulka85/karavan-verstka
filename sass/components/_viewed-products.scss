@@ -32,3 +32,43 @@
     }
   }
 }
+
+
+.review-block {
+  font-family: $fopRegular;
+  font-size: 1.4rem;
+
+  &__stars {
+    display: flex;
+    align-items: center;
+  }
+
+  &__star {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+
+    &:before {
+      font-family: "IconsFont", sans-serif;
+      font-size: 1.9rem;
+    }
+
+    &.on {
+      @extend .icon-star-full;
+      &:before {
+        color: #f98e3c;
+      }
+    }
+    &.off {
+      @extend .icon-star;
+
+      &:before {
+        color: #a5a5a4;
+      }
+
+    }
+  }
+}

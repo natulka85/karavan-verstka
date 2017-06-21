@@ -131,7 +131,7 @@ input:-webkit-autofill {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-[class^="icon2-"]:before, [class*=" icon2-"]:before, .icon-template2, .page-slider .slick-arrow.slick-prev:before, .page-slider .slick-arrow.slick-next:before {
+[class^="icon2-"]:before, [class*=" icon2-"]:before, .icon-template2, .page-slider .slick-arrow.slick-prev:before, .page-slider .slick-arrow.slick-next:before, .page-header-cart__breadcrumbs-item:not(:last-child) span:after {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'IconsFont2' !important;
   speak: none;
@@ -6796,6 +6796,112 @@ yx-axis
   .actions__plate-list {
     display: grid;
     grid-template-columns: repeat(4, 25%); } }
+
+.page-header-cart__breadcrumbs {
+  list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.page-header-cart__breadcrumbs-item {
+  font-family: "OpenSansBold", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 0.75;
+  color: #2a2024; }
+  .page-header-cart__breadcrumbs-item.is-active {
+    color: #ff7e09; }
+  .page-header-cart__breadcrumbs-item:not(:last-child) span:after {
+    content: '\e201';
+    font-size: 8px;
+    vertical-align: middle;
+    display: inline-block;
+    margin: 0 2rem; }
+
+.left-pay-info__main-notice {
+  padding: 2.5rem 4rem 1.1rem 1.6rem;
+  background-color: #fdf9ec;
+  border: solid 1px #c4c4c4;
+  font-family: "OpenSansBold", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000000;
+  line-height: 1.1; }
+  .left-pay-info__main-notice strong {
+    margin-bottom: 1.1rem;
+    display: inline-block; }
+  .left-pay-info__main-notice span {
+    display: block;
+    white-space: nowrap; }
+
+.left-pay-info__other-info {
+  border: solid 1px #c4c4c4;
+  border-top: none;
+  padding: 1.2rem 1.6rem; }
+
+.left-pay-info__head {
+  white-space: nowrap; }
+
+.left-pay-info__icon {
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url("../images/our-advantages/sprite-advantages.png");
+  background-repeat: no-repeat;
+  background-position: center -9.7rem;
+  width: 6.7rem; }
+  .left-pay-info__icon.spr-best-price {
+    height: 6.2rem;
+    background-position-y: -25.7rem;
+    background-position-x: -24px;
+    -webkit-background-size: 150% auto;
+    background-size: 150% auto; }
+  .left-pay-info__icon.spr-delivery {
+    height: 4.7rem;
+    background-position-y: -12.7rem;
+    background-position-x: -8px;
+    -webkit-background-size: 115% auto;
+    background-size: 115% auto; }
+
+.left-pay-info__title {
+  font-family: "OpenSansBold", sans-serif;
+  font-weight: 600;
+  color: #ff7e09;
+  font-size: 2.4rem;
+  display: inline-block;
+  vertical-align: middle; }
+
+.left-pay-info__small-title {
+  font-family: "OpenSansBold", sans-serif;
+  font-weight: 600;
+  color: #000;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  white-space: nowrap;
+  margin: 8px 0; }
+
+.left-pay-info__content {
+  font-size: 1.4rem;
+  line-height: 1.29;
+  color: #000000;
+  padding-right: 1.8rem; }
+  .left-pay-info__content p:not(:last-child) {
+    margin-bottom: 2rem; }
+  .left-pay-info__content.is-bold {
+    margin-top: 1rem;
+    padding-right: 0; }
+    .left-pay-info__content.is-bold p {
+      font-weight: 600; }
+
+.left-pay-info__side:nth-child(2) {
+  margin-bottom: 3.5rem; }
+
+.left-pay-info__side:nth-child(3) {
+  margin-bottom: 1.8rem; }
 
 .catalog-sections-wrap {
   width: 100%;

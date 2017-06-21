@@ -1,0 +1,34 @@
+extends layouts/_base-layoute.jade
+
+block PageTitle
+	title Cart-1
+
+
+block PageLayout
+	section.base-content.inner-width.fw
+		section.header
+			include blocks/_header-top
+			include blocks/_header-menu
+			include blocks/_basket-small
+		section.main-content.fw
+			section.sidebar-bar
+				include blocks/_main-search
+				include includes/_left-pay-info.jade
+
+			section.main-content-inner.fw
+				.actions-page__wrap
+					include blocks/_page-header-cart
+
+		section.footer.fl
+			include includes/_footer
+
+
+
+
+
+
+
+
+
+
+

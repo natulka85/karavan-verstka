@@ -1,0 +1,29 @@
+.page-header-cart{
+&__breadcrumbs{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+  &__breadcrumbs-item{
+    font-family: $fopb;
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 0.75;
+    color: #2a2024;
+    &.is-active{
+      color: #ff7e09;
+    }
+    &:not(:last-child){
+      span{
+        &:after{
+          @extend .icon-template2;
+          content: '\e201';
+          font-size: 8px;
+          vertical-align: middle;
+          display: inline-block;
+          margin: 0 2rem;
+        }
+      }
+    }
+  }
+}

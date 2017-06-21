@@ -8,6 +8,11 @@
   .breadcrumbs{
     margin-top: 0;
   }
+  &.is-all{
+    .page-btn-block{
+      display: none;
+    }
+  }
 }
 
 @media #{$media-960}  {
@@ -21,6 +26,15 @@
   .news-page__wrap{
     .page-header{
       margin-bottom: 1.5rem;
+    }
+  }
+}
+@media #{$media-686} {
+  .news-page__wrap{
+    &.is-all{
+      .page-btn-block{
+        display: block;
+      }
     }
   }
 }

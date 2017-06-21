@@ -19,16 +19,31 @@
     &__form{
       position: relative;
     }
+    &__fields{
+      float: left;
+    }
     &__text{
-      position: absolute;
-      top: 0;
-      right:0;
+      float: left;
       font-size: 14px;
       line-height: 1.29;
       color: #000000;
+      width: 31%;
+      margin-left: 6rem;
     }
   }
   .page-btn-block{
+    display: none;
+  }
+}
+
+@media #{$media-1728} {
+  .reviews-page__wrap .main-form__text{
+    margin-left: 3rem;
+    width: 26%;
+  }
+}
+@media #{$media-1166} {
+  .reviews-page__wrap .main-form__text{
     display: none;
   }
 }

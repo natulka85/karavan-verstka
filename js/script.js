@@ -148,6 +148,10 @@ function adaptive() {
     }
 
     if (size > 960) {
+        if($('.left-menu').find('.is-active').length == 0){
+            $('.left-menu .is-default-active').addClass('is-active');
+        }
+
         $('.main-search.is-moved').prependTo($('.sidebar-bar')).removeClass('is-moved');
         ///
         $('.catalog-sections-wrap .plate-block .subscribe-page-block.is-moved').insertAfter($('.plate-block .plate-block__elem').eq(11)).removeClass('is-moved');

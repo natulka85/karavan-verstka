@@ -1,0 +1,133 @@
+.basket-items {
+  padding-right: 1.3rem;
+  &__item {
+    padding: 3.7rem 0;
+    height: 14.6rem;
+    border-bottom: 1px solid #d2d2d2;
+    position: relative;
+    &:first-child{
+      border-top: 1px solid #d2d2d2;
+    }
+  }
+  &__image{
+    width: 15rem;
+    position: absolute;
+    top: 0;
+  }
+  &__main-content{
+    padding-left: 15rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__name{
+    margin-bottom: 1rem;
+    margin-top:7px;
+  }
+  &__name-link{
+    font-family:$fopb;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #000000;
+    text-decoration: none;
+  }
+  &__description{
+    font-size: 14px;
+    line-height: 1.29;
+    color: #000000;
+  }
+  &__description-country{
+    margin-left: 1rem;
+    white-space: nowrap;
+  }
+  &__description-country-flag{
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-left: 5px;
+  }
+  &__textarea{
+    width: 16.3rem;
+    height: 6.8rem;
+    background-color: #ffffff;
+    border: solid 1px #999999;
+    resize: none;
+    padding-top: 1.4rem;
+    padding-left: 1rem;
+    font-size: 1.4rem;
+    color: #000;
+    margin-right: 3.3rem;
+  }
+  ::-webkit-input-placeholder { font-size: 1.4rem;
+    color: #000;}
+  ::-moz-placeholder          { font-size: 1.4rem;
+    color: #000;}/* Firefox 19+ */
+  :-moz-placeholder           { font-size: 1.4rem;
+    color: #000;}/* Firefox 18- */
+  :-ms-input-placeholder      { font-size: 1.4rem;
+    color: #000;}
+
+  &__content{
+    &:nth-child(2){
+      display: flex;
+      align-items: center;
+      padding-right: 7.5rem;
+    }
+  }
+  &__price-cur{
+    font-family: $fopb;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #000000;
+    &:after{
+      content: 'X';
+      margin: 0 1.4rem;
+    }
+  }
+  &__price-all{
+    font-family: $fopb;
+    font-size: 18px;
+    font-weight: 600;
+    color: #64ac39;
+  }
+  &__controls-quantity{
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    display: flex;
+    justify-content:flex-end;
+    span{
+      display: block;
+      font-weight: 600;
+    }
+  }
+  &__controls-quantity-input{
+    width: 5.4rem;
+    height: 3.3rem;
+    line-height: 3.3rem;
+    background-color: #ffffff;
+    border: solid 1px #999999;
+    padding-left: 1.3rem;
+    font-size: 1.4rem;
+    color: #666666;
+  }
+  &__controls-quantity-text{
+    margin-right: 1.5rem;
+    span{
+      white-space: nowrap;
+    }
+  }
+  &__controls-count{
+    max-height:3rem;
+    margin-right: 1.7rem;
+  }
+  &__controls-count-btn{
+    height: 1.3rem;
+    right: 3px;
+
+    &.is-up{
+      top: 3px;
+    }
+    &.is-down{
+      bottom: 0;
+    }
+  }
+}

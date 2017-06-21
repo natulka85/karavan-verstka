@@ -16,8 +16,82 @@ block PageLayout
 				include includes/_left-pay-info.jade
 
 			section.main-content-inner.fw
-				.actions-page__wrap
+				.basket-page__wrap
 					include blocks/_page-header-cart
+					section.page-header-main
+
+					section.basket-page__wrap
+						.basket-items
+							.basket-items__list
+								.basket-items__item
+									.basket-items__image
+										img.basket-items__img(src='../images/develop/pic-1.jpg')
+									.basket-items__main-content
+										.basket-items__content
+											.basket-items__name
+												a.basket-items__name-link(href='') Скульптура резная Слон в попоне 2Hai13
+											.basket-items__description
+												span.basket-items__description-short Дерево суар, резьба, <br>105*30*18см &nbsp;
+												span.basket-items__description-art Артикул: Hai06
+												span.basket-items__description-country Индонезия
+													img.basket-items__description-country-flag(src='../images/flags/fl-indonez.png')
+										.basket-items__content
+											textarea.basket-items__textarea(type='textarea' placeholder='Комментарий')
+											.basket-items__price
+												.basket-items__price-cur 978 руб.
+											.basket-items__controls-count.main-count
+												.basket-items__controls-count-btn.main-count__btn.is-up.js-count(data-count='1').js-count
+												input.basket-items__controls-quantity-input
+												.basket-items__controls-count-btn.main-count__btn.is-down.js-count(data-count='-1').js-count
+											.basket-items__price
+												.basket-items__price-all #[span 978] руб.
+									.basket-items__btn-del
+								.basket-items__item
+									.basket-items__image
+										img.basket-items__img(src='../images/develop/pic-1.jpg')
+									.basket-items__main-content
+										.basket-items__content
+											.basket-items__name
+												a.basket-items__name-link(href='') Скульптура резная Слон в попоне 2Hai13
+											.basket-items__description
+												span.basket-items__description-short Дерево суар, резьба, <br>105*30*18см &nbsp;
+												span.basket-items__description-art Артикул: Hai06
+												span.basket-items__description-country Индонезия
+													img.basket-items__description-country-flag(src='../images/flags/fl-indonez.png')
+										.basket-items__content
+											textarea.basket-items__textarea(type='textarea' placeholder='Комментарий')
+											.basket-items__price
+												.basket-items__price-cur 978 руб.
+											.basket-items__controls-count.main-count
+												.basket-items__controls-count-btn.main-count__btn.is-up.js-count(data-count='1').js-count
+												input.basket-items__controls-quantity-input
+												.basket-items__controls-count-btn.main-count__btn.is-down.js-count(data-count='-1').js-count
+											.basket-items__price
+												.basket-items__price-all #[span 978] руб.
+									.basket-items__btn-del
+								.basket-items__item
+									.basket-items__image
+										img.basket-items__img(src='../images/develop/pic-1.jpg')
+									.basket-items__main-content
+										.basket-items__content
+											.basket-items__name
+												a.basket-items__name-link(href='') Скульптура резная Слон в попоне 2Hai13
+											.basket-items__description
+												span.basket-items__description-short Дерево суар, резьба, <br>105*30*18см &nbsp;
+												span.basket-items__description-art Артикул: Hai06
+												span.basket-items__description-country Индонезия
+													img.basket-items__description-country-flag(src='../images/flags/fl-indonez.png')
+										.basket-items__content
+											textarea.basket-items__textarea(type='textarea' placeholder='Комментарий')
+											.basket-items__price
+												.basket-items__price-cur 978 руб.
+											.basket-items__controls-count.main-count
+												.basket-items__controls-count-btn.main-count__btn.is-up.js-count(data-count='1').js-count
+												input.basket-items__controls-quantity-input
+												.basket-items__controls-count-btn.main-count__btn.is-down.js-count(data-count='-1').js-count
+											.basket-items__price
+												.basket-items__price-all #[span 978] руб.
+									.basket-items__btn-del
 
 		section.footer.fl
 			include includes/_footer

@@ -8,8 +8,10 @@
     font-family: $fopb;
     font-size: 2.4rem;
     font-weight: 600;
-    line-height: 0.75;
+    line-height: 1;
     color: #2a2024;
+    white-space: nowrap;
+    text-align: center;
     &.is-active{
       color: #ff7e09;
     }
@@ -23,6 +25,28 @@
           display: inline-block;
           margin: 0 2rem;
         }
+      }
+    }
+    br{
+      display: none;
+    }
+  }
+}
+
+@media #{$media-1166} {
+  .page-header-cart{
+    &__breadcrumbs-item{
+      font-size: 2.1rem;
+    }
+  }
+}
+
+@media #{$media-686} {
+  .page-header-cart{
+    &__breadcrumbs-item{
+      font-size: 1.8rem;
+      br{
+        display: block;
       }
     }
   }

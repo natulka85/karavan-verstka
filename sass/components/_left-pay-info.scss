@@ -90,3 +90,9 @@
     }
   }
 }
+
+@media #{$media-960} {
+  .left-pay-info{
+    display: none;
+  }
+}

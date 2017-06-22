@@ -55,6 +55,17 @@
     color: #000000;
     border-color: #cecece;
   }
+  &.is-pink{
+    background-color: #e9a980;
+    color: #ffffff;
+    &:hover{
+      background-color: #ff7e09;
+    }
+  }
+  &.is-transparent-blue{
+    border-color: #007fc7;
+    color: #007fc7;
+  }
 }
 
 .separate-pattern{

@@ -1,0 +1,25 @@
+.basket-total{
+  font-family:$fopb;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.94;
+  margin: 3.6rem 0;
+  &__name{
+    text-align: right;
+    color: #000000;
+  }
+
+  &__value{
+    color: #64ac39;
+    width: 11rem;
+    padding-left: 1.2rem;
+    
+    &.is-persent{
+      color: #000000;
+    }
+  }
+  &__row{
+    display: flex;
+    justify-content: flex-end;
+  }
+}

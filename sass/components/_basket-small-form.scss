@@ -1,0 +1,65 @@
+.basket-small-form{
+  &__form{
+
+  }
+  &__field{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  &__input{
+    width: 21.6rem;
+    height: 4.4rem;
+    line-height: 4.4rem;
+    border-radius: 2px;
+    background-color: #ffffff;
+    border: solid 1px #999999;
+    padding-left: 1.7rem;
+    margin-right: 1rem;
+    font-size: 1.8rem;
+  }
+
+  &__label{
+    font-size: 18.7px;
+    color: #999999;
+    position: absolute;
+    top: 0;
+    height: 4.4rem;
+    line-height: 4.4rem;
+    padding-left: 1.7rem;
+
+    &:before{
+      font-size: 1.6rem;
+      margin-right: 1.2rem;
+      display: inline-block;
+    }
+    &.icon-email:before{
+      font-size: 1.3rem;
+    }
+  }
+  &__name{
+    white-space: nowrap;
+    font-size: 1.8rem;
+    margin-right: 1.5rem;
+  }
+  &__label-absolute{
+    position: relative;
+  }
+}
+
+@media #{$media-686} {
+  .basket-small-form{
+    &__field{
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+    &__name{
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 1rem;
+    }
+    &__input{
+      width: 24.6rem;
+    }
+  }
+}

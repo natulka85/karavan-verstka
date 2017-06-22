@@ -1,6 +1,62 @@
 .footer{
   padding: 2rem;
   background-color: #fafafa;
+  &__add-elements{
+    position: relative;
+  }
+  &__notice{
+    width: 51rem;
+    height: 23.8rem;
+    border-radius: 10px;
+    background-color: #fdf9ec;
+    box-shadow: 1px -0.3px 7px 0 rgba(0, 0, 0, 0.11);
+    position: absolute;
+    top: -28.2rem;
+    left: -20rem;
+    padding: 2.5rem;
+    line-height: 1.29;
+
+    &:after{
+      content: '';
+      width: 0;
+      height: 0;
+      border-left: 7px solid transparent;
+      border-right: 7px solid transparent;
+      border-top: 18px solid #fdf9ec;
+      position: absolute;
+      bottom: -18px;
+      left: 50%;
+      margin-left: -7px;
+    }
+    &:before{
+      content: '';
+      width: 0;
+      height: 0;
+      border-left: 7px solid transparent;
+      border-right: 7px solid transparent;
+      border-top: 14px solid #fdf9ec;
+      position: absolute;
+      bottom: -11px;
+      left: 50%;
+      margin-left: -7px;
+      background: black;
+      opacity: 0.1;
+      filter: blur(5px);
+    }
+
+    p{
+      margin-bottom: 1.5rem;
+      font-size: 1.4rem;
+    }
+  }
+  &__notice-title{
+    color: #000000;
+    font-family: $fopb;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+  }
+
 }
 .footer-block{
   display: flex;
@@ -209,6 +265,9 @@
   }
   .footer-shops{
     max-width: 19.7rem;
+  }
+  .footer__notice{
+    display: none;
   }
 }
 

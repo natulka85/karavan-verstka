@@ -12,6 +12,10 @@
     color: #2a2024;
     white-space: nowrap;
     text-align: center;
+    &:not(:last-child){
+      position: relative;
+      padding-right: 6.5rem;
+    }
     &.is-active{
       color: #ff7e09;
     }
@@ -24,6 +28,10 @@
           vertical-align: middle;
           display: inline-block;
           margin: 0 2rem;
+          position: absolute;
+          top: 50%;
+          margin-top: -4px;
+          right: 0;
         }
       }
     }
@@ -41,10 +49,13 @@
   }
 }
 
-@media #{$media-686} {
+@media #{$media-740} {
   .page-header-cart{
     &__breadcrumbs-item{
       font-size: 1.8rem;
+      &:not(:last-child){
+        padding-right: 5.5rem;
+      }
       br{
         display: block;
       }

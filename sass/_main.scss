@@ -132,6 +132,57 @@ input[type="text"], input[type="password"], textarea {
     float: none;
     width: 100%;
   }
+
+  &__other-page-link{
+    font-family: $fopb;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 1.8rem;
+    display: block;
+    @media #{$media-960} {
+      float: left;
+      margin-right: 18px;
+      margin-bottom: 0;
+      height: 34px;
+      line-height: 34px;
+    }
+    @media #{$media-686} {
+      line-height: 1.1;
+      width: 6.8rem;
+    }
+  }
+  &__delivery-info{
+    float: right;
+    width: 18.1rem;
+    position: relative;
+    padding-left: 3.6rem !important;
+    margin-left: 1.5rem;
+    display: none!important;
+    white-space: nowrap;
+
+    &:before{
+      content: 'i';
+      border-radius: 50%;
+      border: 1px solid #007fc7;
+      width: 1.7rem;
+      height: 1.7rem;
+      line-height: 1.7rem;
+      text-align: center;
+      display: block;
+      position: absolute;
+      left: 1.5rem;
+      top: 8px;
+    }
+    span{
+      line-height:1;
+      border-bottom: 1px solid #007fc7;
+    }
+    @media #{$media-960} {
+      display: block!important;
+    }
+  }
+
 }
 
 .inner-width {

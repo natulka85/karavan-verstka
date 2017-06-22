@@ -59,6 +59,8 @@
 @import "components/page-header-cart";
 @import "components/left-pay-info";
 @import "components/basket-items";
+@import "components/basket-total";
+@import "components/basket-small-form";
 
 
 //Wrapps
@@ -74,6 +76,7 @@
 @import "wrapps/main-shop-info__wrap";
 @import "wrapps/delivery-tab__wrap";
 @import "wrapps/reviews-page__wrap";
+@import "wrapps/basket-page__wrap";
 
 // Print
 @import "print";

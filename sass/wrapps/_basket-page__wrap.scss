@@ -1,0 +1,86 @@
+.basket-page__wrap{
+  .basket-page{
+    &__footer{
+      padding-right:8.5rem;
+    }
+    &__control-section{
+     &:not(:last-child){
+       border-bottom: 1px solid #d2d2d2;
+     }
+      &.is-buttons{
+        margin-top: 3.6rem;
+        padding-bottom: 3.8rem;
+        .basket-page__btn.is-green{
+          width: 20.4rem;
+          margin-left: 22rem;
+        }
+      }
+      &.is-contacts{
+        padding: 3rem 0;
+      }
+      &.is-send-mail{
+        padding: 3rem 0;
+      }
+    }
+    &__main-btn{
+      display: flex;
+      justify-content: flex-end;
+    }
+    &__btn{
+      text-decoration: none;
+      height: 4.4rem;
+      line-height: 4.4rem;
+      font-size: 1.8rem;
+      border:none;
+      width: 20.4rem;
+    }
+    &__contacts{
+      font-size: 1.8rem;
+      color: #000000;
+      text-align: right;
+      margin-bottom: 4rem;
+      margin-top: 8px;
+      span{
+        font-family: $fopb;
+        font-size: 2.4rem;
+        font-weight: 600;
+        color: #64ac39;
+      }
+      br{
+        display: none;
+      }
+    }
+  }
+}
+
+@media #{$media-1166} {
+  .basket-page__wrap {
+    .basket-page__footer {
+      padding-right: 0;
+    }
+  }
+}
+@media #{$media-768} {
+  .basket-page__wrap {
+    .basket-page__main-btn {
+      justify-content: space-between;
+    }
+    .basket-page__control-section.is-buttons .basket-page__btn.is-green{
+      margin-left: 0;
+    }
+  }
+}
+
+@media #{$media-686} {
+  .basket-page__wrap {
+    .basket-page{
+      &__contacts{
+        line-height: 1.3;
+        text-align: center;
+        br{
+          display: block;
+        }
+      }
+    }
+  }
+}

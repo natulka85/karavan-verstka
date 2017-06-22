@@ -6926,6 +6926,8 @@ yx-axis
     padding-right: 6.5rem; }
   .page-header-cart__breadcrumbs-item.is-active {
     color: #ff7e09; }
+  .page-header-cart__breadcrumbs-item.is-done {
+    color: #999999; }
   .page-header-cart__breadcrumbs-item:not(:last-child) span:after {
     content: '\e201';
     font-size: 8px;
@@ -7814,6 +7816,17 @@ yx-axis
     width: 20.4rem;
     margin-left: 22rem; }
 
+.basket-page__wrap .basket-page__control-section.is-buttons.is-middle {
+  text-align: center; }
+  .basket-page__wrap .basket-page__control-section.is-buttons.is-middle .basket-page__main-btn {
+    margin-top: 3.6rem;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .basket-page__wrap .basket-page__control-section.is-buttons.is-middle .basket-page__btn.is-green {
+    margin-left: 0; }
+
 .basket-page__wrap .basket-page__control-section.is-contacts {
   padding: 3rem 0; }
 
@@ -7851,6 +7864,11 @@ yx-axis
     color: #64ac39; }
   .basket-page__wrap .basket-page__contacts br {
     display: none; }
+
+.basket-page__wrap .basket-page__text-input {
+  font-size: 1.8rem;
+  line-height: 1.0;
+  color: #000000; }
 
 @media screen and (max-width: 1166px) {
   .basket-page__wrap .basket-page__footer {

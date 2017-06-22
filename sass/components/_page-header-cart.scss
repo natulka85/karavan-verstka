@@ -19,6 +19,9 @@
     &.is-active{
       color: #ff7e09;
     }
+    &.is-done{
+      color: #999999;
+    }
     &:not(:last-child){
       span{
         &:after{

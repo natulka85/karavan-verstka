@@ -1,0 +1,78 @@
+extends layouts/_base-layoute.jade
+
+block PageTitle
+	title Cart-1
+
+
+block PageLayout
+	section.base-content.inner-width.fw
+		section.header
+			include blocks/_header-top
+			include blocks/_header-menu
+			include blocks/_basket-small
+		section.main-content.fw
+			section.sidebar-bar
+				a.sidebar-bar__other-page-link(href='') Перейти в каталог
+				include blocks/_main-search
+					.sidebar-bar__delivery-info.btn.is-transparent-blue #[span Оплата и доставка]
+				include includes/_left-pay-info.jade
+
+			section.main-content-inner.fw
+				.basket-page__wrap
+					include blocks/_page-header-cart-2
+					section.page-header-main
+
+					.basket-page
+
+
+						.basket-page__footer
+
+							.basket-page__control-section.is-buttons.is-middle
+								.basket-page__text-input
+									input.main-checkbox(type="checkbox")
+									label.main-checkbox-label Я даю свое согласие на обработку персональных данных.
+								.basket-page__main-btn
+									a.basket-page__btn.btn.is-green(href='') Оформить заказ
+							.basket-page__control-section.is-contacts
+								.basket-page__contacts Заказ можно оформить и по телефону! <br>Звоните: #[span 8 (800) 700-52-10]
+								.basket-page__small-form
+									form.basket-small-form__form.js-form
+										.basket-small-form__fields
+											.basket-small-form__field
+												span.basket-small-form__name Вам перезвонить?
+												.basket-small-form__label-absolute
+													label.basket-small-form__label.icon-phone +7 (926) 123-45-67
+													input.basket-small-form__input(type='text' value='')
+												button.basket-page__btn.btn.is-pink(type='submit' value='') Перезвонить мне
+							.basket-page__control-section.is-send-mail
+								.basket-small-form
+									form.basket-small-form__form.js-form
+										.basket-small-form__fields
+											.basket-small-form__field
+												span.basket-small-form__name Выслать мою корзину на e-mail
+												.basket-small-form__label-absolute
+													label.basket-small-form__label.icon-email Ваш e-mail
+													input.basket-small-form__input(type='text' value='')
+												button.basket-page__btn.btn.is-pink(type='submit' value='') Выслать
+
+		section.footer.fl
+			.footer__add-elements
+				.footer__notice
+					.footer__notice-title Уважаемый покупатель!
+					p Оптовые цены действуют при покупке на сумму от 15000 рублей.
+						|При сумме заказа по оптовым ценам менее 15000 рублей, итоговаястоимость заказа увеличивается на 50%
+						|(розничное удорожание).
+					p Наша цена - самая выгодная для вас!
+
+			include includes/_footer
+
+
+
+
+
+
+
+
+
+
+

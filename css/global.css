@@ -7283,6 +7283,37 @@ yx-axis
   .basket-items__main-content {
     padding-left: 7.1rem; } }
 
+.basket-items.is-table {
+  margin-top: 5.6rem; }
+  .basket-items.is-table .basket-items__image {
+    position: static;
+    width: 6.7rem; }
+  .basket-items.is-table .basket-items__title {
+    font-family: "OpenSansBold", sans-serif;
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 0.75;
+    color: #000000;
+    margin-bottom: 1.6rem; }
+  .basket-items.is-table .basket-items__name-link {
+    font-size: 1.4rem;
+    font-weight: normal;
+    font-family: "OpenSansRegular", sans-serif; }
+  .basket-items.is-table .basket-items__table-img {
+    width: 8.7rem; }
+  .basket-items.is-table .basket-items__table-name {
+    width: 40%; }
+  .basket-items.is-table table {
+    width: 100%; }
+  .basket-items.is-table th {
+    font-family: "OpenSansBold", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000000;
+    height: 4rem; }
+  .basket-items.is-table tr {
+    border-bottom: 1px solid #d2d2d2; }
+
 .basket-total {
   font-family: "OpenSansBold", sans-serif;
   font-size: 1.8rem;
@@ -7616,6 +7647,43 @@ yx-axis
     white-space: normal; }
     .basket-tabs__tabs-item-link br {
       display: block; } }
+
+.order-confirm {
+  font-size: 1.4rem;
+  line-height: 1.71;
+  color: #000000;
+  padding-top: 1.5rem; }
+  .order-confirm__title {
+    font-family: "OpenSansBold", sans-serif;
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 0.75;
+    color: #64ac39;
+    margin-bottom: 2.3rem; }
+  .order-confirm strong {
+    font-family: "OpenSansBold", sans-serif;
+    font-weight: 600; }
+  .order-confirm__firm-contacts {
+    margin-top: 2.3rem;
+    margin-bottom: 3.2rem; }
+  .order-confirm__contacts {
+    position: relative;
+    padding-left: 2.4rem; }
+    .order-confirm__contacts:before {
+      position: absolute;
+      left: 0;
+      top: 50%; }
+    .order-confirm__contacts.icon-phone:before {
+      font-size: 1.6rem;
+      margin-top: -8px; }
+    .order-confirm__contacts.icon-email:before {
+      font-size: 1.4rem;
+      margin-top: -7px; }
+    .order-confirm__contacts.icon2-skype:before {
+      font-size: 3rem;
+      color: #00c6ff;
+      left: -8px;
+      margin-top: -1.5rem; }
 
 .catalog-sections-wrap {
   width: 100%;

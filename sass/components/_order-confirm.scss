@@ -1,0 +1,47 @@
+.order-confirm{
+  font-size: 1.4rem;
+  line-height: 1.71;
+  color: #000000;
+  padding-top: 1.5rem;
+&__title{
+  font-family: $fopb;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 0.75;
+  color: #64ac39;
+  margin-bottom: 2.3rem;
+}
+  strong{
+    font-family: $fopb;
+    font-weight: 600;
+  }
+  &__firm-contacts{
+    margin-top: 2.3rem;
+    margin-bottom: 3.2rem;
+  }
+  &__contacts{
+    position: relative;
+    padding-left: 2.4rem;
+    &:before{
+      position: absolute;
+      left: 0;
+      top: 50%;
+    }
+    &.icon-phone:before{
+      font-size: 1.6rem;
+      margin-top: -8px;
+    }
+    &.icon-email:before{
+      font-size: 1.4rem;
+      margin-top: -7px;
+    }
+    &.icon2-skype:before{
+      font-size: 3rem;
+      color: #00c6ff;
+      left: -8px;
+      margin-top: -1.5rem;
+    }
+
+
+  }
+}

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Cart-1</title>
+    <title>Cart-2</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="SKYPE_TOOLBA" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
@@ -124,16 +124,106 @@
                   <li class="page-header-cart__breadcrumbs-item"><span>Подтверждение <br>заказа</span></li>
                 </ul>
               </div>
-              <section class="page-header-main"></section>
               <div class="basket-page">
-                <div class="basket-page__footer">
-                  <div class="basket-page__control-section is-buttons is-middle">
-                    <div class="basket-page__text-input">
-                      <input type="checkbox" class="main-checkbox">
-                      <label class="main-checkbox-label">Я даю свое согласие на обработку персональных данных.</label>
-                    </div>
-                    <div class="basket-page__main-btn"><a href="" class="basket-page__btn btn is-green">Оформить заказ</a></div>
+                <div class="basket-tabs__tabs main-tabs">
+                  <div class="basket-tabs__tabs-items main-tabs__items">
+                    <div class="basket-tabs__tabs-item main-tabs__item is-default-active js-main-tabs"><a href="#registr-order" class="basket-tabs__tabs-item-link">Оформление заказа</a></div>
+                    <div class="basket-tabs__tabs-item main-tabs__item js-main-tabs"><a href="#form-clients" class="basket-tabs__tabs-item-link">Для клиентов КараванМаркет.ру:</a></div>
                   </div>
+                  <div class="basket-tabs__content main-tabs__content">
+                    <div id="registr-order" class="basket-tabs__content-tabs main-tabs__content-item is-default-active js-content-tabs">
+                      <div class="basket-page__big-form">
+                        <form class="basket-big-form__form js-form">
+                          <div class="basket-big-form__fields">
+                            <div class="basket-big-form__field"><span class="basket-big-form__name">Имя *</span>
+                              <div class="basket-big-form__label-absolute">
+                                <label class="basket-big-form__label icon-man"></label>
+                                <input type="text" value="" class="basket-big-form__input">
+                              </div>
+                            </div>
+                            <div class="basket-big-form__field"><span class="basket-big-form__name">Фамилия *</span>
+                              <div class="basket-big-form__label-absolute">
+                                <label class="basket-big-form__label icon-man"></label>
+                                <input type="text" value="" class="basket-big-form__input">
+                              </div>
+                            </div>
+                            <div class="basket-big-form__field"><span class="basket-big-form__name">Телефон *</span>
+                              <div class="basket-big-form__label-absolute">
+                                <label class="basket-big-form__label icon-phone">+7 (926) 123-45-67</label>
+                                <input type="text" value="" class="basket-big-form__input">
+                              </div>
+                            </div>
+                            <div class="basket-big-form__field"><span class="basket-big-form__name">E-мейл *</span>
+                              <div class="basket-big-form__label-absolute">
+                                <label class="basket-big-form__label icon-email">Ваш е-mail</label>
+                                <input type="text" value="" class="basket-big-form__input">
+                              </div>
+                            </div>
+                            <div class="basket-big-form__field"><span class="basket-big-form__name">Место *</span>
+                              <div class="basket-big-form__label-absolute">
+                                <label class="basket-big-form__label icon-email">Москва</label>
+                                <input type="text" value="" class="basket-big-form__input">
+                                <div class="basket-big-form__field is-address"><span class="basket-big-form__name">Адрес доставки</span>
+                                  <div class="basket-big-form__label-absolute">
+                                    <label class="basket-big-form__label icon-email"></label>
+                                    <input type="text" value="" class="basket-big-form__input">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="basket-big-form__field"><span class="basket-big-form__name">Доставка</span>
+                              <div class="basket-big-form__label-absolute">
+                                <label class="basket-big-form__label icon-email">Ваш е-mail</label>
+                                <input type="text" value="" class="basket-big-form__input">
+                              </div>
+                            </div>
+                            <div class="basket-big-form__field"><span class="basket-big-form__name">Оплата</span>
+                              <div class="basket-big-form__label-absolute">
+                                <label class="basket-big-form__label icon-email">Выберите способ оплаты</label>
+                                <input type="text" value="" class="basket-big-form__input">
+                              </div>
+                            </div>
+                            <div class="basket-big-form__field"><span class="basket-big-form__name">Комментарий к заказу</span>
+                              <div class="basket-big-form__label-absolute">
+                                <label class="basket-big-form__label"></label>
+                                <input type="text" value="" class="basket-big-form__input">
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                        <div class="basket-page__control-section is-buttons is-middle">
+                          <div class="basket-page__text-input">
+                            <input type="checkbox" class="main-checkbox">
+                            <label class="main-checkbox-label">Я даю свое согласие на обработку персональных данных.</label>
+                          </div>
+                          <div class="basket-page__main-btn"><a href="" class="basket-page__btn btn is-green">Оформить заказ</a></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="form-clients" class="basket__content-tabs main-tabs__content-item is-default-active js-content-tabs">
+                      <div class="basket-page__big-form">
+                        <form class="basket-big-form__form is-background js-form">
+                          <div class="basket-big-form__fields">
+                            <div class="basket-big-form__field"><span class="basket-big-form__name">E-мейл</span>
+                              <div class="basket-big-form__label-absolute">
+                                <label class="basket-big-form__label icon-email">Ваш е-mail</label>
+                                <input type="text" value="" class="basket-big-form__input">
+                              </div>
+                            </div>
+                            <div class="basket-big-form__field"><span class="basket-big-form__name">Пароль</span>
+                              <div class="basket-big-form__label-absolute">
+                                <label class="basket-big-form__label"></label>
+                                <input type="text" value="" class="basket-big-form__input"><a href="" class="basket-big-form__notice">Забыли пароль?</a>
+                              </div>
+                            </div>
+                            <button type="submit" value="" class="basket-page__btn btn is-orange">Продолжить оформление заказа</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="basket-page__footer">
                   <div class="basket-page__control-section is-contacts">
                     <div class="basket-page__contacts">Заказ можно оформить и по телефону! <br>Звоните: <span>8 (800) 700-52-10</span></div>
                     <div class="basket-page__small-form">

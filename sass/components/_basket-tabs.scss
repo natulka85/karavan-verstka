@@ -1,0 +1,28 @@
+.basket-tabs{
+  &__tabs{
+    margin-top: 6rem;
+  }
+  &__content{
+    display: flex;
+  }
+  &__tabs-item-link{
+    font-family: $fopb;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000000;
+    text-decoration: none;
+  }
+  &__tabs-items{
+    margin-bottom: 2.7rem;
+    display: flex;
+    justify-content: flex-start;
+  }
+  &__tabs-item{
+    flex-basis: 50%;
+    &:nth-child(2){
+      position: relative;
+      left: 63px;
+      z-index:2;
+    }
+  }
+}

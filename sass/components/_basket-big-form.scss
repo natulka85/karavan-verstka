@@ -1,0 +1,116 @@
+.basket-big-form {
+
+  &__form {
+    &.is-background {
+      width: 513px;
+      height: 296px;
+      background-color: #fdf9ec;
+      padding-top: 6.4rem;
+      position: relative;
+      top: -62px;
+      left: 63px;
+      z-index: 1;
+
+      .basket-page__btn.is-orange {
+        width: 37rem;
+      }
+      .basket-big-form__name {
+        width: 9.3rem;
+      }
+      .basket-big-form__field {
+        justify-content: flex-start;
+      }
+      .basket-big-form__fields {
+        width: 37rem;
+        margin: auto;
+      }
+    }
+
+    & + .basket-page__control-section.is-buttons.is-middle {
+      width: 200%;
+    }
+  }
+
+  &__field {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 1.9rem;
+
+    &.is-address{
+      position: absolute;
+      left: calc(100% + 66px);
+      top: 0;
+    }
+  }
+  &__input {
+    width: 27.8rem;
+    height: 4.4rem;
+    line-height: 4.4rem;
+    border-radius: 2px;
+    background-color: #ffffff;
+    border: solid 1px #999999;
+    padding-left: 1.7rem;
+    margin-right: 1rem;
+    font-size: 1.8rem;
+  }
+
+  &__label {
+    font-size: 18.7px;
+    color: #999999;
+    position: absolute;
+    top: 0;
+    height: 4.4rem;
+    line-height: 4.4rem;
+    padding-left: 1.7rem;
+
+    &:before {
+      font-size: 1.6rem;
+      margin-right: 1.2rem;
+      display: inline-block;
+    }
+    &.icon-email:before {
+      font-size: 1.3rem;
+    }
+  }
+  &__name {
+    white-space: nowrap;
+    font-size: 1.8rem;
+    margin-right: 1.5rem;
+    width: 19rem;
+  }
+  &__label-absolute {
+    position: relative;
+  }
+
+  &__notice {
+    font-size: 14px;
+    line-height: 1.29;
+    color: #000000;
+    margin-top: 1rem;
+    display: block;
+    white-space: nowrap;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+}
+
+@media #{$media-686} {
+  .basket-small-form {
+    &__field {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+    &__name {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 1rem;
+    }
+    &__input {
+      width: 24.6rem;
+    }
+  }
+}

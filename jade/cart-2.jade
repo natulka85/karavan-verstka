@@ -1,7 +1,7 @@
 extends layouts/_base-layoute.jade
 
 block PageTitle
-	title Cart-1
+	title Cart-2
 
 
 block PageLayout
@@ -20,19 +20,92 @@ block PageLayout
 			section.main-content-inner.fw
 				.basket-page__wrap
 					include blocks/_page-header-cart-2
-					section.page-header-main
 
 					.basket-page
+						.basket-tabs__tabs.main-tabs
+							.basket-tabs__tabs-items.main-tabs__items
+								.basket-tabs__tabs-item.main-tabs__item.is-default-active.js-main-tabs
+									a.basket-tabs__tabs-item-link(href='#registr-order') Оформление заказа
+								.basket-tabs__tabs-item.main-tabs__item.js-main-tabs
+									a.basket-tabs__tabs-item-link(href='#form-clients') Для клиентов КараванМаркет.ру:
+							.basket-tabs__content.main-tabs__content
+								.basket-tabs__content-tabs.main-tabs__content-item.is-default-active.js-content-tabs(id='registr-order')
+
+									.basket-page__big-form
+										form.basket-big-form__form.js-form
+											.basket-big-form__fields
+												.basket-big-form__field
+													span.basket-big-form__name Имя *
+													.basket-big-form__label-absolute
+														label.basket-big-form__label.icon-man
+														input.basket-big-form__input(type='text' value='')
+												.basket-big-form__field
+													span.basket-big-form__name Фамилия *
+													.basket-big-form__label-absolute
+														label.basket-big-form__label.icon-man
+														input.basket-big-form__input(type='text' value='')
+												.basket-big-form__field
+													span.basket-big-form__name Телефон *
+													.basket-big-form__label-absolute
+														label.basket-big-form__label.icon-phone +7 (926) 123-45-67
+														input.basket-big-form__input(type='text' value='')
+												.basket-big-form__field
+													span.basket-big-form__name E-мейл *
+													.basket-big-form__label-absolute
+														label.basket-big-form__label.icon-email Ваш е-mail
+														input.basket-big-form__input(type='text' value='')
+												.basket-big-form__field
+													span.basket-big-form__name Место *
+													.basket-big-form__label-absolute
+														label.basket-big-form__label.icon-email Москва
+														input.basket-big-form__input(type='text' value='')
+														.basket-big-form__field.is-address
+															span.basket-big-form__name Адрес доставки
+															.basket-big-form__label-absolute
+																label.basket-big-form__label.icon-email
+																input.basket-big-form__input(type='text' value='')
+												.basket-big-form__field
+													span.basket-big-form__name Доставка
+													.basket-big-form__label-absolute
+														label.basket-big-form__label.icon-email Ваш е-mail
+														input.basket-big-form__input(type='text' value='')
+												.basket-big-form__field
+													span.basket-big-form__name Оплата
+													.basket-big-form__label-absolute
+														label.basket-big-form__label.icon-email Выберите способ оплаты
+														input.basket-big-form__input(type='text' value='')
+												.basket-big-form__field
+													span.basket-big-form__name Комментарий к заказу
+													.basket-big-form__label-absolute
+														label.basket-big-form__label
+														input.basket-big-form__input(type='text' value='')
+										.basket-page__control-section.is-buttons.is-middle
+											.basket-page__text-input
+												input.main-checkbox(type="checkbox")
+												label.main-checkbox-label Я даю свое согласие на обработку персональных данных.
+											.basket-page__main-btn
+												a.basket-page__btn.btn.is-green(href='') Оформить заказ
+
+								.basket__content-tabs.main-tabs__content-item.is-default-active.js-content-tabs(id='form-clients')
+
+									.basket-page__big-form
+										form.basket-big-form__form.is-background.js-form
+											.basket-big-form__fields
+												.basket-big-form__field
+													span.basket-big-form__name E-мейл
+													.basket-big-form__label-absolute
+														label.basket-big-form__label.icon-email Ваш е-mail
+														input.basket-big-form__input(type='text' value='')
+												.basket-big-form__field
+													span.basket-big-form__name Пароль
+													.basket-big-form__label-absolute
+														label.basket-big-form__label
+														input.basket-big-form__input(type='text' value='')
+														a.basket-big-form__notice(href='') Забыли пароль?
+												button.basket-page__btn.btn.is-orange(type='submit' value='') Продолжить оформление заказа
 
 
 						.basket-page__footer
-
-							.basket-page__control-section.is-buttons.is-middle
-								.basket-page__text-input
-									input.main-checkbox(type="checkbox")
-									label.main-checkbox-label Я даю свое согласие на обработку персональных данных.
-								.basket-page__main-btn
-									a.basket-page__btn.btn.is-green(href='') Оформить заказ
 							.basket-page__control-section.is-contacts
 								.basket-page__contacts Заказ можно оформить и по телефону! <br>Звоните: #[span 8 (800) 700-52-10]
 								.basket-page__small-form

@@ -25,9 +25,9 @@ block PageLayout
 						.basket-tabs__tabs.main-tabs
 							.basket-tabs__tabs-items.main-tabs__items
 								.basket-tabs__tabs-item.main-tabs__item.is-default-active.js-main-tabs
-									a.basket-tabs__tabs-item-link(href='#registr-order') Оформление заказа
+									a.basket-tabs__tabs-item-link(href='#registr-order') Оформление <br>заказа
 								.basket-tabs__tabs-item.main-tabs__item.js-main-tabs
-									a.basket-tabs__tabs-item-link(href='#form-clients') Для клиентов КараванМаркет.ру:
+									a.basket-tabs__tabs-item-link(href='#form-clients') Для клиентов <br>КараванМаркет.ру:
 							.basket-tabs__content.main-tabs__content
 								.basket-tabs__content-tabs.main-tabs__content-item.is-default-active.js-content-tabs(id='registr-order')
 
@@ -54,16 +54,17 @@ block PageLayout
 													.basket-big-form__label-absolute
 														label.basket-big-form__label.icon-email Ваш е-mail
 														input.basket-big-form__input(type='text' value='')
-												.basket-big-form__field
-													span.basket-big-form__name Место *
-													.basket-big-form__label-absolute
-														label.basket-big-form__label.icon-email Москва
-														input.basket-big-form__input(type='text' value='')
-														.basket-big-form__field.is-address
-															span.basket-big-form__name Адрес доставки
-															.basket-big-form__label-absolute
-																label.basket-big-form__label.icon-email
-																input.basket-big-form__input(type='text' value='')
+												.basket-big-form__relative-block
+													.basket-big-form__field
+														span.basket-big-form__name Место *
+														.basket-big-form__label-absolute
+															label.basket-big-form__label.icon-email Москва
+															input.basket-big-form__input(type='text' value='')
+													.basket-big-form__field.is-address
+														span.basket-big-form__name Адрес доставки
+														.basket-big-form__label-absolute
+															label.basket-big-form__label
+															input.basket-big-form__input(type='text' value='')
 												.basket-big-form__field
 													span.basket-big-form__name Доставка
 													.basket-big-form__label-absolute
@@ -86,10 +87,11 @@ block PageLayout
 											.basket-page__main-btn
 												a.basket-page__btn.btn.is-green(href='') Оформить заказ
 
-								.basket__content-tabs.main-tabs__content-item.is-default-active.js-content-tabs(id='form-clients')
+								.basket-tabs__content-tabs.main-tabs__content-item.js-content-tabs(id='form-clients')
 
 									.basket-page__big-form
 										form.basket-big-form__form.is-background.js-form
+											.basket-big-form__title Для клиентов КараванМаркет.ру:
 											.basket-big-form__fields
 												.basket-big-form__field
 													span.basket-big-form__name E-мейл

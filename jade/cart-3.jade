@@ -49,7 +49,7 @@ block PageLayout
 								tr
 									th(colspan='2') Название
 									th Артикул
-									th Количество
+									th #[strong Количество] #[span Кол-во]
 									th Цена
 								tr
 									td.basket-items__table-img
@@ -57,12 +57,12 @@ block PageLayout
 											img.basket-items__img(src='../images/develop/pic-1.jpg')
 									td.basket-items__table-name
 										a.basket-items__name-link(href='') Скульптура резная Слон в попоне 2Hai13
-									td
+									td.basket-items__table-art
 										span.basket-items__description-art Hai06
 
-									td
+									td.basket-items__table-quant
 										span 1
-									td
+									td.basket-items__table-price
 										span 978 руб
 								tr
 									td.basket-items__table-img
@@ -70,12 +70,12 @@ block PageLayout
 											img.basket-items__img(src='../images/develop/pic-1.jpg')
 									td.basket-items__table-name
 										a.basket-items__name-link(href='') Скульптура резная Слон в попоне 2Hai13
-									td
+									td.basket-items__table-art
 										span.basket-items__description-art Hai06
 
-									td
+									td.basket-items__table-quant
 										span 1
-									td
+									td.basket-items__table-price
 										span 978 руб
 								tr
 									td.basket-items__table-img
@@ -83,13 +83,50 @@ block PageLayout
 											img.basket-items__img(src='../images/develop/pic-1.jpg')
 									td.basket-items__table-name
 										a.basket-items__name-link(href='') Скульптура резная Слон в попоне 2Hai13
-									td
+									td.basket-items__table-art
 										span.basket-items__description-art Hai06
 
-									td
+									td.basket-items__table-quant
 										span 1
-									td
+									td.basket-items__table-price
 										span 978 руб
+
+							.basket-items__table-total-wrap
+								table.basket-items__table-total
+									tr
+									tr
+
+										td
+											span Общий вес:
+										td
+											span 0г
+									tr
+
+										td
+											span Товаров на
+										td
+											span 15 600 руб
+									tr
+
+										td
+											strong Итого
+										td
+											strong 15 600 руб
+									tr
+								table.basket-items__table-total
+									tr
+									tr
+
+										td
+											span Способ доставки:
+										td
+											span доставка до Москва
+									tr
+
+										td
+											span Оплата:
+										td
+											span Наличными
 
 
 		section.footer.fl

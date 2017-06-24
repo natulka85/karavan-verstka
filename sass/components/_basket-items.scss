@@ -162,6 +162,10 @@
     display: flex;
     align-items: center;
   }
+  strong{
+    font-family:$fopb;
+    font-weight: 600;
+  }
 }
 
 @media #{$media-1728} {
@@ -277,12 +281,49 @@
       font-size: 1.4rem;
       font-weight:normal;
       font-family:$FontBase;
+      white-space: normal;
     }
     &__table-img{
       width: 8.7rem;
     }
     &__table-name{
-      width: 40%;
+      width: 45%;
+      white-space: normal;
+      padding-right: 1.5rem;
+      min-width: 19rem;
+    }
+    &__table-art{
+      width: 15%;
+    }
+    &__table-quant{
+      width: 18%;
+    }
+    &__table-total-wrap{
+      width: 37rem;
+      float: right;
+    }
+    &__table-price{
+      width: 172px;
+      min-width:172px;
+    }
+    &__table-total{
+      font-size: 1.4rem;
+      line-height: 1.71;
+      color: #000000;
+      border-collapse: separate;
+      padding: 1.7rem 2rem;
+      &:not(:last-child){
+        border-bottom: 1px solid #d2d2d2;
+      }
+      tr{
+        &:not(.is-border-bottom){
+          border-bottom: none!important;
+        }
+        td:nth-child(2){
+          width: 152px;
+          min-width: 152px;
+        }
+      }
     }
   }
   table{
@@ -294,8 +335,60 @@
     font-weight: 600;
     color: #000000;
     height: 4rem;
+    
+    span{
+      display: none;
+    }
   }
   tr{
-    border-bottom:1px solid #d2d2d2;
+    white-space: nowrap;
+    &:not(.is-no-border){
+      border-bottom:1px solid #d2d2d2;
+    }
+  }
+
+
+}
+
+@media #{$media-960} {
+  .basket-items.is-table .basket-items__table-img {
+    width: 8rem;
+  }
+  .basket-items.is-table .basket-items__table-name {
+    width: 29%;
+  }
+  .basket-items.is-table .basket-items__table-art {
+    width: 16.6%;
+  }
+  .basket-items.is-table .basket-items__table-quant {
+    width: 33%;
+  }
+}
+
+@media #{$media-686} {
+  .basket-items.is-table th {
+    span{
+      display: block;
+    }
+    strong{
+      display: none;
+    }
+  }
+  .basket-items.is-table .basket-items__table-quant {
+    width: 14%;
+  }
+  .basket-items.is-table .basket-items__table-total-wrap{
+    width: 30rem;
+  }
+  .basket-items.is-table .basket-items__table-total{
+    padding-right:0;
+  }
+  .basket-items.is-table .basket-items__table-total tr td:nth-child(2) {
+    width: 10px;
+    min-width: 100px;
+  }
+  .basket-items.is-table .basket-items__table-price {
+    width: 100px;
+    min-width: 100px;
   }
 }

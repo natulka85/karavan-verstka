@@ -58,7 +58,7 @@ block PageLayout
 													.basket-big-form__field
 														span.basket-big-form__name Место *
 														.basket-big-form__label-absolute
-															label.basket-big-form__label.icon-email Москва
+															label.basket-big-form__label Москва
 															input.basket-big-form__input(type='text' value='')
 													.basket-big-form__field.is-address
 														span.basket-big-form__name Адрес доставки
@@ -67,14 +67,19 @@ block PageLayout
 															input.basket-big-form__input(type='text' value='')
 												.basket-big-form__field
 													span.basket-big-form__name Доставка
-													.basket-big-form__label-absolute
-														label.basket-big-form__label.icon-email Ваш е-mail
-														input.basket-big-form__input(type='text' value='')
+													select.basket-big-form__input.is-select-dropdown.cd-select
+														option(value='-1', selected) Доставка до адреса
+														option(value='1', selected) Доставка до адреса
+														option(value='2', selected) Доставка до адреса
+														option(value='3', selected) Доставка до адреса
+														option(value='4', selected) Доставка до адреса
+
 												.basket-big-form__field
 													span.basket-big-form__name Оплата
-													.basket-big-form__label-absolute
-														label.basket-big-form__label.icon-email Выберите способ оплаты
-														input.basket-big-form__input(type='text' value='')
+													select.basket-big-form__input.is-select-dropdown.cd-select
+														option(value='-1', selected) Выберете способ оплаты
+														option(value='1', selected) Выберете способ оплаты
+														option(value='2', selected) Выберете способ оплаты
 												.basket-big-form__field
 													span.basket-big-form__name Комментарий к заказу
 													.basket-big-form__label-absolute

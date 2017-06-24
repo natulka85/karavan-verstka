@@ -211,6 +211,70 @@ function dropDownLists(){
             });
         });
     }
+    if($('.basket-big-form__input.is-select-dropdown').length > 0){
+        $('.basket-big-form__input.is-select-dropdown').each(function () {
+            $(this).dropdown({
+                stack : false,
+            });
+        });
+    }
+
+    var all = $('.cd-dropdown');
+    var ff = new Object();
+
+
+
+    all.on('click', function(){
+
+        var selfNum = all.index(this);
+
+        var selfSpanZ = $(this).children('span').css('z-index');
+        var selfLiZ = $(this).find('li').css('z-index');
+
+        var maxSpanZ = Number(selfSpanZ);
+        var maxLiZ = Number(selfLiZ);
+
+        console.log(maxSpanZ, maxLiZ);
+
+        all.each(function (index) {
+            if(index != selfNum) {
+                if ($(this).is('cd-active')) {
+                    var spanZ = $(this).children('span').css('z-index');
+                    var liZ = $(this).find('li').css('z-index');
+                    if (spanZ > selfSpanZ) {
+                        maxSpanZ = spanZ;
+                    }
+                    if (liZ > selfLiZ) {
+                        maxLiZ = liZ;
+                    }
+                    console.log('yes');
+                }
+
+            }
+
+        });
+
+        if(maxSpanZ < maxLiZ){
+            maxSpanZ = Number(maxLiZ) + 1;
+            console.log('меньше');
+        }
+        console.log(maxSpanZ, maxLiZ);
+
+        $(this).find('li').css('z-index', Number(maxSpanZ));
+        $(this).children('span').css('z-index', Number(maxLiZ));
+
+
+ /*       all.each(function(index){
+            if(index != selfNum){
+                if($(this).is('.cd-active')){
+                    console.log($(this));
+                    DropDown.close($(this));
+                }
+            }
+
+        })*/
+    });
+
 }
 
 // PHOTO GALLERY

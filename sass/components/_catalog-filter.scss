@@ -61,6 +61,10 @@
     font-size:6px;
     border: none;
   }
+  .cd-active.cd-dropdown ul li span:hover {
+    background: #f4f0e9;
+    color: #000000;
+  }
 
   &__name{
     font-family: $fopRegular;
@@ -69,10 +73,7 @@
     margin-bottom: 1.4rem;
     font-weight:300;
   }
-  .cd-active.cd-dropdown ul li span:hover {
-    background: #f4f0e9;
-    color: #000000;
-  }
+
 
 
   .catalog-filter__section:last-child{

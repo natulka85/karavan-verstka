@@ -31,16 +31,34 @@ input[type="text"], input[type="password"], textarea {
   font-family: Helvetica, sasn-serif;
   
 }
+::-webkit-input-placeholder {
+  font-size: 1.4rem;
+  font-family:$FontBase;color: #000000}
+/* Firefox < 19 */
+:-moz-placeholder {font-size: 1.4rem;
+  font-family:$FontBase;color: #000000}
+/* Firefox > 19 */
+::-moz-placeholder {font-size: 1.4rem;
+  font-family:$FontBase;color: #000000}
+/* Internet Explorer 10 */
+:-ms-input-placeholder{font-size: 1.4rem;
+  font-family:$FontBase;color: #000000}
+
 input:focus::-webkit-input-placeholder {opacity:0}
 /* Firefox < 19 */
-input:-moz-placeholder {opacity:0}
 input:focus:-moz-placeholder {opacity:0}
 /* Firefox > 19 */
-input::-moz-placeholder {opacity:0}
 input:focus::-moz-placeholder {opacity:0}
 /* Internet Explorer 10 */
-input:-ms-input-placeholder {opacity:0}
 input:focus:-ms-input-placeholder{opacity:0}
+
+textarea:focus::-webkit-input-placeholder {opacity:0}
+/* Firefox < 19 */
+textarea:focus:-moz-placeholder {opacity:0}
+/* Firefox > 19 */
+textarea:focus::-moz-placeholder {opacity:0}
+/* Internet Explorer 10 */
+textarea:focus:-ms-input-placeholder{opacity:0}
 
 .clear {
   clear: both;
@@ -161,6 +179,7 @@ input:focus:-ms-input-placeholder{opacity:0}
     @media #{$media-686} {
       line-height: 1.1;
       width: 6.8rem;
+      margin-right: 8px;
     }
   }
   &__delivery-info{
@@ -191,6 +210,9 @@ input:focus:-ms-input-placeholder{opacity:0}
     }
     @media #{$media-960} {
       display: block!important;
+    }
+    @media #{$media-686} {
+      margin-left: 8px;
     }
   }
 

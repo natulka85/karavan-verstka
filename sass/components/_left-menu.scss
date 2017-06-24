@@ -74,6 +74,13 @@
       }
     }
 
+    &:hover{
+      .left-menu__list-item-link{
+        color: #238dcd;
+        text-decoration: underline;
+      }
+    }
+
   }
 
   &__list{
@@ -200,6 +207,19 @@
 @media #{$media-960}{
   .left-menu__tabs-item{
     background-color: #ffc030;
+    border: none;
+    box-shadow: none;
+
+    &:first-child{
+      margin-right: 3px;
+      border: none;
+      box-shadow: none;
+    }
+    &:last-child{
+      border: none;
+      box-shadow: none;
+    }
+
     &.is-active{
       background-color: #ff7e09;
     }
@@ -243,5 +263,9 @@
   }
   .left-menu__list{
     padding-top: 3.6rem;
+  }
+  .left-menu__tabs{
+    border: none;
+    box-shadow: none;
   }
 }

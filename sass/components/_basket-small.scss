@@ -25,6 +25,10 @@
     }
     a{
       color: #ffffff;
+      
+      &:hover{
+        text-decoration: none;
+      }
     }
   }
   &__info{
@@ -42,6 +46,11 @@
       font-size: 3.1rem;
       left: 1.5rem;
       top: 0.8rem;
+    }
+    a{
+      display: inline-block;
+      text-decoration: none;
+      color: #000000;
     }
   }
   &__info-goods{

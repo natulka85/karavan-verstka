@@ -46,6 +46,7 @@
     padding-left: 3.3rem;
     position: relative;
     color: #2a2024;
+    white-space: nowrap;
 
     &:before{
       position: absolute;
@@ -62,6 +63,7 @@
   }
   &__mail{
     padding-top: 3px;
+    white-space: nowrap;
     a{
       font-family: $fopRegular;
       font-size: 1.4rem;
@@ -73,6 +75,7 @@
     font-size: 1.4rem;
     color: #272727;
     padding-top: 3px;
+    white-space: nowrap;
     &:before{
       font-size: 2.4rem;
       vertical-align: middle;

@@ -16,31 +16,34 @@
     margin-top: 2.2rem;
     position: relative;
     height: 91.8rem;
-    background: url('../images/bg-howorder_1900.png');
+    background: url('../images/bg/bg-howorder_1900.png');
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size:100% auto;
+    position: relative;
   }
   &__item{
     width: 33%;
     max-width:32rem;
-    position: relative;
+    position: absolute;
   
   }
   &__row{
-    position: absolute;
     display: flex;
     justify-content: space-between;
     width: 100%;
     &:nth-child(1){
       top: 13rem;
       .howorder-block__item:nth-child(1){
+        top: 10rem;
         left: -23px;
       }
       .howorder-block__item:nth-child(2){
+        top: 10rem;
         left: -31px;
       }
       .howorder-block__item:nth-child(3){
-        left: -46px;
+        top: 10rem;
+        left: 66%;
       }
 
     }

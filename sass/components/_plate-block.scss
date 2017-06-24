@@ -75,6 +75,9 @@
     font-size: 1.4rem;
     line-height: 1.29;
     color: #272727;
+    &:hover{
+      text-decoration: none;
+    }
   }
 
   #mm_polki_i_stellaji img{vertical-align: bottom}
@@ -89,7 +92,7 @@
     width: 31%;
   }
   .plate-block__content{
-    width: 74%;
+    width: 68%;
   }
 }
 

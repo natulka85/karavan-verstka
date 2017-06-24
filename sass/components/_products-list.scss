@@ -416,6 +416,15 @@
 
 }
 
+@media #{$media-768} {
+  .products-list .slick-arrow{
+    display: none!important;
+  }
+  .products-list__preview-photos{
+    top:0;
+  }
+}
+
 @media #{$media-1166}{
   .products-list__item{
     width: 48.2%;

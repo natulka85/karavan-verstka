@@ -256,6 +256,7 @@ function dropDownLists(){
 
         $(this).find('li').css('z-index', Number(maxLiZ));
         $(this).children('span').css('z-index', Number(maxSpanZ));
+        $(this).css('z-index', Number(maxSpanZ) + 1);
 
     });
 

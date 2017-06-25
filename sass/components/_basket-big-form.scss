@@ -235,13 +235,20 @@
     &__field.is-address{
       position: static;
       .basket-big-form__name {
-        width: 19rem;
+        width: 18rem;
         margin-right: 4px;
       }
       .basket-big-form__input{
         width: 27.8rem;
       }
     }
+
+  }
+  .basket-big-form__form .cd-dropdown, .basket-big-form__form .cd-select{
+    width: 27.8rem;
+  }
+  .basket-big-form__name{
+    width: 18rem;
   }
 }
 

@@ -219,10 +219,8 @@ function dropDownLists(){
         });
     }
 
+    //функция для рассчета z-index при нескольких открытых списках
     var all = $('.cd-dropdown');
-    var ff = new Object();
-
-
 
     all.on('click', function(){
 
@@ -234,45 +232,31 @@ function dropDownLists(){
         var maxSpanZ = Number(selfSpanZ);
         var maxLiZ = Number(selfLiZ);
 
-        console.log(maxSpanZ, maxLiZ);
-
         all.each(function (index) {
             if(index != selfNum) {
-                if ($(this).is('cd-active')) {
+
                     var spanZ = $(this).children('span').css('z-index');
                     var liZ = $(this).find('li').css('z-index');
-                    if (spanZ > selfSpanZ) {
+                    if (spanZ >= selfSpanZ) {
                         maxSpanZ = spanZ;
                     }
-                    if (liZ > selfLiZ) {
+                    if (liZ >= selfLiZ) {
                         maxLiZ = liZ;
                     }
-                    console.log('yes');
+                    if(maxLiZ <= maxSpanZ){
+                        maxLiZ = Number(maxSpanZ) + 1;
+                    }
                 }
-
-            }
 
         });
 
-        if(maxSpanZ < maxLiZ){
+        if(maxSpanZ <= maxLiZ){
             maxSpanZ = Number(maxLiZ) + 1;
-            console.log('меньше');
         }
-        console.log(maxSpanZ, maxLiZ);
 
-        $(this).find('li').css('z-index', Number(maxSpanZ));
-        $(this).children('span').css('z-index', Number(maxLiZ));
+        $(this).find('li').css('z-index', Number(maxLiZ));
+        $(this).children('span').css('z-index', Number(maxSpanZ));
 
-
- /*       all.each(function(index){
-            if(index != selfNum){
-                if($(this).is('.cd-active')){
-                    console.log($(this));
-                    DropDown.close($(this));
-                }
-            }
-
-        })*/
     });
 
 }

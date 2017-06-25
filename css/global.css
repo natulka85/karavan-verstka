@@ -4150,8 +4150,6 @@ yx-axis
   .catalog-filter .cd-dropdown ul li {
     height: 4rem;
     line-height: 4rem; }
-  .cd-dropdown.cd-active {
-    z-index: 1010; }
   .cd-dropdown, .cd-select {
     margin: 0;
     margin-bottom: 1rem; } }
@@ -7639,7 +7637,7 @@ yx-axis
   background-color: #ffffff;
   border: solid 1px #999999;
   font-family: "OpenSansRegular", sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   color: #000000;
   padding: 0;
   padding-left: 1rem;
@@ -7654,7 +7652,7 @@ yx-axis
     height: 4.4rem;
     line-height: 4.4rem;
     font-family: "OpenSansRegular", sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     color: #000000;
     font-weight: 300;
     padding: 0;

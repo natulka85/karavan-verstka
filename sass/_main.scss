@@ -18,17 +18,21 @@ body {
   width: 100%;
   min-width: $MinWidth;
   font-size: 12px;
-  //-webkit-font-smoothing: antialiased;
-  //-moz-osx-font-smoothing: grayscale;
-  //text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeSpeed;
+  text-size-adjust:none;
 }
 
 img {
   max-width: 100%;
 }
 
-input[type="text"], input[type="password"], textarea {
+input[type="text"], input[type="password"], textarea, input {
   font-family: Helvetica, sasn-serif;
+  -webkit-border-radius: 0px;
+  -webkit-appearance: none!important;;
+  border-radius: none;
   
 }
 ::-webkit-input-placeholder {
@@ -163,7 +167,7 @@ textarea:focus:-ms-input-placeholder{opacity:0}
   }
 
   &__other-page-link{
-    font-family: $fopb;
+    font-family: $FontBase;
     font-size: 1.4rem;
     font-weight: 600;
     color: #000000;

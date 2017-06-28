@@ -20,7 +20,7 @@
 // Font Face
 // =============================================================================
 
-@mixin font-face-normal($name, $path, $weight: null, $style: null, $exts: eot woff ttf svg) {
+@mixin font-face-normal($name, $path, $weight: null, $style: null, $exts: eot woff woff2 ttf svg) {
   $src: null;
 
   $extmods: (

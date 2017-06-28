@@ -22,6 +22,7 @@ $(document).ready(function () {
     inputCounter();
     CatalogControlsLink();
     voteStars();
+    modalGallery();
 });
 
 $(window).on('resize', function () {
@@ -629,4 +630,10 @@ function voteStars(){
         }
     });
 
+}
+
+function modalGallery(){
+    $('.js-gallery').swipebox({
+        hideBarsDelay: false,
+    });
 }

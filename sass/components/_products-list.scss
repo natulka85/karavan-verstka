@@ -71,7 +71,7 @@
     overflow: hidden;
   }
   &__name-link{
-    font-family:$fopb;
+    font-family:$FontBase;
     font-size: 16px;
     font-weight: 600;
     color: #000000;
@@ -157,7 +157,7 @@
     white-space: nowrap;
   }
   &__price-cur{
-    font-family: $fopb;
+    font-family: $FontBase;
     font-weight: bold;
     color: #008d1e;
     white-space: nowrap;
@@ -788,6 +788,7 @@
     .products-list__controls-quantity-input{
       width: 5.4rem;
       height: 2.9rem;
+      line-height: 2.9rem;
     }
   }
 }

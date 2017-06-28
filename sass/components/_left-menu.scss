@@ -45,7 +45,7 @@
   &__tabs-item-link{
     height: 3.8rem;
     line-height:3.8rem;
-    font-family: $fopb;
+    font-family: $FontBase;
     font-weight: bold;
     font-size: 1.6rem;
     color: #007fc7;
@@ -60,7 +60,7 @@
 
     &.is-current{
       .left-menu__list-item-link{
-        font-family:$fopb;
+        font-family:$FontBase;
         font-weight: bold;
       }
     }

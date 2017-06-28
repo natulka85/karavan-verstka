@@ -147,12 +147,13 @@
     .cd-dropdown ul li{
       border:none;
       box-shadow: none;
-      height: 3.5 rem;
+      height: 3.5rem;
 
       span{
         font-weight: normal;
         font-family: $fopRegular;
         color: #2a2024;
+        font-size: 14px;
       }
     }
     .cd-dropdown > span{
@@ -160,13 +161,14 @@
       font-weight: normal;
       font-family: $fopRegular;
       color: #2a2024;
+      font-size: 14px;
+      padding: 0 2.8rem;
     }
     .cd-dropdown ul li span{
       font-size: 14px;
       letter-spacing: -0.1px;
       color: #2a2024;
-      padding: 0;
-      padding-left:2.8rem;
+      padding: 0 2.8rem;
       line-height: 3.5rem;
     }
     .cd-dropdown > span:after{
@@ -190,7 +192,7 @@
 
 
   &__mobile-controls-title{
-    font-family: $fopb;
+    font-family: $FontBase;
     font-size: 1.4rem;
     font-weight: bold;
     color: #2a2024;

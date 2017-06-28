@@ -54,7 +54,7 @@
       left: 0;
     }
     a{
-      font-family: $fopb;
+      font-family: $FontBase;
       font-size: 2.7rem;
       font-weight: bold;
       color: #2a2024;
@@ -204,5 +204,10 @@
   .header-top {
     background-image: url("../images/bg/header-bg_480.png");
     background-size: auto 13.5rem;
+    &__phone a{
+      font-family:"OpenSansSemiBold", sans-serif;
+      letter-spacing: -1px;
+    }
   }
+
 }

@@ -22,7 +22,7 @@
     margin-top:7px;
   }
   &__name-link{
-    font-family:$fopb;
+    font-family:$FontBase;
     font-size: 1.8rem;
     font-weight: 600;
     color: #000000;
@@ -47,7 +47,8 @@
     height: 6.8rem;
     background-color: #ffffff;
     border: solid 1px #999999;
-    resize: none;
+    resize: vertical;
+    max-height: 14.5rem;
     padding-top: 1.4rem;
     padding-left: 1rem;
     font-size: 1.4rem;
@@ -81,7 +82,7 @@
     white-space: nowrap;
   }
   &__price-cur{
-    font-family: $fopb;
+    font-family: $FontBase;
     font-size: 1.8rem;
     font-weight: 600;
     color: #000000;
@@ -91,7 +92,7 @@
     }
   }
   &__price-all{
-    font-family: $fopb;
+    font-family: $FontBase;
     font-size: 18px;
     font-weight: 600;
     color: #64ac39;
@@ -163,7 +164,7 @@
     align-items: center;
   }
   strong{
-    font-family:$fopb;
+    font-family:$FontBase;
     font-weight: 600;
   }
 }
@@ -191,6 +192,9 @@
 }
 
 @media #{$media-1166} {
+  .basket-items{
+    padding-right:0;
+  }
   .basket-items__item{
     height: 15.9rem;
   }
@@ -270,7 +274,7 @@
       width: 6.7rem;
     }
     &__title{
-      font-family: $fopb;
+      font-family: $FontBase;
       font-size: 2.4rem;
       font-weight: 600;
       line-height: 0.75;
@@ -330,7 +334,7 @@
     width: 100%;
   }
   th{
-    font-family: $fopb;
+    font-family: $FontBase;
     font-size: 14px;
     font-weight: 600;
     color: #000000;

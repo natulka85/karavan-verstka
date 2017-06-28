@@ -3,7 +3,7 @@
   padding: 2.5rem 4rem 1.1rem 1.6rem;
   background-color: #fdf9ec;
   border: solid 1px #c4c4c4;
-  font-family: $fopb;
+  font-family: $FontBase;
   font-size: 18px;
   font-weight: 600;
   color: #000000;
@@ -47,7 +47,7 @@
     }
   }
   &__title{
-    font-family:$fopb;
+    font-family:$FontBase;
     font-weight: 600;
     color: #ff7e09;
     font-size: 2.4rem;
@@ -55,7 +55,7 @@
     vertical-align: middle;
   }
   &__small-title{
-    font-family:$fopb;
+    font-family:$FontBase;
     font-weight: 600;
     color: #000;
     font-size: 1.8rem;

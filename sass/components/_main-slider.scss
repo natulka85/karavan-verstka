@@ -21,7 +21,7 @@
   }
 
   &__header{
-    font-family:$fopb;
+    font-family:$FontBase;
     padding-left: 3.8rem;
     margin-bottom: 1rem;
   }
@@ -39,6 +39,12 @@
     font-size: 2.1rem;
     font-weight: bold;
     color: #2a2024;
+    text-decoration: none;
+    transition: .2s;
+    &:hover{
+      text-decoration: underline;
+      color: #238dcd;
+    }
   }
 
   &__list{

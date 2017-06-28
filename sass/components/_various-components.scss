@@ -27,10 +27,14 @@
   font-family: $fopRegular;
   transition: .3s;
   text-align: center;
+  -webkit-appearance: none;
 
   &.is-orange{
     background-color: #ff7e09;
     border-color:#ff7e09;
+    &:hover{
+      background-color: #e67106;
+    }
   }
   &.is-green{
     background-color: #64ac39;
@@ -54,6 +58,9 @@
     background-color: #ffffff;
     color: #000000;
     border-color: #cecece;
+    &:hover{
+      border-color: #000000;
+    }
   }
   &.is-pink{
     background-color: #e9a980;
@@ -411,8 +418,19 @@ $checkSize: 13;
     letter-spacing: normal;
     color: #2a2024;
     strong{
-      font-family:$fopb;
+      font-family:$FontBase;
       font-weight: bold;
     }
+  }
+}
+
+.fancybox-nav{
+  @extend .icon-template;
+  color: #FFFFFF;
+  &.fancybox-next{
+    @extend .icon-arrow;
+  }
+  &.fancybox-prev{
+    @extend .icon-arrow;
   }
 }

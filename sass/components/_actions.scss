@@ -6,11 +6,17 @@
     margin-bottom: 2.8rem;
   }
   &__name {
-    font-family: $fopb;
+    font-family: $FontBase;
     font-size: 1.6rem;
     font-weight: bold;
     line-height: 1.12;
     color: #ff7e09;
+    border-bottom: 1px solid transparent;
+    transition: .3s;
+    text-decoration: none;
+    &:hover{
+      border-bottom-color: #ff7e09;
+    }
   }
   &__item {
     padding-top: 4rem;
@@ -35,7 +41,7 @@
   &__item-content{
     margin-bottom: -4rem;
     strong{
-      font-family:$fopb;
+      font-family:$FontBase;
       font-weight: bold;
       font-size: 1.4rem;
       color: #272727;
@@ -59,6 +65,10 @@
     line-height: 1.29;
     text-align: center;
     color: #007fc7;
+    &:hover{
+      text-decoration: none;
+      color: #272727;
+    }
   }
   &__plate-image-wrapp{
     height: 11rem;

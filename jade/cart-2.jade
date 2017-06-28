@@ -12,7 +12,7 @@ block PageLayout
 			include blocks/_basket-small
 		section.main-content.fw
 			section.sidebar-bar
-				a.sidebar-bar__other-page-link(href='') Перейти в каталог
+				a.sidebar-bar__other-page-link(href='') Перейти в&nbsp;каталог
 				include blocks/_main-search
 					.sidebar-bar__delivery-info.btn.is-transparent-blue #[span Оплата и доставка]
 				include includes/_left-pay-info.jade
@@ -50,7 +50,7 @@ block PageLayout
 														label.basket-big-form__label.icon-phone +7 (926) 123-45-67
 														input.basket-big-form__input(type='text' value='')
 												.basket-big-form__field
-													span.basket-big-form__name E-мейл *
+													span.basket-big-form__name E-мэйл *
 													.basket-big-form__label-absolute
 														label.basket-big-form__label.icon-email Ваш е-mail
 														input.basket-big-form__input(type='text' value='')
@@ -68,18 +68,18 @@ block PageLayout
 												.basket-big-form__field
 													span.basket-big-form__name Доставка
 													select.basket-big-form__input.is-select-dropdown.cd-select
-														option(value='-1', selected) Доставка до адреса
+														option(value='-1', selected) Выберите способ доставки
 														option(value='1', selected) Доставка до адреса
-														option(value='2', selected) Доставка до адреса
-														option(value='3', selected) Доставка до адреса
-														option(value='4', selected) Доставка до адреса
+														option(value='2', selected) Доставка до трансп. компании
+														option(value='3', selected) Самовывоз
 
 												.basket-big-form__field
 													span.basket-big-form__name Оплата
 													select.basket-big-form__input.is-select-dropdown.cd-select
-														option(value='-1', selected) Выберете способ оплаты
-														option(value='1', selected) Выберете способ оплаты
-														option(value='2', selected) Выберете способ оплаты
+														option(value='-1', selected) Выберите способ оплаты
+														option(value='1', selected) Наличными
+														option(value='2', selected) Безналичная оплата
+														option(value='3', selected) Денежные переводы
 												.basket-big-form__field
 													span.basket-big-form__name Комментарий к заказу
 													.basket-big-form__label-absolute
@@ -99,7 +99,7 @@ block PageLayout
 											.basket-big-form__title Для клиентов КараванМаркет.ру:
 											.basket-big-form__fields
 												.basket-big-form__field
-													span.basket-big-form__name E-мейл
+													span.basket-big-form__name E-мэйл
 													.basket-big-form__label-absolute
 														label.basket-big-form__label.icon-email Ваш е-mail
 														input.basket-big-form__input(type='text' value='')

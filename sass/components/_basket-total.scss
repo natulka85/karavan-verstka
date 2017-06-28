@@ -1,5 +1,5 @@
 .basket-total{
-  font-family:$fopb;
+  font-family:$FontBase;
   font-size: 1.8rem;
   font-weight: 600;
   line-height: 1.94;
@@ -13,6 +13,7 @@
     color: #64ac39;
     width: 11rem;
     padding-left: 1.2rem;
+    white-space: nowrap;
     
     &.is-persent{
       color: #000000;

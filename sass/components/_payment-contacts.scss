@@ -4,7 +4,7 @@
   margin-top: 3.8rem;
   font-size: 1.4rem;
   &__title{
-    font-family:$fopb;
+    font-family:$FontBase;
     font-size: 1.6rem;
     font-weight: bold;
     line-height: 1;
@@ -23,7 +23,7 @@
     }
   }
   &__phone{
-    font-family:$fopb;
+    font-family:$FontBase;
     font-size: 1.6rem;
     font-weight: bold;
     line-height: 1.71;
@@ -41,6 +41,8 @@
     padding-left: 2.6rem;
     position: relative;
     line-height: 1.71;
+    text-decoration: none;
+    color: #000;
 
     &:before{
       position: absolute;
@@ -55,7 +57,7 @@
     margin: 1.6rem 0;
     line-height: 1.29;
     strong{
-      font-family:$fopb;
+      font-family:$FontBase;
       font-weight: bold;
     }
   }

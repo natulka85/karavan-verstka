@@ -29,6 +29,10 @@
     color: #2a2024;
     margin-bottom: 1.8rem;
     margin-top: 5px;
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+    }
   }
   &__data{
     &:before{
@@ -95,6 +99,12 @@
   &__list-pic-img{
     height: 12.8rem;
     line-height: 12.8rem;
+  }
+  &__link-to-detail{
+    margin-left: 1rem;
+    &:hover{
+      text-decoration: none;
+    }
   }
 }
 

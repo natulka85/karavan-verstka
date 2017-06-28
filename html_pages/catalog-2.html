@@ -3,7 +3,7 @@
   <head>
     <title>Catalog-2</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, User-scalable=no">
     <meta name="SKYPE_TOOLBA" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-TileColor" content="#ffffff">
@@ -22,6 +22,7 @@
     <script src="../js/vendor/jquery.dropdown.js" type="text/javascript"></script>
     <script src="..js/vendor/nouislider.min.js" type="text/javascript"></script>
     <script src="../js/vendor/jquery.fancybox.min.js" type="text/javascript"></script>
+    <script src="../js/vendor/jquery.swipebox.min.js" type="text/javascript"></script>
     <script src="../js/script.js" type="text/javascript"></script>
   </head>
   <body>
@@ -62,10 +63,9 @@
               <div class="basket-small__top-control"><a href="">Вход</a></div>
               <div class="basket-small__top-control"><a href="">Регистрация</a></div>
             </div>
-            <div class="basket-small__main">
-              <div class="basket-small__info icon-cart"><a href=""><span class="basket-small__info-goods">5 товаров&nbsp;</span><span class="basket-small__info-summ">на <strong>24000 р</strong></span></a></div>
-              <div class="basket-small__text"><span>Мин. сумма оптового <strong>заказа — 15 000 руб</strong></span></div>
-            </div>
+            <div class="basket-small__main"><a href="">
+                <div class="basket-small__info icon-cart"><span class="basket-small__info-goods">5 товаров&nbsp;</span><span class="basket-small__info-summ">на <strong>24000 р</strong></span></div>
+                <div class="basket-small__text"><span>Мин. сумма оптового <strong>заказа — 15 000 руб</strong></span></div></a></div>
           </div>
         </section>
         <section class="main-content fw">
@@ -479,7 +479,7 @@
                             <div class="products-list__controls-quantity-text"><span>Кол-во</span><span>Мин. 1шт</span></div>
                             <div class="products-list__controls-count main-count">
                               <div data-count="1" class="products-list__controls-count-btn main-count__btn is-up js-count js-count"></div>
-                              <input class="products-list__controls-quantity-input">
+                              <input value="1" class="products-list__controls-quantity-input">
                               <div data-count="-1" class="products-list__controls-count-btn main-count__btn is-down js-count js-count"></div>
                             </div>
                           </div>
@@ -541,7 +541,7 @@
                             <div class="products-list__controls-quantity-text"><span>Кол-во</span><span>Мин. 1шт</span></div>
                             <div class="products-list__controls-count main-count">
                               <div data-count="1" class="products-list__controls-count-btn main-count__btn is-up js-count js-count"></div>
-                              <input class="products-list__controls-quantity-input">
+                              <input value="1" class="products-list__controls-quantity-input">
                               <div data-count="-1" class="products-list__controls-count-btn main-count__btn is-down js-count js-count"></div>
                             </div>
                           </div>
@@ -603,7 +603,7 @@
                             <div class="products-list__controls-quantity-text"><span>Кол-во</span><span>Мин. 1шт</span></div>
                             <div class="products-list__controls-count main-count">
                               <div data-count="1" class="products-list__controls-count-btn main-count__btn is-up js-count js-count"></div>
-                              <input class="products-list__controls-quantity-input">
+                              <input value="1" class="products-list__controls-quantity-input">
                               <div data-count="-1" class="products-list__controls-count-btn main-count__btn is-down js-count js-count"></div>
                             </div>
                           </div>
@@ -665,7 +665,7 @@
                             <div class="products-list__controls-quantity-text"><span>Кол-во</span><span>Мин. 1шт</span></div>
                             <div class="products-list__controls-count main-count">
                               <div data-count="1" class="products-list__controls-count-btn main-count__btn is-up js-count js-count"></div>
-                              <input class="products-list__controls-quantity-input">
+                              <input value="1" class="products-list__controls-quantity-input">
                               <div data-count="-1" class="products-list__controls-count-btn main-count__btn is-down js-count js-count"></div>
                             </div>
                           </div>
@@ -727,7 +727,7 @@
                             <div class="products-list__controls-quantity-text"><span>Кол-во</span><span>Мин. 1шт</span></div>
                             <div class="products-list__controls-count main-count">
                               <div data-count="1" class="products-list__controls-count-btn main-count__btn is-up js-count js-count"></div>
-                              <input class="products-list__controls-quantity-input">
+                              <input value="1" class="products-list__controls-quantity-input">
                               <div data-count="-1" class="products-list__controls-count-btn main-count__btn is-down js-count js-count"></div>
                             </div>
                           </div>
@@ -789,7 +789,7 @@
                             <div class="products-list__controls-quantity-text"><span>Кол-во</span><span>Мин. 1шт</span></div>
                             <div class="products-list__controls-count main-count">
                               <div data-count="1" class="products-list__controls-count-btn main-count__btn is-up js-count js-count"></div>
-                              <input class="products-list__controls-quantity-input">
+                              <input value="1" class="products-list__controls-quantity-input">
                               <div data-count="-1" class="products-list__controls-count-btn main-count__btn is-down js-count js-count"></div>
                             </div>
                           </div>
@@ -851,7 +851,7 @@
                             <div class="products-list__controls-quantity-text"><span>Кол-во</span><span>Мин. 1шт</span></div>
                             <div class="products-list__controls-count main-count">
                               <div data-count="1" class="products-list__controls-count-btn main-count__btn is-up js-count js-count"></div>
-                              <input class="products-list__controls-quantity-input">
+                              <input value="1" class="products-list__controls-quantity-input">
                               <div data-count="-1" class="products-list__controls-count-btn main-count__btn is-down js-count js-count"></div>
                             </div>
                           </div>
@@ -913,7 +913,7 @@
                             <div class="products-list__controls-quantity-text"><span>Кол-во</span><span>Мин. 1шт</span></div>
                             <div class="products-list__controls-count main-count">
                               <div data-count="1" class="products-list__controls-count-btn main-count__btn is-up js-count js-count"></div>
-                              <input class="products-list__controls-quantity-input">
+                              <input value="1" class="products-list__controls-quantity-input">
                               <div data-count="-1" class="products-list__controls-count-btn main-count__btn is-down js-count js-count"></div>
                             </div>
                           </div>
@@ -989,7 +989,7 @@
                             <div class="products-list__controls-quantity-text"><span>Кол-во</span><span>Мин. 1шт</span></div>
                             <div class="products-list__controls-count main-count">
                               <div data-count="1" class="products-list__controls-count-btn main-count__btn is-up js-count js-count"></div>
-                              <input class="products-list__controls-quantity-input">
+                              <input value="1" class="products-list__controls-quantity-input">
                               <div data-count="-1" class="products-list__controls-count-btn main-count__btn is-down js-count js-count"></div>
                             </div>
                           </div>
@@ -1051,7 +1051,7 @@
                             <div class="products-list__controls-quantity-text"><span>Кол-во</span><span>Мин. 1шт</span></div>
                             <div class="products-list__controls-count main-count">
                               <div data-count="1" class="products-list__controls-count-btn main-count__btn is-up js-count js-count"></div>
-                              <input class="products-list__controls-quantity-input">
+                              <input value="1" class="products-list__controls-quantity-input">
                               <div data-count="-1" class="products-list__controls-count-btn main-count__btn is-down js-count js-count"></div>
                             </div>
                           </div>
@@ -1113,7 +1113,7 @@
                             <div class="products-list__controls-quantity-text"><span>Кол-во</span><span>Мин. 1шт</span></div>
                             <div class="products-list__controls-count main-count">
                               <div data-count="1" class="products-list__controls-count-btn main-count__btn is-up js-count js-count"></div>
-                              <input class="products-list__controls-quantity-input">
+                              <input value="1" class="products-list__controls-quantity-input">
                               <div data-count="-1" class="products-list__controls-count-btn main-count__btn is-down js-count js-count"></div>
                             </div>
                           </div>
@@ -1175,7 +1175,7 @@
                             <div class="products-list__controls-quantity-text"><span>Кол-во</span><span>Мин. 1шт</span></div>
                             <div class="products-list__controls-count main-count">
                               <div data-count="1" class="products-list__controls-count-btn main-count__btn is-up js-count js-count"></div>
-                              <input class="products-list__controls-quantity-input">
+                              <input value="1" class="products-list__controls-quantity-input">
                               <div data-count="-1" class="products-list__controls-count-btn main-count__btn is-down js-count js-count"></div>
                             </div>
                           </div>
@@ -1237,7 +1237,7 @@
                             <div class="products-list__controls-quantity-text"><span>Кол-во</span><span>Мин. 1шт</span></div>
                             <div class="products-list__controls-count main-count">
                               <div data-count="1" class="products-list__controls-count-btn main-count__btn is-up js-count js-count"></div>
-                              <input class="products-list__controls-quantity-input">
+                              <input value="1" class="products-list__controls-quantity-input">
                               <div data-count="-1" class="products-list__controls-count-btn main-count__btn is-down js-count js-count"></div>
                             </div>
                           </div>
@@ -1299,7 +1299,7 @@
                             <div class="products-list__controls-quantity-text"><span>Кол-во</span><span>Мин. 1шт</span></div>
                             <div class="products-list__controls-count main-count">
                               <div data-count="1" class="products-list__controls-count-btn main-count__btn is-up js-count js-count"></div>
-                              <input class="products-list__controls-quantity-input">
+                              <input value="1" class="products-list__controls-quantity-input">
                               <div data-count="-1" class="products-list__controls-count-btn main-count__btn is-down js-count js-count"></div>
                             </div>
                           </div>
@@ -1361,7 +1361,7 @@
                             <div class="products-list__controls-quantity-text"><span>Кол-во</span><span>Мин. 1шт</span></div>
                             <div class="products-list__controls-count main-count">
                               <div data-count="1" class="products-list__controls-count-btn main-count__btn is-up js-count js-count"></div>
-                              <input class="products-list__controls-quantity-input">
+                              <input value="1" class="products-list__controls-quantity-input">
                               <div data-count="-1" class="products-list__controls-count-btn main-count__btn is-down js-count js-count"></div>
                             </div>
                           </div>
@@ -1423,7 +1423,7 @@
                             <div class="products-list__controls-quantity-text"><span>Кол-во</span><span>Мин. 1шт</span></div>
                             <div class="products-list__controls-count main-count">
                               <div data-count="1" class="products-list__controls-count-btn main-count__btn is-up js-count js-count"></div>
-                              <input class="products-list__controls-quantity-input">
+                              <input value="1" class="products-list__controls-quantity-input">
                               <div data-count="-1" class="products-list__controls-count-btn main-count__btn is-down js-count js-count"></div>
                             </div>
                           </div>
@@ -1485,7 +1485,7 @@
                             <div class="products-list__controls-quantity-text"><span>Кол-во</span><span>Мин. 1шт</span></div>
                             <div class="products-list__controls-count main-count">
                               <div data-count="1" class="products-list__controls-count-btn main-count__btn is-up js-count js-count"></div>
-                              <input class="products-list__controls-quantity-input">
+                              <input value="1" class="products-list__controls-quantity-input">
                               <div data-count="-1" class="products-list__controls-count-btn main-count__btn is-down js-count js-count"></div>
                             </div>
                           </div>
@@ -1547,7 +1547,7 @@
                             <div class="products-list__controls-quantity-text"><span>Кол-во</span><span>Мин. 1шт</span></div>
                             <div class="products-list__controls-count main-count">
                               <div data-count="1" class="products-list__controls-count-btn main-count__btn is-up js-count js-count"></div>
-                              <input class="products-list__controls-quantity-input">
+                              <input value="1" class="products-list__controls-quantity-input">
                               <div data-count="-1" class="products-list__controls-count-btn main-count__btn is-down js-count js-count"></div>
                             </div>
                           </div>
@@ -1609,7 +1609,7 @@
                             <div class="products-list__controls-quantity-text"><span>Кол-во</span><span>Мин. 1шт</span></div>
                             <div class="products-list__controls-count main-count">
                               <div data-count="1" class="products-list__controls-count-btn main-count__btn is-up js-count js-count"></div>
-                              <input class="products-list__controls-quantity-input">
+                              <input value="1" class="products-list__controls-quantity-input">
                               <div data-count="-1" class="products-list__controls-count-btn main-count__btn is-down js-count js-count"></div>
                             </div>
                           </div>
@@ -1671,7 +1671,7 @@
                             <div class="products-list__controls-quantity-text"><span>Кол-во</span><span>Мин. 1шт</span></div>
                             <div class="products-list__controls-count main-count">
                               <div data-count="1" class="products-list__controls-count-btn main-count__btn is-up js-count js-count"></div>
-                              <input class="products-list__controls-quantity-input">
+                              <input value="1" class="products-list__controls-quantity-input">
                               <div data-count="-1" class="products-list__controls-count-btn main-count__btn is-down js-count js-count"></div>
                             </div>
                           </div>

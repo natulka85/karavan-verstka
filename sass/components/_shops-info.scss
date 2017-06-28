@@ -19,7 +19,7 @@
     }
   }
   &__title {
-    font-family: $fopb;
+    font-family: $FontBase;
     font-size: 1.6rem;
     font-weight: bold;
     line-height: 1.12;
@@ -32,8 +32,12 @@
       margin-bottom: 2rem;
     }
     strong {
-      font-family: $fopb;
+      font-family: $FontBase;
       font-weight: bold;
+    }
+    a{
+      text-decoration: none;
+      color: #2a2024;
     }
   }
   &__visual-content {

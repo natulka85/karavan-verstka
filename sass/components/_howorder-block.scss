@@ -5,7 +5,7 @@
   color: #000000;
 
   &__name {
-    font-family: $fopb;
+    font-family: $FontBase;
     font-size: 1.6rem;
     font-weight: bold;
     line-height: 1.12;
@@ -15,8 +15,7 @@
   &__list{
     margin-top: 2.2rem;
     position: relative;
-    height: 91.8rem;
-    background: url('../images/bg/bg-howorder_1900.png');
+    //background: url('../images/bg/bg-howorder_1900.png');
     background-repeat: no-repeat;
     background-size:100% auto;
     position: relative;
@@ -59,5 +58,31 @@
     &:nth-child(3){
       top: 80rem;
     }
+  }
+  &__bg{
+    width: 100%;
+    height: 88.6rem;
+    background: url('../images/bg/bg-how-order_1900.png');
+    background-repeat: no-repeat;
+    background-size:100% auto;
+    background-position: center top;
+  }
+}
+@media #{$media-768} {
+  .howorder-block__bg{
+    height: 91.5rem;
+    background: url('../images/bg/bg-how-order_768.png');
+    background-repeat: no-repeat;
+    background-size:100% auto;
+    background-position: center top;
+  }
+}
+@media #{$media-480} {
+  .howorder-block__bg{
+    height: 175rem;
+    background: url('../images/bg/bg-how-order_480.png');
+    background-repeat: no-repeat;
+    background-size:100% auto;
+    background-position: center top;
   }
 }

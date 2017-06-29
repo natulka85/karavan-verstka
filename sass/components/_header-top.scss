@@ -36,7 +36,7 @@
   &__shop-name{
     padding-top: 7px;
     h3{
-      font-family: $fopSemib;
+      font-family: $fopsb;
       font-size: 16px;
       font-weight: 600;
       color: #231f20;
@@ -178,7 +178,8 @@
   }
   .header-top__shop-name{
     text-align: left;
-    max-width: 15rem;
+    width: 16.1rem;
+    max-width: 16.1rem;
     left: 1.6rem;
     top: 7.8rem;
   }
@@ -188,9 +189,12 @@
   .header-top__shop-name h3 {
     font-size: 1.2rem;
     line-height: 1.3;
-    font-weight: 600;
     br{
       display: none;
+    }
+    span{
+      white-space: nowrap;
+      display: block;
     }
   }
 

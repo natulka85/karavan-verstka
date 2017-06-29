@@ -418,7 +418,7 @@ textarea:focus:-ms-input-placeholder {
       float: none;
       width: 100%; } }
   .sidebar-bar__other-page-link {
-    font-family: "OpenSansRegular", sans-serif;
+    font-family: "OpenSansSemiBold", sans-serif;
     font-size: 1.4rem;
     font-weight: 600;
     color: #000000;
@@ -2421,7 +2421,7 @@ html.swipebox-html.swipebox-touch {
     letter-spacing: normal;
     color: #2a2024; }
     .note-block__context strong {
-      font-family: "OpenSansRegular", sans-serif;
+      font-family: "OpenSansSemiBold", sans-serif;
       font-weight: bold; }
 
 .fancybox-nav {
@@ -2477,7 +2477,7 @@ html.swipebox-html.swipebox-touch {
       font-size: 2.2rem;
       left: 0; }
     .header-top__phone a {
-      font-family: "OpenSansRegular", sans-serif;
+      font-family: "OpenSansSemiBold", sans-serif;
       font-size: 2.7rem;
       font-weight: bold;
       color: #2a2024;
@@ -2693,7 +2693,7 @@ html.swipebox-html.swipebox-touch {
   .basket-small__info-summ {
     display: block; }
     .basket-small__info-summ strong {
-      font-family: "OpenSansRegular", sans-serif; }
+      font-family: "OpenSansSemiBold", sans-serif; }
   .basket-small__text {
     font-size: 1.3rem;
     line-height: 1.2;
@@ -2852,7 +2852,7 @@ html.swipebox-html.swipebox-touch {
   .left-menu__tabs-item-link {
     height: 3.8rem;
     line-height: 3.8rem;
-    font-family: "OpenSansRegular", sans-serif;
+    font-family: "OpenSansSemiBold", sans-serif;
     font-weight: bold;
     font-size: 1.6rem;
     color: #007fc7;
@@ -2863,7 +2863,7 @@ html.swipebox-html.swipebox-touch {
     position: relative;
     line-height: 1.28em; }
     .left-menu__list-item.is-current .left-menu__list-item-link {
-      font-family: "OpenSansRegular", sans-serif;
+      font-family: "OpenSansSemiBold", sans-serif;
       font-weight: bold; }
     .left-menu__list-item.is-current .left-menu__submenu-list {
       display: block; }
@@ -3207,7 +3207,7 @@ html.swipebox-html.swipebox-touch {
       background: #ffc030;
       color: #ffffff; }
   .page-header__mobile-controls-title {
-    font-family: "OpenSansRegular", sans-serif;
+    font-family: "OpenSansSemiBold", sans-serif;
     font-size: 1.4rem;
     font-weight: bold;
     color: #2a2024;
@@ -3287,7 +3287,7 @@ html.swipebox-html.swipebox-touch {
       width: 100%;
       text-align: center; }
   .main-slider__header {
-    font-family: "OpenSansRegular", sans-serif;
+    font-family: "OpenSansSemiBold", sans-serif;
     padding-left: 3.8rem;
     margin-bottom: 1rem; }
   .main-slider__flag {
@@ -3382,7 +3382,7 @@ html.swipebox-html.swipebox-touch {
       box-shadow: 1px -0.3px 9px 0 rgba(0, 0, 0, 0.19);
       border-color: #ece4d6; }
   .plate-block__title {
-    font-family: "OpenSansRegular", sans-serif;
+    font-family: "OpenSansSemiBold", sans-serif;
     font-size: 1.6rem;
     font-weight: bold;
     color: #000000;
@@ -3501,7 +3501,7 @@ html.swipebox-html.swipebox-touch {
   .left-news__item-link {
     text-decoration: none; }
   .left-news__item-title {
-    font-family: "OpenSansRegular", sans-serif;
+    font-family: "OpenSansSemiBold", sans-serif;
     font-size: 1.6rem;
     font-weight: bold;
     line-height: 1.4;
@@ -3604,7 +3604,7 @@ html.swipebox-html.swipebox-touch {
     line-height: 1.29;
     color: #272727; }
   .left-reviews__name {
-    font-family: "OpenSansRegular", sans-serif;
+    font-family: "OpenSansSemiBold", sans-serif;
     font-size: 1.6rem;
     font-weight: bold;
     line-height: 1.12;
@@ -3654,7 +3654,7 @@ html.swipebox-html.swipebox-touch {
     .reviews-page__content p {
       max-width: 89rem; }
   .reviews-page__name {
-    font-family: "OpenSansRegular", sans-serif;
+    font-family: "OpenSansSemiBold", sans-serif;
     font-size: 1.6rem;
     font-weight: bold;
     line-height: 1.12;
@@ -3947,7 +3947,7 @@ html.swipebox-html.swipebox-touch {
       font-size: 1.4rem; }
   .footer__notice-title {
     color: #000000;
-    font-family: "OpenSansRegular", sans-serif;
+    font-family: "OpenSansSemiBold", sans-serif;
     font-weight: 600;
     margin-bottom: 2rem;
     font-size: 1.8rem; }
@@ -3964,7 +3964,7 @@ html.swipebox-html.swipebox-touch {
   padding-top: 1.8rem;
   position: relative; }
   .footer-block__title {
-    font-family: "OpenSansRegular", sans-serif;
+    font-family: "OpenSansSemiBold", sans-serif;
     font-size: 1.4rem;
     font-weight: bold;
     color: #000000;
@@ -3995,7 +3995,7 @@ html.swipebox-html.swipebox-touch {
   max-width: 19.4rem; }
   .footer-contacts__phone {
     display: block;
-    font-family: "OpenSansRegular", sans-serif;
+    font-family: "OpenSansSemiBold", sans-serif;
     font-weight: bold;
     line-height: 1.29;
     color: #000000;
@@ -4043,7 +4043,7 @@ html.swipebox-html.swipebox-touch {
       color: #007fc7;
       border-bottom-color: #007fc7; }
   .footer-catalog__promo-link {
-    font-family: "OpenSansRegular", sans-serif;
+    font-family: "OpenSansSemiBold", sans-serif;
     font-weight: bold;
     line-height: 1.71;
     color: #000000;
@@ -4063,7 +4063,7 @@ html.swipebox-html.swipebox-touch {
   color: #000;
   max-width: 27rem; }
   .footer-shops__name {
-    font-family: "OpenSansRegular", sans-serif;
+    font-family: "OpenSansSemiBold", sans-serif;
     font-weight: bold; }
   .footer-shops__elem:not(:last-child) {
     margin-bottom: 3.2rem; }
@@ -4093,7 +4093,7 @@ html.swipebox-html.swipebox-touch {
   .footer-account__basket-goods {
     color: #007fc7; }
   .footer-account__basket-summ strong {
-    font-family: "OpenSansRegular", sans-serif;
+    font-family: "OpenSansSemiBold", sans-serif;
     font-weight: bold; }
   .footer-account__apps-link {
     display: block;
@@ -5567,10 +5567,10 @@ html.swipebox-html.swipebox-touch {
   .detail-product__available-stock {
     white-space: nowrap; }
     .detail-product__available-stock:last-child {
-      font-family: "OpenSansRegular", sans-serif;
+      font-family: "OpenSansSemiBold", sans-serif;
       font-weight: 600; }
     .detail-product__available-stock span {
-      font-family: "OpenSansRegular", sans-serif;
+      font-family: "OpenSansSemiBold", sans-serif;
       font-weight: 600; }
   .detail-product__buy-info {
     width: 42%; }
@@ -5665,7 +5665,7 @@ html.swipebox-html.swipebox-touch {
     text-decoration: line-through;
     white-space: nowrap; }
   .detail-product__price-cur {
-    font-family: "OpenSansRegular", sans-serif;
+    font-family: "OpenSansSemiBold", sans-serif;
     font-weight: bold;
     color: #008d1e;
     white-space: nowrap; }
@@ -6001,7 +6001,7 @@ html.swipebox-html.swipebox-touch {
     .our-advantages__item-image.spr-manager {
       background-position-y: -69rem; }
   .our-advantages__item-title {
-    font-family: "OpenSansRegular", sans-serif;
+    font-family: "OpenSansSemiBold", sans-serif;
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 1.0;
@@ -6050,7 +6050,7 @@ html.swipebox-html.swipebox-touch {
 .our-stores {
   padding: 5rem 0; }
   .our-stores__title {
-    font-family: "OpenSansRegular", sans-serif;
+    font-family: "OpenSansSemiBold", sans-serif;
     font-size: 2.4rem;
     font-weight: 600;
     line-height: 0.75;
@@ -6064,7 +6064,7 @@ html.swipebox-html.swipebox-touch {
     max-width: 93rem;
     margin-bottom: 5.7rem; }
   .our-stores__item-title {
-    font-family: "OpenSansRegular", sans-serif;
+    font-family: "OpenSansSemiBold", sans-serif;
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 1.0;
@@ -6358,7 +6358,7 @@ html.swipebox-html.swipebox-touch {
 
 .actions-timer__numbers {
   display: inline-block;
-  font-family: "OpenSansRegular", sans-serif;
+  font-family: "OpenSansSemiBold", sans-serif;
   font-weight: 600;
   font-size: 5rem;
   color: #666666;
@@ -6426,7 +6426,7 @@ html.swipebox-html.swipebox-touch {
     -ms-flex-positive: 2;
     flex-grow: 2; }
   .shops-info__title {
-    font-family: "OpenSansRegular", sans-serif;
+    font-family: "OpenSansSemiBold", sans-serif;
     font-size: 1.6rem;
     font-weight: bold;
     line-height: 1.12;
@@ -6437,7 +6437,7 @@ html.swipebox-html.swipebox-touch {
     .shops-info__content:not(:last-child) {
       margin-bottom: 2rem; }
     .shops-info__content strong {
-      font-family: "OpenSansRegular", sans-serif;
+      font-family: "OpenSansSemiBold", sans-serif;
       font-weight: bold; }
     .shops-info__content a {
       text-decoration: none;
@@ -6641,7 +6641,7 @@ html.swipebox-html.swipebox-touch {
     height: 9rem;
     margin-bottom: 1rem; }
   .payment-page-block__title {
-    font-family: "OpenSansRegular", sans-serif;
+    font-family: "OpenSansSemiBold", sans-serif;
     font-size: 1.6rem;
     font-weight: bold;
     color: #000000;
@@ -6717,7 +6717,7 @@ html.swipebox-html.swipebox-touch {
   margin-top: 3.8rem;
   font-size: 1.4rem; }
   .payment-contacts__title {
-    font-family: "OpenSansRegular", sans-serif;
+    font-family: "OpenSansSemiBold", sans-serif;
     font-size: 1.6rem;
     font-weight: bold;
     line-height: 1;
@@ -6733,7 +6733,7 @@ html.swipebox-html.swipebox-touch {
   .payment-contacts__content-contact .payment-contacts__title {
     margin-bottom: 1.6rem; }
   .payment-contacts__phone {
-    font-family: "OpenSansRegular", sans-serif;
+    font-family: "OpenSansSemiBold", sans-serif;
     font-size: 1.6rem;
     font-weight: bold;
     line-height: 1.71;
@@ -6791,7 +6791,7 @@ html.swipebox-html.swipebox-touch {
     max-width: 32rem;
     margin-right: 1.3rem; }
   .connection-block__phone {
-    font-family: "OpenSansRegular", sans-serif;
+    font-family: "OpenSansSemiBold", sans-serif;
     font-size: 3.6rem;
     font-weight: bold;
     line-height: 1.0;
@@ -6854,13 +6854,13 @@ html.swipebox-html.swipebox-touch {
   color: #2a2024; }
   .delivery-page-block__title {
     font-size: 1.6rem;
-    font-family: "OpenSansRegular", sans-serif;
+    font-family: "OpenSansSemiBold", sans-serif;
     font-weight: bold;
     margin-bottom: 1rem; }
   .delivery-page-block__item {
     margin-bottom: 2.5rem; }
   .delivery-page-block__context strong {
-    font-family: "OpenSansRegular", sans-serif;
+    font-family: "OpenSansSemiBold", sans-serif;
     font-weight: bold; }
   .delivery-page-block__logo-block-img {
     width: 13.7rem;
@@ -6885,7 +6885,7 @@ html.swipebox-html.swipebox-touch {
   text-align: center;
   color: #000000; }
   .howorder-block__name {
-    font-family: "OpenSansRegular", sans-serif;
+    font-family: "OpenSansSemiBold", sans-serif;
     font-size: 1.6rem;
     font-weight: bold;
     line-height: 1.12;
@@ -6896,8 +6896,7 @@ html.swipebox-html.swipebox-touch {
     position: relative;
     background-repeat: no-repeat;
     -webkit-background-size: 100% auto;
-    background-size: 100% auto;
-    position: relative; }
+    background-size: 100% auto; }
   .howorder-block__item {
     width: 33%;
     max-width: 32rem;
@@ -6995,7 +6994,7 @@ html.swipebox-html.swipebox-touch {
   line-height: 1.29;
   color: #000000; }
   .main-form__title {
-    font-family: "OpenSansRegular", sans-serif;
+    font-family: "OpenSansSemiBold", sans-serif;
     font-size: 1.6rem;
     font-weight: bold;
     line-height: 1.88;
@@ -7241,7 +7240,7 @@ html.swipebox-html.swipebox-touch {
   margin-bottom: 2.8rem; }
 
 .actions__name {
-  font-family: "OpenSansRegular", sans-serif;
+  font-family: "OpenSansSemiBold", sans-serif;
   font-size: 1.6rem;
   font-weight: bold;
   line-height: 1.12;
@@ -7281,7 +7280,7 @@ html.swipebox-html.swipebox-touch {
 .actions__item-content {
   margin-bottom: -4rem; }
   .actions__item-content strong {
-    font-family: "OpenSansRegular", sans-serif;
+    font-family: "OpenSansSemiBold", sans-serif;
     font-weight: bold;
     font-size: 1.4rem;
     color: #272727; }
@@ -7416,7 +7415,7 @@ html.swipebox-html.swipebox-touch {
   padding: 2.5rem 4rem 1.1rem 1.6rem;
   background-color: #fdf9ec;
   border: solid 1px #c4c4c4;
-  font-family: "OpenSansRegular", sans-serif;
+  font-family: "OpenSansSemiBold", sans-serif;
   font-size: 18px;
   font-weight: 600;
   color: #000000;
@@ -7457,7 +7456,7 @@ html.swipebox-html.swipebox-touch {
     background-size: 115% auto; }
 
 .left-pay-info__title {
-  font-family: "OpenSansRegular", sans-serif;
+  font-family: "OpenSansSemiBold", sans-serif;
   font-weight: 600;
   color: #ff7e09;
   font-size: 2.4rem;
@@ -7465,7 +7464,7 @@ html.swipebox-html.swipebox-touch {
   vertical-align: middle; }
 
 .left-pay-info__small-title {
-  font-family: "OpenSansRegular", sans-serif;
+  font-family: "OpenSansSemiBold", sans-serif;
   font-weight: 600;
   color: #000;
   font-size: 1.8rem;
@@ -7527,7 +7526,7 @@ html.swipebox-html.swipebox-touch {
     margin-bottom: 1rem;
     margin-top: 7px; }
   .basket-items__name-link {
-    font-family: "OpenSansRegular", sans-serif;
+    font-family: "OpenSansSemiBold", sans-serif;
     font-size: 1.8rem;
     font-weight: 600;
     color: #000000;
@@ -7586,7 +7585,7 @@ html.swipebox-html.swipebox-touch {
   .basket-items__price {
     white-space: nowrap; }
   .basket-items__price-cur {
-    font-family: "OpenSansRegular", sans-serif;
+    font-family: "OpenSansSemiBold", sans-serif;
     font-size: 1.8rem;
     font-weight: 600;
     color: #000000; }
@@ -7594,7 +7593,7 @@ html.swipebox-html.swipebox-touch {
       content: 'X';
       margin: 0 1.4rem; }
   .basket-items__price-all {
-    font-family: "OpenSansRegular", sans-serif;
+    font-family: "OpenSansSemiBold", sans-serif;
     font-size: 18px;
     font-weight: 600;
     color: #64ac39; }
@@ -7668,7 +7667,7 @@ html.swipebox-html.swipebox-touch {
     -ms-flex-align: center;
     align-items: center; }
   .basket-items strong {
-    font-family: "OpenSansRegular", sans-serif;
+    font-family: "OpenSansSemiBold", sans-serif;
     font-weight: 600; }
 
 @media screen and (max-width: 1728px) {
@@ -7752,7 +7751,7 @@ html.swipebox-html.swipebox-touch {
     position: static;
     width: 6.7rem; }
   .basket-items.is-table .basket-items__title {
-    font-family: "OpenSansRegular", sans-serif;
+    font-family: "OpenSansSemiBold", sans-serif;
     font-size: 2.4rem;
     font-weight: 600;
     line-height: 0.75;
@@ -7761,7 +7760,7 @@ html.swipebox-html.swipebox-touch {
   .basket-items.is-table .basket-items__name-link {
     font-size: 1.4rem;
     font-weight: normal;
-    font-family: "OpenSansRegular", sans-serif;
+    font-family: "OpenSansSemiBold", sans-serif;
     white-space: normal; }
   .basket-items.is-table .basket-items__table-img {
     width: 8.7rem; }
@@ -7796,7 +7795,7 @@ html.swipebox-html.swipebox-touch {
   .basket-items.is-table table {
     width: 100%; }
   .basket-items.is-table th {
-    font-family: "OpenSansRegular", sans-serif;
+    font-family: "OpenSansSemiBold", sans-serif;
     font-size: 14px;
     font-weight: 600;
     color: #000000;
@@ -7837,7 +7836,7 @@ html.swipebox-html.swipebox-touch {
     min-width: 100px; } }
 
 .basket-total {
-  font-family: "OpenSansRegular", sans-serif;
+  font-family: "OpenSansSemiBold", sans-serif;
   font-size: 1.8rem;
   font-weight: 600;
   line-height: 1.94;
@@ -7928,7 +7927,7 @@ html.swipebox-html.swipebox-touch {
     width: 24.6rem; } }
 
 .basket-big-form__title {
-  font-family: "OpenSansRegular", sans-serif;
+  font-family: "OpenSansSemiBold", sans-serif;
   font-size: 18px;
   font-weight: 600;
   color: #000000;
@@ -8150,7 +8149,7 @@ html.swipebox-html.swipebox-touch {
   flex-grow: 2; }
 
 .basket-tabs__tabs-item-link {
-  font-family: "OpenSansRegular", sans-serif;
+  font-family: "OpenSansSemiBold", sans-serif;
   font-size: 18px;
   font-weight: 600;
   color: #000000;
@@ -8242,14 +8241,14 @@ html.swipebox-html.swipebox-touch {
   color: #000000;
   padding-top: 1.5rem; }
   .order-confirm__title {
-    font-family: "OpenSansRegular", sans-serif;
+    font-family: "OpenSansSemiBold", sans-serif;
     font-size: 2.4rem;
     font-weight: 600;
     line-height: 0.75;
     color: #64ac39;
     margin-bottom: 2.3rem; }
   .order-confirm strong {
-    font-family: "OpenSansRegular", sans-serif;
+    font-family: "OpenSansSemiBold", sans-serif;
     font-weight: 600; }
   .order-confirm__firm-contacts {
     margin-top: 2.3rem;
@@ -8758,7 +8757,7 @@ html.swipebox-html.swipebox-touch {
   margin-bottom: 4rem;
   margin-top: 8px; }
   .basket-page__wrap .basket-page__contacts span {
-    font-family: "OpenSansRegular", sans-serif;
+    font-family: "OpenSansSemiBold", sans-serif;
     font-size: 2.4rem;
     font-weight: 600;
     color: #64ac39; }

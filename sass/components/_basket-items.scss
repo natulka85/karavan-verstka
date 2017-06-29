@@ -22,7 +22,7 @@
     margin-top:7px;
   }
   &__name-link{
-    font-family:$FontBase;
+    font-family:$fopsb;
     font-size: 1.8rem;
     font-weight: 600;
     color: #000000;
@@ -82,7 +82,7 @@
     white-space: nowrap;
   }
   &__price-cur{
-    font-family: $FontBase;
+    font-family: $fopsb;
     font-size: 1.8rem;
     font-weight: 600;
     color: #000000;
@@ -92,7 +92,7 @@
     }
   }
   &__price-all{
-    font-family: $FontBase;
+    font-family: $fopsb;
     font-size: 18px;
     font-weight: 600;
     color: #64ac39;
@@ -164,7 +164,7 @@
     align-items: center;
   }
   strong{
-    font-family:$FontBase;
+    font-family:$fopsb;
     font-weight: 600;
   }
 }
@@ -274,7 +274,7 @@
       width: 6.7rem;
     }
     &__title{
-      font-family: $FontBase;
+      font-family: $fopsb;
       font-size: 2.4rem;
       font-weight: 600;
       line-height: 0.75;
@@ -284,7 +284,7 @@
     &__name-link{
       font-size: 1.4rem;
       font-weight:normal;
-      font-family:$FontBase;
+      font-family:$fopsb;
       white-space: normal;
     }
     &__table-img{
@@ -334,7 +334,7 @@
     width: 100%;
   }
   th{
-    font-family: $FontBase;
+    font-family: $fopsb;
     font-size: 14px;
     font-weight: 600;
     color: #000000;

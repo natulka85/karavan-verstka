@@ -23,11 +23,13 @@ $(document).ready(function () {
     CatalogControlsLink();
     voteStars();
     modalGallery();
+    deliveryInfo();
 });
 
 $(window).on('resize', function () {
     mainTabs();
     adaptive();
+    deliveryInfo();
 })
 
 function mainTabs() {
@@ -247,6 +249,10 @@ function dropDownLists(){
                     if(maxLiZ <= maxSpanZ){
                         maxLiZ = Number(maxSpanZ) + 1;
                     }
+
+                $(this).css('z-index', 0);
+                $(this).find('li').css('top', 0);
+                $(this).find('ul').css('height', '100%');
                 }
 
         });
@@ -635,5 +641,15 @@ function voteStars(){
 function modalGallery(){
     $('.js-gallery').swipebox({
         hideBarsDelay: false,
+    });
+}
+function deliveryInfo(){
+    if($('.left-pay-info').length > 0){
+        var cord = $('.js-delivery-info').position();
+        $('.left-pay-info').css('top', cord.top + 33);
+    }
+
+    $('.js-delivery-info, .left-pay-info__close').on('click', function(){
+        $('.left-pay-info').toggleClass('is-opened');
     });
 }

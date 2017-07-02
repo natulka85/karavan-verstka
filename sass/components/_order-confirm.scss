@@ -4,7 +4,7 @@
   color: #000000;
   padding-top: 1.5rem;
 &__title{
-  font-family: $fopsb;
+  font-family: "OpenSansRegular", sans-serif;
   font-size: 2.4rem;
   font-weight: 600;
   line-height: 0.75;
@@ -12,7 +12,7 @@
   margin-bottom: 2.3rem;
 }
   strong{
-    font-family: $fopsb;
+    font-family: "OpenSansRegular", sans-serif;
     font-weight: 600;
   }
   &__firm-contacts{

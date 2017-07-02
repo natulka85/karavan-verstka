@@ -36,9 +36,8 @@
   &__shop-name{
     padding-top: 7px;
     h3{
-      font-family: $fopsb;
+      font-family: $FontBase;
       font-size: 16px;
-      font-weight: 600;
       color: #231f20;
     }
   }
@@ -54,7 +53,7 @@
       left: 0;
     }
     a{
-      font-family: $fopsb;
+      font-family: "OpenSansRegular", sans-serif;
       font-size: 2.7rem;
       font-weight: bold;
       color: #2a2024;

@@ -3,7 +3,7 @@
   padding: 2.5rem 4rem 1.1rem 1.6rem;
   background-color: #fdf9ec;
   border: solid 1px #c4c4c4;
-  font-family: $fopsb;
+  font-family: "OpenSansRegular", sans-serif;
   font-size: 18px;
   font-weight: 600;
   color: #000000;
@@ -47,7 +47,7 @@
     }
   }
   &__title{
-    font-family: $fopsb;
+    font-family: "OpenSansRegular", sans-serif;
     font-weight: 600;
     color: #ff7e09;
     font-size: 2.4rem;
@@ -55,7 +55,7 @@
     vertical-align: middle;
   }
   &__small-title{
-    font-family:$fopsb;
+    font-family:"OpenSansRegular", sans-serif;
     font-weight: 600;
     color: #000;
     font-size: 1.8rem;
@@ -89,10 +89,50 @@
       margin-bottom: 1.8rem;
     }
   }
+  &__close-wrap{
+    position: relative;
+  }
+  &__close{
+    display: none;
+  }
 }
 
 @media #{$media-960} {
   .left-pay-info{
     display: none;
+    position: absolute;
+    z-index: 10;
+    background: white;
+    width: calc(100% - 40px);
+    border: solid 1px #007fc7;
+    &.is-opened{
+      display: block !important;
+    }
+  }
+  .left-pay-info__side:nth-child(2){
+    width: 50%;
+    float: left;
+  }
+  .left-pay-info__head{
+    clear: both;
+  }
+  .left-pay-info__main-notice{
+    margin: 4rem 9px 0 9px;
+  }
+  .left-pay-info__other-info{
+    border:none;
+  }
+  .left-pay-info__close{
+    display: block;
+  }
+}
+@media #{$media-686} {
+  .left-pay-info{
+    width: calc(100% - 20px);
+  }
+  .left-pay-info__side:nth-child(2){
+    width: 100%;
+    float: none;
+    margin-bottom: 1.5rem;
   }
 }

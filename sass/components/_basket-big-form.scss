@@ -1,6 +1,6 @@
 .basket-big-form {
   &__title{
-    font-family: $fopsb;
+    font-family: "OpenSansRegular", sans-serif;
     font-size: 18px;
     font-weight: 600;
     color: #000000;
@@ -68,6 +68,7 @@
       padding: 0;
       padding-left: 1rem;
       font-weight:300;
+      white-space: nowrap;
     }
 
     .cd-dropdown ul li{
@@ -84,6 +85,7 @@
         font-weight:300;
         padding: 0;
         padding-left: 1rem;
+        white-space: nowrap;
       }
     }
 
@@ -167,7 +169,7 @@
     white-space: nowrap;
     font-size: 1.8rem;
     margin-right: 1.5rem;
-    width: 19rem;
+    width: 19.3rem;
   }
   &__label-absolute {
     position: relative;
@@ -235,7 +237,7 @@
     &__field.is-address{
       position: static;
       .basket-big-form__name {
-        width: 18rem;
+        width: 19.3rem;
         margin-right: 4px;
       }
       .basket-big-form__input{
@@ -247,8 +249,16 @@
   .basket-big-form__form .cd-dropdown, .basket-big-form__form .cd-select{
     width: 27.8rem;
   }
-  .basket-big-form__name{
-    width: 18rem;
+}
+@media screen and (max-width: 585px) {
+  .basket-big-form__input{
+    width: 26.3rem;
+  }
+  .basket-big-form__form .cd-dropdown, .basket-big-form__form .cd-select{
+    width: 26.3rem;
+  }
+  .basket-big-form__field.is-address .basket-big-form__input{
+    width: 26.3rem;
   }
 }
 

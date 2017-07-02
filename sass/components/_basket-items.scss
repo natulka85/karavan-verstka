@@ -22,7 +22,7 @@
     margin-top:7px;
   }
   &__name-link{
-    font-family:$fopsb;
+    font-family:"OpenSansRegular", sans-serif;
     font-size: 1.8rem;
     font-weight: 600;
     color: #000000;
@@ -82,7 +82,7 @@
     white-space: nowrap;
   }
   &__price-cur{
-    font-family: $fopsb;
+    font-family: "OpenSansRegular", sans-serif;
     font-size: 1.8rem;
     font-weight: 600;
     color: #000000;
@@ -92,7 +92,7 @@
     }
   }
   &__price-all{
-    font-family: $fopsb;
+    font-family: "OpenSansRegular", sans-serif;
     font-size: 18px;
     font-weight: 600;
     color: #64ac39;
@@ -164,7 +164,7 @@
     align-items: center;
   }
   strong{
-    font-family:$fopsb;
+    font-family:"OpenSansRegular", sans-serif;
     font-weight: 600;
   }
 }
@@ -259,7 +259,7 @@
     display: block;
     overflow: hidden;
     white-space: nowrap;
-    height: 2.2rem;
+    height: 2.9rem;
   }
   .basket-items__main-content{
     padding-left: 7.1rem;
@@ -275,7 +275,7 @@
       width: 6.7rem;
     }
     &__title{
-      font-family: $fopsb;
+      font-family: "OpenSansRegular", sans-serif;
       font-size: 2.4rem;
       font-weight: 600;
       line-height: 0.75;
@@ -284,8 +284,8 @@
     }
     &__name-link{
       font-size: 1.4rem;
-      font-weight:normal;
-      font-family:$fopsb;
+      font-weight:600;
+      font-family:"OpenSansRegular", sans-serif;
       white-space: normal;
     }
     &__table-img{
@@ -335,7 +335,7 @@
     width: 100%;
   }
   th{
-    font-family: $fopsb;
+    font-family: "OpenSansRegular", sans-serif;
     font-size: 14px;
     font-weight: 600;
     color: #000000;
@@ -389,11 +389,18 @@
     padding-right:0;
   }
   .basket-items.is-table .basket-items__table-total tr td:nth-child(2) {
-    width: 10px;
-    min-width: 100px;
+    width: 90px;
+    min-width: 90px;
   }
   .basket-items.is-table .basket-items__table-price {
-    width: 100px;
-    min-width: 100px;
+    width: 90px;
+    min-width: 90px;
+  }
+  .basket-items__name-link{
+    padding-right: 10px;
+  }
+  .basket-items.is-table .basket-items__table-name{
+    padding-right: 5px;
+    min-width: 17rem;
   }
 }

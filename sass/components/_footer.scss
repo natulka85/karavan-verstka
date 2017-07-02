@@ -51,7 +51,7 @@
   }
   &__notice-title{
     color: #000000;
-    font-family: $fopsb;
+    font-family: "OpenSansRegular", sans-serif;
     font-weight: 600;
     margin-bottom: 2rem;
     font-size: 1.8rem;
@@ -65,7 +65,7 @@
   position: relative;
 
   &__title{
-    font-family: $fopsb;
+    font-family: "OpenSansRegular", sans-serif;
     font-size: 1.4rem;
     font-weight: bold;
     color: #000000;
@@ -100,7 +100,7 @@
 
   &__phone{
     display: block;
-    font-family: $fopsb;
+    font-family: "OpenSansRegular", sans-serif;
     font-weight: bold;
     line-height: 1.29;
     color: #000000;
@@ -165,7 +165,7 @@
   }
 
   &__promo-link{
-    font-family: $fopsb;
+    font-family: "OpenSansRegular", sans-serif;
     font-weight: bold;
     line-height: 1.71;
     color: #000000;
@@ -187,7 +187,7 @@
   color: #000;
   max-width: 27rem;
   &__name{
-    font-family: $fopsb;
+    font-family: "OpenSansRegular", sans-serif;
     font-weight: bold;
   }
   &__elem{
@@ -234,7 +234,7 @@
 
   &__basket-summ{
     strong{
-      font-family:$fopsb;
+      font-family:"OpenSansRegular", sans-serif;
       font-weight: bold;
     }
   }
@@ -242,6 +242,14 @@
   &__apps-link{
     display: block;
     margin-bottom: 4px;
+  }
+  a{
+    color: #272727;
+    &:hover{
+      .footer-account__basket-goods{
+        text-decoration: underline;
+      }
+    }
   }
 }
 

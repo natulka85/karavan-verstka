@@ -14,7 +14,7 @@ block PageLayout
 			section.sidebar-bar
 				a.sidebar-bar__other-page-link(href='') Перейти в&nbsp;каталог
 				include blocks/_main-search
-					.sidebar-bar__delivery-info.btn.is-transparent-blue #[span Оплата и доставка]
+					.sidebar-bar__delivery-info.btn.is-transparent-blue.js-delivery-info #[span Оплата и доставка]
 				include includes/_left-pay-info.jade
 
 			section.main-content-inner.fw
@@ -70,7 +70,7 @@ block PageLayout
 													select.basket-big-form__input.is-select-dropdown.cd-select
 														option(value='-1', selected) Выберите способ доставки
 														option(value='1', selected) Доставка до адреса
-														option(value='2', selected) Доставка до трансп. компании
+														option(value='2', selected) Доставка до трансп. комп&
 														option(value='3', selected) Самовывоз
 
 												.basket-big-form__field

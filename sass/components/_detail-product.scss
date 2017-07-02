@@ -94,11 +94,11 @@
   &__available-stock {
     white-space: nowrap;
     &:last-child {
-      font-family: $fopsb;
+      font-family: "OpenSansRegular", sans-serif;
       font-weight: 600;
     }
     span{
-      font-family: $fopsb;
+      font-family: "OpenSansRegular", sans-serif;
       font-weight: 600;
     }
   }
@@ -199,7 +199,7 @@
     white-space: nowrap;
   }
   &__price-cur {
-    font-family: $fopsb;
+    font-family: "OpenSansRegular", sans-serif;
     font-weight: bold;
     color: #008d1e;
     white-space: nowrap;

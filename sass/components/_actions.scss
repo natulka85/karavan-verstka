@@ -6,7 +6,7 @@
     margin-bottom: 2.8rem;
   }
   &__name {
-    font-family: $fopsb;
+    font-family: "OpenSansRegular", sans-serif;
     font-size: 1.6rem;
     font-weight: bold;
     line-height: 1.12;
@@ -41,7 +41,7 @@
   &__item-content{
     margin-bottom: -4rem;
     strong{
-      font-family:$fopsb;
+      font-family:"OpenSansRegular", sans-serif;
       font-weight: bold;
       font-size: 1.4rem;
       color: #272727;

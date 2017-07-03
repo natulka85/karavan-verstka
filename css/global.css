@@ -4554,15 +4554,22 @@ html.swipebox-html.swipebox-touch {
     line-height: 2.2rem;
     left: 1rem;
     -webkit-border-radius: 2px;
-    border-radius: 2px; }
+    border-radius: 2px;
+    cursor: pointer; }
     .products-list__label.is-promo {
       top: 0;
       font-size: 1.3rem;
       height: 2.2rem; }
+      .products-list__label.is-promo:hover {
+        color: #ffffff;
+        background-color: #ff6600; }
     .products-list__label.is-collection {
       bottom: 0;
       font-size: 1.2rem;
       height: 2.5rem; }
+      .products-list__label.is-collection:hover {
+        color: #ffffff;
+        background-color: #008d1e; }
   .products-list__name {
     max-width: 75%;
     margin-bottom: 3px;
@@ -5552,7 +5559,14 @@ html.swipebox-html.swipebox-touch {
     display: block;
     width: 100%; }
   .detail-product__label {
-    padding: 0 1.8rem; }
+    padding: 0 1.8rem;
+    cursor: pointer; }
+    .detail-product__label.is-promo:hover {
+      color: #ffffff;
+      background-color: #ff6600; }
+    .detail-product__label.is-collection:hover {
+      color: #ffffff;
+      background-color: #008d1e; }
   .detail-product__gallery {
     position: relative;
     padding-right: 7.2rem; }

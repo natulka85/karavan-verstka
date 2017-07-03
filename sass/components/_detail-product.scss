@@ -46,6 +46,19 @@
   }
   &__label{
     padding: 0 1.8rem;
+    cursor: pointer;
+    &.is-promo{
+      &:hover{
+        color: #ffffff;
+        background-color: #ff6600;
+      }
+    }
+    &.is-collection{
+      &:hover{
+        color: #ffffff;
+        background-color: #008d1e;
+      }
+    }
   }
   &__gallery {
     position: relative;

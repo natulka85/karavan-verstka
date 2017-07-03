@@ -19,6 +19,17 @@
     line-height: 1.29;
     color: #262626;
   }
+  .label-block{
+    &__label{
+      cursor: pointer;
+      &.is-orange{
+        &:hover{
+          color: #ffffff;
+          background-color: #ff6600;
+        }
+      }
+    }
+  }
 }
 
 @media #{$media-1166} {

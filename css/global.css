@@ -4263,6 +4263,11 @@ html.swipebox-html.swipebox-touch {
     font-size: 1.4rem;
     line-height: 1.29;
     color: #262626; }
+  .page-header-main .label-block__label {
+    cursor: pointer; }
+    .page-header-main .label-block__label.is-orange:hover {
+      color: #ffffff;
+      background-color: #ff6600; }
 
 @media screen and (max-width: 1166px) {
   .page-header-main__side:nth-child(1) {
@@ -4569,7 +4574,8 @@ html.swipebox-html.swipebox-touch {
       height: 2.5rem; }
       .products-list__label.is-collection:hover {
         color: #ffffff;
-        background-color: #008d1e; }
+        background-color: #64ac39;
+        border-color: #64ac39; }
   .products-list__name {
     max-width: 75%;
     margin-bottom: 3px;
@@ -5566,7 +5572,8 @@ html.swipebox-html.swipebox-touch {
       background-color: #ff6600; }
     .detail-product__label.is-collection:hover {
       color: #ffffff;
-      background-color: #008d1e; }
+      background-color: #64ac39;
+      border-color: #64ac39; }
   .detail-product__gallery {
     position: relative;
     padding-right: 7.2rem; }
